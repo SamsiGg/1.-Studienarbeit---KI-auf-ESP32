@@ -11,6 +11,8 @@
 #include "esp_camera.h"
 #include "esp_http_server.h"
 
+#include "credentials.h" // Enthält WIFI_NAME und WIFI_PASSWORD
+
 
 
 static const char *TAG = "CAMERA_WEBSERVER";
@@ -136,8 +138,8 @@ void wifi_init_sta(void) {
 
     wifi_config_t wifi_config = {
         .sta = {
-            .ssid = CONFIG_ESP_WIFI_SSID,
-            .password = CONFIG_ESP_WIFI_PASSWORD,
+            .ssid = WIFI_NAME,
+            .password = WIFI_PASSWORD,
         },
     };
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));

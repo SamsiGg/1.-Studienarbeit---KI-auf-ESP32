@@ -3,3 +3,8 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+
+components/esp32-camera
+components/esp-tflite-micro
+
+src/credentials.ini
