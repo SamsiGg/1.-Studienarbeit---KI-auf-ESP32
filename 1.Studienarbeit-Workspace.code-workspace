@@ -5,6 +5,10 @@
 		},
 		{
 			"path": "ESP32-Wroom-32_Programm"
+		},
+		{
+			"name": "ESP32-CAM_Programm",
+			"path": "ESP32-CAM_Programm"
 		}
 	]
 }

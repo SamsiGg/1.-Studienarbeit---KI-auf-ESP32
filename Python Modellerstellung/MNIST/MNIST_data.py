@@ -48,9 +48,9 @@ def image_to_c_array(image_path, array_name="my_digit"):
 # --- HAUPTPROGRAMM ---
 if __name__ == "__main__":
     # Gib hier den Namen deiner Bilddatei an
-    IMAGE_FILE = "sample6.png"
+    IMAGE_FILE = "sample7.png"
     
     # Gib hier den gewünschten Variablennamen für dein C-Array an
-    ARRAY_VARIABLE_NAME = "sample_digit_6"
+    ARRAY_VARIABLE_NAME = "sample_digit_7"
     
     image_to_c_array(IMAGE_FILE, ARRAY_VARIABLE_NAME)
