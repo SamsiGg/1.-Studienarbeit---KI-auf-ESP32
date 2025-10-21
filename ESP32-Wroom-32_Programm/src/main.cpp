@@ -15,6 +15,7 @@
 #include "tensorflow/lite/schema/schema_generated.h"
 
 // Dein konvertiertes Modell und die Testdaten (bleiben gleich)
+#include "model_data.h"
 #include "model_data_2.h"
 
 // Input ist ein 28x28 Pixel großes Bild
@@ -229,14 +230,14 @@ extern "C" void app_main(void)
     ESP_LOGI(TAG, "⏳ Lade TensorFlow Lite Modell...");
     
     // 1. Lade das Modell aus dem C-Array
-    model = tflite::GetModel(mnist_cnn_tflite); 
+    model = tflite::GetModel(trained_lstm_tflite); 
     if (model->version() != TFLITE_SCHEMA_VERSION) {
         ESP_LOGE(TAG, "❌ FEHLER: Modell-Version ist inkompatibel!");
         while (1) vTaskDelay(100);
     }
 
     // 2. Erstelle den OpResolver (Deine Version hatte 4, aber es sind 6 Operatoren)
-    tflite::MicroMutableOpResolver<9> op_resolver;
+    tflite::MicroMutableOpResolver<10> op_resolver;
 
     if (op_resolver.AddShape() != kTfLiteOk) { ESP_LOGE(TAG, "Fehler bei AddShapee"); return; }
     if (op_resolver.AddStridedSlice() != kTfLiteOk) { ESP_LOGE(TAG, "Fehler bei AddStridedSlice"); return; }
@@ -247,6 +248,7 @@ extern "C" void app_main(void)
     if (op_resolver.AddReshape() != kTfLiteOk) { ESP_LOGE(TAG, "Fehler bei AddReshape"); return; }
     if (op_resolver.AddFullyConnected() != kTfLiteOk) { ESP_LOGE(TAG, "Fehler bei AddFullyConnected"); return; }
     if (op_resolver.AddSoftmax() != kTfLiteOk) { ESP_LOGE(TAG, "Fehler bei AddSoftmax"); return; }
+    if (op_resolver.AddUnidirectionalSequenceLSTM() != kTfLiteOk) { ESP_LOGE(TAG, "Fehler bei AddUnidirectionalSequenceLSTM"); return; }
 
     tensor_arena = (uint8_t*) malloc(kTensorArenaSize);
     if (tensor_arena == nullptr) {

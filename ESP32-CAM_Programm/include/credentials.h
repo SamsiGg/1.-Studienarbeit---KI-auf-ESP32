@@ -2,7 +2,7 @@
 #define CREDENTIALS_H
 
 // Verwende #define statt const char*
-#define WIFI_NAME "SammysNetz"
-#define WIFI_PASSWORD "Merlin20132025"
+#define WIFI_NAME "iPhone (96)"
+#define WIFI_PASSWORD "sammyyyyy"
 
 #endif // CREDENTIALS_H

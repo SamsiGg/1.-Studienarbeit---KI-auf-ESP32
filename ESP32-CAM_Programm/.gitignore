@@ -6,5 +6,6 @@
 
 components/esp32-camera
 components/esp-tflite-micro
+components/esp-dl
 
-src/credentials.ini
+src/credentials.h
