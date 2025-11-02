@@ -29,7 +29,7 @@
 #include <string.h>   // Für libc-Hooks (memcpy, etc.)
 
 // 3. TFLM-Header
-#include "tensorflow/lite/micro/micro_log.h"
+#include "tensorflow/lite/micro/micro_error_reporter.h"
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/schema/schema_generated.h"
@@ -41,27 +41,27 @@
 #if TH_MODEL_VERSION == EE_MODEL_VERSION_IC01
   #include "ic01_model_data.h" // Enthält das ResNet-Modell
   const unsigned char* g_model = pretrainedResnet_quant_tflite;
-  constexpr int kTensorArenaSize = 150 * 1024; // 100 KB
+  constexpr size_t kTensorArenaSize = 150 * 1024; // 100 KB
 
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_KWS01
   #include "kws01_model_data.h" // Enthält das DS-CNN-Modell
   const unsigned char* g_model = kws_ref_model_tflite;
-  constexpr int kTensorArenaSize = 20 * 1024; // 20 KB
+  constexpr size_t kTensorArenaSize = 20 * 1024; // 20 KB
 
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_VWW01
   #include "vww01_model_data.h" // Enthält das MobileNetV1-Modell
   const unsigned char* g_model = vww_96_int8_tflite;
-  constexpr int kTensorArenaSize = 335 * 1024; // 335 KB
+  constexpr size_t kTensorArenaSize = 335 * 1024; // 335 KB
 
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_AD01
   #include "ad01_model_data.h" // Enthält das Autoencoder-Modell
   const unsigned char* g_model = ad01_int8_tflite;
-  constexpr int kTensorArenaSize = 50 * 1024; // 50 KB
+  constexpr size_t kTensorArenaSize = 50 * 1024; // 50 KB
 
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_STRWW01
   #include "strww01_model_data.h" // Enthält das TinyML RNN-Modell
   const unsigned char* g_model = str_ww_ref_model_tflite;
-  constexpr int kTensorArenaSize = 30 * 1024; // 30 KB
+  constexpr size_t kTensorArenaSize = 30 * 1024; // 30 KB
 
 #else
   #error "TH_MODEL_VERSION wurde nicht auf ein gültiges Modell gesetzt!"
@@ -78,6 +78,9 @@ tflite::MicroInterpreter* interpreter = nullptr;
 TfLiteTensor* model_input = nullptr;
 TfLiteTensor* model_output = nullptr;
 tflite::MicroOpResolver* op_resolver = nullptr;
+
+tflite::MicroErrorReporter micro_error_reporter;
+tflite::ErrorReporter* error_reporter = &micro_error_reporter;
 
 // Die Tensor Arena!
 // Wird vom Linker in das RAM des Teensy gelegt.
@@ -211,7 +214,7 @@ void th_results() {
  */
 void th_infer() {
   if (interpreter->Invoke() != kTfLiteOk) {
-    MicroPrintf("FEHLER: interpreter->Invoke() ist fehlgeschlagen!");
+    th_printf("FEHLER: interpreter->Invoke() ist fehlgeschlagen!");
   }
 }
 
@@ -277,22 +280,24 @@ void th_final_initialize(void) {
 
   // 2. Modell laden (g_model wird durch den #if-Block oben gesetzt)
   model = tflite::GetModel(g_model);
+  /*
   if (model->version() != TFLITE_SCHEMA_VERSION) {
-    MicroPrintf("FEHLER: Modell-Schema-Version stimmt nicht überein!");
+    th_printf("FEHLER: Modell-Schema-Version stimmt nicht überein!");
     return;
-  }
+  }*/
 
   // 3. Operatoren zum Resolver hinzufügen (je nach Modell)
   AddOpsToResolver();
-
+ 
   // 4. Interpreter initialisieren
   static tflite::MicroInterpreter static_interpreter(
-      model, *op_resolver, tensor_arena, kTensorArenaSize);
+      model, *op_resolver, tensor_arena, kTensorArenaSize, 
+      error_reporter, nullptr);
   interpreter = &static_interpreter;
 
   // 5. Tensoren im Arena-Speicher zuweisen
   if (interpreter->AllocateTensors() != kTfLiteOk) {
-    MicroPrintf("FEHLER: AllocateTensors() fehlgeschlagen.");
+    th_printf("FEHLER: AllocateTensors() fehlgeschlagen.");
     return;
   }
 
