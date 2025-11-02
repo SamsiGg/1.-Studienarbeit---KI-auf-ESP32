@@ -10,6 +10,7 @@
 #include "esp_log.h"       // Für ESP_LOGI, ESP_LOGE
 #include "esp_err.h"       // Für esp_err_t, ESP_OK, ESP_FAIL
 #include "esp_camera.h"    // Für camera_fb_t und Kamera-Funktionen
+#include "esp_timer.h"    // Für Zeitmessungen
 
 // --- FreeRTOS ---
 #include "freertos/FreeRTOS.h"
@@ -80,13 +81,13 @@ static const char *TAG = "PERSON_DETECTION";
 const int full_width = 320;
 const int full_height = 240;
 uint8_t* rgb888_image_full = NULL; // Puffer für 320x240x3
-uint8_t* rgb888_image_96x96 = NULL;
-int8_t* model_input_buffer = NULL;
+uint8_t* rgb888_image_96x96 = NULL; // Puffer für 96x96x3
+int8_t* model_input_buffer = NULL; // Puffer für 96x96x1 (Modell-Input)
 
 const tflite::Model* model = nullptr;
 tflite::MicroInterpreter* interpreter = nullptr;
 TfLiteTensor* input = nullptr;
-constexpr int kTensorArenaSize = 160 * 1024;
+constexpr int kTensorArenaSize = 100 * 1024;
 static uint8_t *tensor_arena;
 
 esp_err_t setup_person_detection_model(){
@@ -99,7 +100,7 @@ esp_err_t setup_person_detection_model(){
     }
     ESP_LOGI(TAG, "Input-Puffer (%.1f KB) allokiert.", (kNumRows * kNumCols * kNumChannels)/1024.0);
 
-    // Stelle sicher, dass der rgb565_image_160x120 Puffer allokiert ist
+    // Stelle sicher, dass der rgb888_image_full Puffer allokiert ist
     rgb888_image_full = (uint8_t*) heap_caps_malloc(full_width * full_height * 3, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
     if (!rgb888_image_full) {
         ESP_LOGE(TAG, "Speicher für 320x240 RGB888 Puffer konnte nicht allokiert werden");
@@ -131,9 +132,9 @@ esp_err_t setup_person_detection_model(){
     }
 
     if (tensor_arena == NULL) {
-        //tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+        tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
         // Benutze PSRAM (SPIRAM) statt internem RAM
-        tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+        //tensor_arena = (uint8_t *) heap_caps_malloc(kTensorArenaSize, MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
     }
     if (tensor_arena == NULL) {
         printf("Couldn't allocate memory of %d bytes\n", kTensorArenaSize);
@@ -179,66 +180,75 @@ esp_err_t setup_person_detection_model(){
 
 void run_person_detection(camera_fb_t *fb) {
 
+    // --- TIMING START: BILDVERARBEITUNG ---
+    int64_t t_start_pre = esp_timer_get_time();
+
     // 1. JPEG (320x240) -> RGB888 (320x240)
-    // Wir benutzen die Funktion 'fmt2rgb888', die JPEG dekodieren kann
     bool conversion_ok = fmt2rgb888(fb->buf, fb->len, 
-                                  PIXFORMAT_JPEG, // Quellformat
-                                  rgb888_image_full); // Ausgabe-Puffer
+                                  PIXFORMAT_JPEG, 
+                                  rgb888_image_full);
     
     if (!conversion_ok) {
         ESP_LOGE(TAG, "JPEG -> RGB888 Dekodierung fehlgeschlagen");
         return;
     }
     
-    // 2. Skaliere von 320x240 auf 96x96 (Deine Idee!)
-    // Wir nutzen die RGB888-Puffer (3 Kanäle)
-    image_resize_linear(rgb888_image_96x96,  // 1. Ziel-Puffer (96x96x3)
-                        rgb888_image_full,   // 2. Quell-Puffer (320x240x3)
-                        kNumCols,            // 3. Ziel-Breite (96)
-                        kNumRows,            // 4. Ziel-Höhe (96)
-                        3,                   // 5. Ziel-Kanäle (RGB = 3)
-                        full_width,          // 6. Quell-Breite (320)
-                        full_height);        // 7. Quell-Höhe (240)
+    // 2. Skaliere von 320x240 auf 96x96
+    image_resize_linear(rgb888_image_96x96,  
+                        rgb888_image_full,   
+                        kNumCols,            
+                        kNumRows,            
+                        3,                   
+                        full_width,          
+                        full_height);        
 
     // 3. RGB888 (96x96) -> Grayscale (96x96) für das Modell
     for (int i = 0; i < kNumRows * kNumCols; i++) {
-        // Lese die 3 Bytes (R, G, B) aus dem 96x96 RGB-Puffer
         uint8_t r = rgb888_image_96x96[i * 3 + 0];
         uint8_t g = rgb888_image_96x96[i * 3 + 1];
         uint8_t b = rgb888_image_96x96[i * 3 + 2];
-
-        // Gamma-korrigierte RGB-zu-Grayscale-Formel und Quantisierung
         int8_t grey_pixel = ((305 * r + 600 * g + 119 * b) >> 10) - 128;
-
-        // Schreibe in den TFLite-Input-Puffer
         model_input_buffer[i] = grey_pixel;
     }
+    
+    // --- TIMING ENDE: BILDVERARBEITUNG ---
+    int64_t t_end_pre = esp_timer_get_time();
 
     // 7. Setze den Input-Puffer des Modells
     memcpy(input->data.int8, model_input_buffer, kMaxImageSize);
+
+    // --- TIMING START: INFERENZ ---
+    int64_t t_start_invoke = esp_timer_get_time();
 
     // 8. Run the model on this input and make sure it succeeds.
     if (kTfLiteOk != interpreter->Invoke()) {
         ESP_LOGE(TAG, "Invoke failed.");
     }
     
+    // --- TIMING ENDE: INFERENZ ---
+    int64_t t_end_invoke = esp_timer_get_time();
+
     // 9. Lese das Ergebnis
     TfLiteTensor* output = interpreter->output(0);
 
     // 10. Hole die Scores aus dem Tensor
-    // Das Modell gibt 2 Werte im int8_t-Format aus (von -128 bis 127).
-    // Wir nutzen die Indizes aus deiner 'model_settings.h'
     int8_t person_score = output->data.int8[kPersonIndex];
     int8_t not_a_person_score = output->data.int8[kNotAPersonIndex];
 
     // 11. Vergleiche die Scores und gib eine sinnvolle Meldung aus
-    // Ein höherer Wert bedeutet eine höhere Wahrscheinlichkeit.
     if (person_score > 50) {
-        // ESP_LOGI (aus "esp_log.h") ist besser für die Ausgabe im ESP-IDF
         ESP_LOGI(TAG, "Person erkannt! (Score: %d vs %d)", person_score, not_a_person_score);
     } else {
         ESP_LOGI(TAG, "Keine Person. (Score: %d vs %d)", person_score, not_a_person_score);
     }
+    
+    // Wir rechnen die Mikrosekunden (int64_t) in Millisekunden (float) um
+    float pre_processing_time = (t_end_pre - t_start_pre) / 1000.0;
+    float inference_time = (t_end_invoke - t_start_invoke) / 1000.0;
+    
+    ESP_LOGI(TAG, "--- TIMING --- Bildbearbeitung: %.2f ms, Inferenz: %.2f ms", 
+             pre_processing_time, 
+             inference_time);
 }
 
 // Diese Funktion ist der Task, der die Inferenz ausführt.
@@ -250,12 +260,20 @@ static void person_detection_task(void *pvParameter) {
     while (true) {
         if (xSemaphoreTake(camera_mutex, (TickType_t)50) == pdTRUE) {
             
+            // ***** GESAMT-TIMER START *****
+            int64_t t_start_total = esp_timer_get_time();
+
             camera_fb_t *fb = esp_camera_fb_get();
             if (!fb) {
                 ESP_LOGE(TAG, "Inferenz: Kamera-Capture fehlgeschlagen");
             } else {
-                run_person_detection(fb);
+                run_person_detection(fb); 
+                
                 esp_camera_fb_return(fb);
+                
+                // ***** GESAMT-TIMER ENDE & AUSGABE *****
+                int64_t t_end_total = esp_timer_get_time();
+                ESP_LOGI(TAG, "--- GESAMTER ZYKLUS: %.2f ms ---", (t_end_total - t_start_total) / 1000.0);
             }
             xSemaphoreGive(camera_mutex);
 

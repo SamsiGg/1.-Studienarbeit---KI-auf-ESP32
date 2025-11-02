@@ -9,6 +9,10 @@
 		{
 			"name": "ESP32-CAM_Programm",
 			"path": "ESP32-CAM_Programm"
+		},
+		{
+			"name": "MLPerf Teensy 4.0",
+			"path": "MLPerf Teensy 4.0"
 		}
 	]
 }

@@ -1,6 +1,6 @@
-# src/CMakeLists.txt
+# This file was automatically generated for projects
+# without default 'CMakeLists.txt' file.
 
-idf_component_register(SRCS "main.cpp"
-                    INCLUDE_DIRS ".")
+FILE(GLOB_RECURSE app_sources ${CMAKE_SOURCE_DIR}/src/*.*)
 
-set(REQUIRES esp_camera esp_httpd)
+idf_component_register(SRCS ${app_sources})
