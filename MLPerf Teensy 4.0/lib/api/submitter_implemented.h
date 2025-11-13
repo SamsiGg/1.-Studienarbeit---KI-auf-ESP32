@@ -28,7 +28,7 @@ methods from th_libc.h and all testharness methods from th_lib.h are here.
 /// \detail This API is designed for performance evaluation only. In order to
 /// gather energy measurments we recommend using the EEMBC test suite.
 #define EE_MSG_TIMESTAMP "m-lap-us-%lu\r\n"
-#define TH_VENDOR_NAME_STRING "unspecified"
+#define TH_VENDOR_NAME_STRING "teensy40"
 
 #define MAX_DB_INPUT_SIZE (96 * 96 * 3)
 #ifndef TH_MODEL_VERSION

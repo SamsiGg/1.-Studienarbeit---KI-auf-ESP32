@@ -109,7 +109,19 @@ arg_claimed_t ee_profile_parse(char *command) {
 
   if (strncmp(command, "profile", EE_CMD_SIZE) == 0) {
     th_printf("m-profile-[%s]\r\n", EE_FW_VERSION);
-    th_printf("m-model-[%s]\r\n", TH_MODEL_VERSION);
+    #if TH_MODEL_VERSION == EE_MODEL_VERSION_IC01
+      th_printf("m-model-[%s]\r\n", "ic01");
+    #elif TH_MODEL_VERSION == EE_MODEL_VERSION_KWS01
+      th_printf("m-model-[%s]\r\n", "kws01");
+    #elif TH_MODEL_VERSION == EE_MODEL_VERSION_VWW01
+      th_printf("m-model-[%s]\r\n", "vww01");
+    #elif TH_MODEL_VERSION == EE_MODEL_VERSION_AD01
+      th_printf("m-model-[%s]\r\n", "ad01");
+    #elif TH_MODEL_VERSION == EE_MODEL_VERSION_STRWW01
+      th_printf("m-model-[%s]\r\n", "strww01");
+    #else
+      th_printf("m-model-[%s]\r\n", "unknown");
+    #endif
   } else if (strncmp(command, "help", EE_CMD_SIZE) == 0) {
     th_printf("%s\r\n", EE_FW_VERSION);
     th_printf("\r\n");

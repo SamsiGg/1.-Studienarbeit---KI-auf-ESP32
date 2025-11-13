@@ -46,7 +46,7 @@
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_KWS01
   #include "kws01_model_data.h" // Enthält das DS-CNN-Modell
   const unsigned char* g_model = kws_ref_model_tflite;
-  constexpr size_t kTensorArenaSize = 20 * 1024; // 20 KB
+  constexpr size_t kTensorArenaSize = 100 * 1024; // 20 KB
 
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_VWW01
   #include "vww01_model_data.h" // Enthält das MobileNetV1-Modell
@@ -110,7 +110,8 @@ void AddOpsToResolver() {
   #if TH_MODEL_VERSION == EE_MODEL_VERSION_IC01 // IC (ResNet)
     // Dieses ResNet-Modell [cite: 152] benötigt Faltungs-, Additions- (für die
     // Residual-Blöcke) und Pooling-Operationen.
-    static tflite::MicroMutableOpResolver<5> micro_op_resolver;
+    static tflite::MicroMutableOpResolver<6> micro_op_resolver;
+    micro_op_resolver.AddFullyConnected();
     micro_op_resolver.AddConv2D();
     micro_op_resolver.AddAdd(); // Wichtig für Residual-Verbindungen
     micro_op_resolver.AddAveragePool2D();
@@ -120,11 +121,12 @@ void AddOpsToResolver() {
 
   #elif TH_MODEL_VERSION == EE_MODEL_VERSION_KWS01 // KWS (DS-CNN)
     // Dieses Modell ist ein "Depthwise Separable" CNN.
-    static tflite::MicroMutableOpResolver<5> micro_op_resolver;
+    static tflite::MicroMutableOpResolver<6> micro_op_resolver;
     micro_op_resolver.AddDepthwiseConv2D(); // Speziell für DS-CNN
     micro_op_resolver.AddConv2D();
     micro_op_resolver.AddAveragePool2D();
     micro_op_resolver.AddReshape();
+    micro_op_resolver.AddFullyConnected();
     micro_op_resolver.AddSoftmax();
     op_resolver = &micro_op_resolver;
 
@@ -168,45 +170,76 @@ void AddOpsToResolver() {
 // 6 WICHTIGSTE API-FUNKTIONEN
 // ===================================================================
 
-/**
- * @brief Lädt die Eingabedaten vom Host (via ee_get_buffer)
- * in den Input-Tensor des Modells.
- */
 void th_load_tensor() {
-  size_t input_size = model_input->bytes;
+  size_t input_size_bytes = model_input->bytes;
+  static uint8_t temp_host_buffer[MAX_DB_INPUT_SIZE];
   
-  // ee_get_buffer() holt die Daten, die der Host zuvor mit dem "db load"
-  // Befehl gesendet hat.
-  size_t host_buffer_size = ee_get_buffer(model_input->data.uint8, input_size);
+  size_t host_buffer_size = ee_get_buffer(temp_host_buffer, input_size_bytes);
 
-  if (host_buffer_size != input_size) {
-    th_printf("FEHLER: Host-Puffer (%d bytes) passt nicht zur Tensor-Größe (%d bytes)!\r\n",
-              host_buffer_size, input_size);
+  if (host_buffer_size != input_size_bytes) {
+    th_printf("FEHLER: Host-Puffer (%d) passt nicht zur Tensor-Groesse (%d)!\r\n", 
+              (int)host_buffer_size, (int)input_size_bytes);
+  }
+  
+  if (model_input->type == kTfLiteInt8) {
+    int8_t* tensor_data = model_input->data.int8;
+    for (size_t i = 0; i < input_size_bytes; i++) {
+      // KORREKTUR: Gleiche Transformation wie Python (Wert - 128)
+      int16_t temp = (int16_t)temp_host_buffer[i] - 128;
+      // Clamping (sollte nicht nötig sein, aber sicher ist sicher)
+      if (temp > 127) temp = 127;
+      if (temp < -128) temp = -128;
+      tensor_data[i] = (int8_t)temp;
+    }
+  } 
+  else if (model_input->type == kTfLiteUInt8) {
+    uint8_t* tensor_data = model_input->data.uint8;
+    memcpy(tensor_data, temp_host_buffer, input_size_bytes);
+  }
+  else {
+    th_printf("FEHLER: Unbekannter Input-Tensor-Typ!");
   }
 }
-
 /**
  * @brief Gibt die Ergebnisse der Inferenz an den Host zurück.
  *
- * HINWEIS: Diese Implementierung sendet den rohen Output-Tensor als Hex-String.
- * Für eine vollständige Genauigkeitsmessung (z.B. AUC bei AD01)
- * wäre hier zusätzliche Logik (Post-Processing) erforderlich.
+ * KORRIGIERTE VERSION: Liest den Output-Tensor als int8_t (signed),
+ * da das Modell so konvertiert wurde.
  */
 void th_results() {
-  // Sende den Header für die Ergebnisse
-  th_printf("m-results-");
+  // 1. Sende den erforderlichen Header
+  th_printf("m-results-[");
 
-  // Sende die Anzahl der Bytes im Output-Tensor
-  size_t output_size = model_output->bytes;
-  th_printf("num-%d-", output_size);
+  // 2. Hole den Output-Tensor
+  TfLiteTensor* output = model_output;
 
-  // Sende den Inhalt des Tensors als Hex-String
-  // (uint8_t wird angenommen, da wir quantisierte Modelle verwenden)
-  th_printf("in-");
+  // 3. Bestimme die Anzahl der Elemente im Output
+  size_t output_size = output->dims->data[output->dims->size - 1];
+
+  // 4. Hole die Quantisierungs-Parameter aus dem Tensor
+  float scale = output->params.scale;
+  int32_t zero_point = output->params.zero_point;
+
+  // 5. HIER IST DER FIX:
+  //    Wir MÜSSEN den Tensor als int8_t (signed) lesen,
+  //    nicht als uint8_t (unsigned).
+  int8_t* output_data = output->data.int8;
+
+  // 6. Schleife: Dequantisiere jeden Wert und drucke ihn
   for (size_t i = 0; i < output_size; i++) {
-    th_printf("%02x", model_output->data.uint8[i]);
+    // DEQUANTISIERUNG: (Wert - Nullpunkt) * Skalierungsfaktor
+    float float_val = ((float)output_data[i] - (float)zero_point) * scale;
+    
+    th_printf("%f", float_val);
+    
+    // Füge ein Komma hinzu, außer beim letzten Wert
+    if (i < output_size - 1) {
+      th_printf(",");
+    }
   }
-  th_printf("-\r\n");
+  
+  // 7. Sende den abschließenden Footer
+  th_printf("]\r\n");
 }
 
 /**
@@ -304,12 +337,34 @@ void th_final_initialize(void) {
   // 6. Zeiger auf Input- und Output-Tensoren holen
   model_input = interpreter->input(0);
   model_output = interpreter->output(0);
+
+  // DEBUG: Zeige Input-Tensor-Infos
+  th_printf("DEBUG Input Tensor:\r\n");
+  th_printf("  Type: %d (0=float32, 1=int32, 2=uint8, 3=int64, 9=int8)\r\n", model_input->type);
+  th_printf("  Bytes: %d\r\n", model_input->bytes);
+  th_printf("  Scale: %f\r\n", model_input->params.scale);
+  th_printf("  Zero point: %d\r\n", model_input->params.zero_point);
+  th_printf("  Dims: ");
+  for (int i = 0; i < model_input->dims->size; i++) {
+    th_printf("%d ", model_input->dims->data[i]);
+  }
+  th_printf("\r\n");
+  
+  // DEBUG: Zeige Output-Tensor-Infos
+  th_printf("DEBUG Output Tensor:\r\n");
+  th_printf("  Type: %d\r\n", model_output->type);
+  th_printf("  Bytes: %d\r\n", model_output->bytes);
+  th_printf("  Scale: %f\r\n", model_output->params.scale);
+  th_printf("  Zero point: %d\r\n", model_output->params.zero_point);
+
 }
 
 // Leere Implementierungen für die restlichen optionalen Funktionen
 void th_pre() {}
 void th_post() {}
-void th_command_ready(char volatile *msg) {}
+void th_command_ready(char volatile *msg) {
+  ee_serial_command_parser_callback((char*) msg);
+}
 
 
 // ===================================================================
