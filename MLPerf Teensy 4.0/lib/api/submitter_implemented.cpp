@@ -51,7 +51,7 @@
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_VWW01
   #include "vww01_model_data.h" // Enthält das MobileNetV1-Modell
   const unsigned char* g_model = vww_96_int8_tflite;
-  constexpr size_t kTensorArenaSize = 335 * 1024; // 335 KB
+  constexpr size_t kTensorArenaSize = 250 * 1024; // 335 KB
 
 #elif TH_MODEL_VERSION == EE_MODEL_VERSION_AD01
   #include "ad01_model_data.h" // Enthält das Autoencoder-Modell
@@ -86,6 +86,12 @@ tflite::ErrorReporter* error_reporter = &micro_error_reporter;
 // Wird vom Linker in das RAM des Teensy gelegt.
 // `alignas(16)` ist eine TFLM-Anforderung für beste Performance.
 alignas(16) static uint8_t tensor_arena[kTensorArenaSize];
+
+#if EE_CFG_ENERGY_MODE // Wird nur benötigt, wenn wir im Energiemodus sind
+  // Wähle einen GPIO-Pin auf deinem Teensy, z.B. D7
+  // Du musst den Pin wählen, der mit deinem Level Shifter/Joulescope verbunden ist!
+  constexpr int TH_GPIO_TIMESTAMP_PIN = 7;
+#endif
 } // namespace
 
 /**
@@ -132,12 +138,13 @@ void AddOpsToResolver() {
 
   #elif TH_MODEL_VERSION == EE_MODEL_VERSION_VWW01 // VWW (MobileNetV1)
     // MobileNetV1 ist ebenfalls ein "Depthwise Separable" CNN.
-    static tflite::MicroMutableOpResolver<6> micro_op_resolver;
+    static tflite::MicroMutableOpResolver<7> micro_op_resolver;
     micro_op_resolver.AddConv2D();
     micro_op_resolver.AddDepthwiseConv2D();
     micro_op_resolver.AddAveragePool2D();
     micro_op_resolver.AddReshape();
     micro_op_resolver.AddSoftmax();
+    micro_op_resolver.AddFullyConnected();
     micro_op_resolver.AddMean(); // Oft für das finale Pooling verwendet
     op_resolver = &micro_op_resolver;
 
@@ -166,10 +173,6 @@ void AddOpsToResolver() {
   #endif
 }
 
-// ===================================================================
-// 6 WICHTIGSTE API-FUNKTIONEN
-// ===================================================================
-
 void th_load_tensor() {
   size_t input_size_bytes = model_input->bytes;
   static uint8_t temp_host_buffer[MAX_DB_INPUT_SIZE];
@@ -181,18 +184,47 @@ void th_load_tensor() {
               (int)host_buffer_size, (int)input_size_bytes);
   }
   
+  // ===================================================================
+  // MODELLSPEZIFISCHE LADEROUTINE
+  // ===================================================================
+
+  // HINWEIS: model_input->type prüft, was das MODELL erwartet.
+  //          Der #if-Block prüft, was der HOST sendet.
+
   if (model_input->type == kTfLiteInt8) {
     int8_t* tensor_data = model_input->data.int8;
+
+#if (TH_MODEL_VERSION == EE_MODEL_VERSION_IC01) || (TH_MODEL_VERSION == EE_MODEL_VERSION_VWW01)
+    //
+    // FALL 1: IC01 (Bilder) & VWW01 (Bilder)
+    // Der Host sendet uint8 (0-255). Das Modell erwartet int8 (-128 bis 127).
+    // Wir müssen den Offset von -128 anwenden.
+    //
     for (size_t i = 0; i < input_size_bytes; i++) {
-      // KORREKTUR: Gleiche Transformation wie Python (Wert - 128)
       int16_t temp = (int16_t)temp_host_buffer[i] - 128;
-      // Clamping (sollte nicht nötig sein, aber sicher ist sicher)
-      if (temp > 127) temp = 127;
-      if (temp < -128) temp = -128;
       tensor_data[i] = (int8_t)temp;
     }
+    
+#elif (TH_MODEL_VERSION == EE_MODEL_VERSION_KWS01) || \
+      (TH_MODEL_VERSION == EE_MODEL_VERSION_AD01) || \
+      (TH_MODEL_VERSION == EE_MODEL_VERSION_STRWW01)
+    //
+    // KORRIGIERTER FALL 2: KWS01 (Audio), AD01, STRWW01
+    // Der Host sendet .bin-Dateien, die bereits als int8 (-128 bis 127) 
+    // gespeichert sind.
+    // Wir müssen die Bytes nur 1-zu-1 kopieren.
+    //
+    memcpy(tensor_data, temp_host_buffer, input_size_bytes);
+    
+#else
+    #error "Unbekannte TH_MODEL_VERSION fuer kTfLiteInt8-Laderoutine!"
+#endif
   } 
   else if (model_input->type == kTfLiteUInt8) {
+    //
+    // FALL 3: Ein uint8-Modell
+    // (Host sendet uint8, Modell erwartet uint8 -> direkte Kopie)
+    //
     uint8_t* tensor_data = model_input->data.uint8;
     memcpy(tensor_data, temp_host_buffer, input_size_bytes);
   }
@@ -252,13 +284,38 @@ void th_infer() {
 }
 
 /**
- * @brief Sendet einen Zeitstempel an den Host.
- * Verwendet micros() für hohe Auflösung.
+ * @brief Sendet einen Zeitstempel an den Host oder generiert ein GPIO-Signal.
+ *
+ * Das Verhalten hängt vom EE_CFG_ENERGY_MODE ab.
  */
 void th_timestamp(void) {
-  // Das Framework erwartet die Zeit in Mikrosekunden (us)
+
+#if EE_CFG_ENERGY_MODE
+  // ENERGIE-MODUS: Erzeuge einen kurzen Puls auf einem GPIO-Pin.
+  // Die Spezifikation verlangt eine HALT-Zeit von mindestens 1µs (fallende Flanke).
+  
+  // High setzen (Start-Zustand des GPIOs)
+  digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
+  // Optional: Füge eine kleine Verzögerung hinzu, um sicherzustellen, dass der High-Zustand stabil ist
+  // delayMicroseconds(10); // Normalerweise nicht nötig, kann aber bei Debugging helfen
+  
+  // LOW setzen -> TRIGGERSIGNAL (FALLENDE FLANKE)
+  digitalWrite(TH_GPIO_TIMESTAMP_PIN, LOW);
+  
+  // Wichtig: Kurze Verzögerung, um die Mindest-Haltedauer von 1µs zu garantieren.
+  // Teensy/Arduino Code läuft sehr schnell, delayMicroseconds(2) ist sicher.
+  delayMicroseconds(2); 
+
+  // Zurück auf HIGH, um den Puls zu beenden und für den nächsten Durchlauf vorzubereiten
+  digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
+  
+  // HINWEIS: Es ist KEINE serielle Ausgabe (th_printf) im Energiemodus erforderlich.
+
+#else 
+  // PERFORMANCE-MODUS: Sende die Zeit in Mikrosekunden an den Host
   // EE_MSG_TIMESTAMP ist in internally_implemented.h als "m-lap-us-%lu\r\n" definiert
   th_printf(EE_MSG_TIMESTAMP, micros());
+#endif
 }
 
 /**
@@ -273,7 +330,14 @@ void th_printf(const char *fmt, ...) {
   vsnprintf(buffer, sizeof(buffer), fmt, args);
   va_end(args);
 
+#if EE_CFG_ENERGY_MODE
+  // ENERGIE-MODUS: Ausgabe über Hardware-UART (Serial1) an IO Manager
+  Serial1.print(buffer);
+  Serial.print(buffer); // Optional: Debug-Ausgabe an USB-Serial
+#else
+  // PERFORMANCE-MODUS: Ausgabe über USB (Serial) an Host-PC
   Serial.print(buffer);
+#endif
 }
 
 /**
@@ -281,11 +345,21 @@ void th_printf(const char *fmt, ...) {
  * von der seriellen Schnittstelle wartet (blockierend).
  */
 char th_getchar() {
+#if EE_CFG_ENERGY_MODE
+  // ENERGIE-MODUS: Lese von Hardware-UART (Serial1)
+  HardwareSerial& active_serial = Serial1;
+#else
+  // PERFORMANCE-MODUS: Lese von USB (Serial)
+  Stream& active_serial = Serial;
+#endif
+
   // Warte, bis ein Zeichen verfügbar ist
-  while (!Serial.available()) {
+  while (!active_serial.available()) {
     yield();
   }
-  return Serial.read();
+  char message = active_serial.read();
+  th_printf("%c", message); // Echo zurück an den Sender; Debug-Zwecke
+  return message;
 }
 
 // ===================================================================
@@ -296,6 +370,31 @@ char th_getchar() {
  * @brief Initialisiert die serielle Schnittstelle.
  */
 void th_serialport_initialize(void) {
+
+#if EE_CFG_ENERGY_MODE
+  // ENERGIE-MODUS: Starte Hardware-UART (Serial1) mit 9600 Baud für den IO Manager
+  // Wichtig: Du musst die Pins für Serial1 korrekt verbinden (Teensy Pin 0 (Rx1) & 1 (Tx1)).
+  Serial1.begin(9600); 
+  
+  // Im Energiemodus kann es sinnvoll sein, die USB-Serielle (Serial) für reines Debugging zu starten, 
+  // sie wird aber NICHT für die Übertragung von Ergebnissen genutzt.
+   Serial.begin(115200); 
+  
+#else 
+  // PERFORMANCE-MODUS: Starte USB-CDC (Serial) mit hoher Baudrate
+  Serial.begin(115200); 
+#endif
+  
+  // Warte, bis der Port bereit ist (wichtig für USB, optional für Hardware-UART)
+  while (
+  #if EE_CFG_ENERGY_MODE
+    !Serial1
+  #else
+    !Serial
+  #endif
+  && (micros() < 500000)) { 
+    yield();
+  }
 }
 
 /**
@@ -356,6 +455,16 @@ void th_final_initialize(void) {
   th_printf("  Bytes: %d\r\n", model_output->bytes);
   th_printf("  Scale: %f\r\n", model_output->params.scale);
   th_printf("  Zero point: %d\r\n", model_output->params.zero_point);
+
+  #if EE_CFG_ENERGY_MODE
+  // Initialisiere den GPIO-Pin für den Timestamp im Energiemodus
+  pinMode(TH_GPIO_TIMESTAMP_PIN, OUTPUT);
+  // Setze den Pin auf HIGH als Standardzustand (Ruhezustand)
+  digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
+  th_printf("DEBUG: Energie-Modus initialisiert. Timestamp-Pin %d\r\n", TH_GPIO_TIMESTAMP_PIN);
+  #else
+    th_printf("DEBUG: Performance-Modus initialisiert.\r\n");
+  #endif
 
 }
 
