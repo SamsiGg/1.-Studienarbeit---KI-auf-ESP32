@@ -21,6 +21,10 @@
 		{
 			"name": "MLPerf_ESP32-S3",
 			"path": "MLPerf_ESP32-S3"
+		},
+		{
+			"name": "MLPerf_Arduino_Giga",
+			"path": "MLPerf_Arduino_Giga"
 		}
 	]
 }
