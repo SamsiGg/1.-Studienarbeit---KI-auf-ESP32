@@ -13,6 +13,14 @@
 		{
 			"name": "MLPerf Teensy 4.0",
 			"path": "MLPerf Teensy 4.0"
+		},
+		{
+			"name": "MLPerf_ESP32-Wroom-32",
+			"path": "MLPerf_ESP32-Wroom-32"
+		},
+		{
+			"name": "MLPerf_ESP32-S3",
+			"path": "MLPerf_ESP32-S3"
 		}
 	]
 }
