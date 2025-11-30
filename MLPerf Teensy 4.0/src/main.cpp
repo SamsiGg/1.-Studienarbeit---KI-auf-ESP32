@@ -9,29 +9,50 @@
 #include "internally_implemented.h" // Für Benchmark-Funktionen
 #include "submitter_implemented.h" // Für th_getchar()
 
-// setup() wird einmal beim Start aufgerufen (NACHDEM Arduino die Hardware init hat)
 void setup() {
-  // 1. STARTE die serielle Schnittstelle so früh wie möglich
-  Serial.begin(115200);
-
-  // 2. WARTE hier, bis der PC (Monitor) verbunden ist
-  //    Dies ist der sichere Weg, um Überhitzung zu vermeiden
-  while (!Serial);
-  // Initialisiert Serial, TFLM, und sendet "m-ready"
+  // WICHTIG: Wir nutzen die MLPerf-Initialisierung.
+  // Diese Funktion ruft intern DEINE 'th_serialport_initialize' auf.
+  // Das sorgt dafür, dass Serial2 (9600) und Serial (115200) gestartet werden.
+  // Außerdem sendet sie am Ende automatisch "m-ready".
   ee_benchmark_initialize();
 }
 
-// loop() wird kontinuierlich aufgerufen
 void loop() {
-  // Prüfe, ob ein Zeichen vom Host-Computer gesendet wurde
-  if (Serial.available() > 0) {
-    
-    // HINWEIS: Wir rufen th_getchar() NICHT mehr auf,
-    // da th_getchar() die blockierende Schleife enthält, die
-    // wir hier nicht wollen. Wir lesen direkt.
-    char c = Serial.read();
-    
-    // Gib das Zeichen an den internen Callback-Parser weiter
-    ee_serial_callback(c);
-  }
+  // 1. Zeichen empfangen
+  // Wir rufen DEINE th_getchar() Funktion auf.
+  // Die enthält jetzt deine Debug-Punkte (...) und lauscht
+  // automatisch am richtigen Port (Serial2 im Energy Mode).
+  char c = th_getchar(); 
+
+  // 2. Zeichen verarbeiten
+  // Das MLPerf Framework kümmert sich um den Rest.
+  ee_serial_callback(c);
 }
+
+/*#include <Arduino.h>
+// Minimaler Echo-Test für Teensy 4.0 an Serial2
+void setup() {
+  // LED zur visuellen Kontrolle
+  pinMode(13, OUTPUT);
+  digitalWrite(13, HIGH); // LED an = Start
+
+  // Serial2 ist Pin 7 (RX) und Pin 8 (TX)
+  Serial2.begin(9600); 
+  Serial.begin(115200); // Für Debugging
+}
+
+void loop() {
+  if (Serial2.available()) {
+    char c = Serial2.read();
+    
+    // Visuelles Feedback: LED kurz ausschalten bei Empfang
+    digitalWrite(13, LOW);
+    delay(5);
+    digitalWrite(13, HIGH);
+    
+    // Zeichen direkt zurücksenden
+    Serial2.write(c);
+    Serial.print("Echoed: ");
+    
+  }
+}*/

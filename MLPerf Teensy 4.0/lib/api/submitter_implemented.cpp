@@ -88,9 +88,9 @@ tflite::ErrorReporter* error_reporter = &micro_error_reporter;
 alignas(16) static uint8_t tensor_arena[kTensorArenaSize];
 
 #if EE_CFG_ENERGY_MODE // Wird nur benötigt, wenn wir im Energiemodus sind
-  // Wähle einen GPIO-Pin auf deinem Teensy, z.B. D7
+  // Wähle einen GPIO-Pin auf deinem Teensy, z.B. D5
   // Du musst den Pin wählen, der mit deinem Level Shifter/Joulescope verbunden ist!
-  constexpr int TH_GPIO_TIMESTAMP_PIN = 7;
+  constexpr int TH_GPIO_TIMESTAMP_PIN = 5;
 #endif
 } // namespace
 
@@ -102,7 +102,11 @@ alignas(16) static uint8_t tensor_arena[kTensorArenaSize];
  * serielle Schnittstelle des Teensy weiter.
  */
 extern "C" void DebugLog(const char* s) {
+#if EE_CFG_ENERGY_MODE
+  Serial2.print(s); // Energie-Modus: Sende an Hardware-UART (IO Manager)
+#else
   Serial.print(s);
+#endif
 }
 
 /**
@@ -331,9 +335,9 @@ void th_printf(const char *fmt, ...) {
   va_end(args);
 
 #if EE_CFG_ENERGY_MODE
-  // ENERGIE-MODUS: Ausgabe über Hardware-UART (Serial1) an IO Manager
-  Serial1.print(buffer);
-  Serial.print(buffer); // Optional: Debug-Ausgabe an USB-Serial
+  // ENERGIE-MODUS: Ausgabe über Hardware-UART (Serial2) an IO Manager
+  Serial2.print(buffer);
+  //Serial.print(buffer); // Optional: Debug-Ausgabe an USB-Serial
 #else
   // PERFORMANCE-MODUS: Ausgabe über USB (Serial) an Host-PC
   Serial.print(buffer);
@@ -346,8 +350,8 @@ void th_printf(const char *fmt, ...) {
  */
 char th_getchar() {
 #if EE_CFG_ENERGY_MODE
-  // ENERGIE-MODUS: Lese von Hardware-UART (Serial1)
-  HardwareSerial& active_serial = Serial1;
+  // ENERGIE-MODUS: Lese von Hardware-UART (Serial2)
+  HardwareSerial& active_serial = Serial2;
 #else
   // PERFORMANCE-MODUS: Lese von USB (Serial)
   Stream& active_serial = Serial;
@@ -358,7 +362,7 @@ char th_getchar() {
     yield();
   }
   char message = active_serial.read();
-  th_printf("%c", message); // Echo zurück an den Sender; Debug-Zwecke
+  //th_printf("%c", message); // Echo zurück an den Sender; Debug-Zwecke
   return message;
 }
 
@@ -372,13 +376,13 @@ char th_getchar() {
 void th_serialport_initialize(void) {
 
 #if EE_CFG_ENERGY_MODE
-  // ENERGIE-MODUS: Starte Hardware-UART (Serial1) mit 9600 Baud für den IO Manager
-  // Wichtig: Du musst die Pins für Serial1 korrekt verbinden (Teensy Pin 0 (Rx1) & 1 (Tx1)).
-  Serial1.begin(9600); 
+  // ENERGIE-MODUS: Starte Hardware-UART (Serial2) mit 9600 Baud für den IO Manager
+  // Wichtig: Du musst die Pins für Serial2 korrekt verbinden (Teensy Pin 0 (Rx1) & 1 (Tx1)).
+  Serial2.begin(9600); 
   
   // Im Energiemodus kann es sinnvoll sein, die USB-Serielle (Serial) für reines Debugging zu starten, 
   // sie wird aber NICHT für die Übertragung von Ergebnissen genutzt.
-   Serial.begin(115200); 
+  //Serial.begin(115200); 
   
 #else 
   // PERFORMANCE-MODUS: Starte USB-CDC (Serial) mit hoher Baudrate
@@ -388,7 +392,7 @@ void th_serialport_initialize(void) {
   // Warte, bis der Port bereit ist (wichtig für USB, optional für Hardware-UART)
   while (
   #if EE_CFG_ENERGY_MODE
-    !Serial1
+    !Serial2
   #else
     !Serial
   #endif
