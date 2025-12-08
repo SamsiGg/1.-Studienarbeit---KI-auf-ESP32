@@ -1,0 +1,341 @@
+Logging initialized. Writing output to sessions/20251208_010905/log.txt
+Initializing SerialDevice on port: /dev/cu.usbmodem141201 at 115200 baud
+open_ll(opt=0)
+device_open(u/js220/005284)
+device_open(u/js220/005284) => 0
+open(opt=0)
+bulk_in_open(-1807531480, endpoint=0x82)
+port0 connect rsp
+JS220 app_id=3, FW=1.3.0, HW=1.0.0, FPGA=1.3.3, protocol=1.0.0
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+open complete
+on_sampling_frequency(2000000)
+jsdrv_downsample_alloc signal_n=1, gpi_n=1
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+_on_sampling_frequency 10000
+on_sampling_frequency(10000)
+jsdrv_downsample_alloc idx=5, decimate_factor=2
+jsdrv_downsample_alloc idx=6, decimate_factor=2
+jsdrv_downsample_alloc idx=7, decimate_factor=2
+jsdrv_downsample_alloc signal_n=1, gpi_n=200
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+JS220 PowerManager initialized with commands:
+[JS220] Stream reading started...
+stream_in_port 22 skip 882 : received=0x121934d expected=0x1218fdb
+stream_in_port 21 skip 882 : received=0x12193cb expected=0x1219059
+stream_in_port 20 skip 504 : received=0x1219390 expected=0x1219198
+stream_in_port 21 skip 312102 : received=0x12995c1 expected=0x124d29b
+stream_in_port 22 skip 312228 : received=0x12995c1 expected=0x124d21d
+stream_in_port 23 skip 310560 : received=0x1298ebf expected=0x124d19f
+stream_in_port 22 skip 1260 : received=0x1299ba9 expected=0x12996bd
+stream_in_port 21 skip 1386 : received=0x1299c27 expected=0x12996bd
+stream_in_port 20 skip 313488 : received=0x1299af0 expected=0x124d260
+stream_in_port 24 skip 312480 : received=0x1299700 expected=0x124d260
+stream_in_port 25 skip 314496 : received=0x1299700 expected=0x124ca80
+stream_in_port 21 skip 19404 : received=0x13097c7 expected=0x1304bfb
+stream_in_port 22 skip 19278 : received=0x13097c7 expected=0x1304c79
+stream_in_port 23 skip 17610 : received=0x13090c5 expected=0x1304bfb
+stream_in_port 20 skip 19152 : received=0x1309690 expected=0x1304bc0
+stream_in_port 21 skip 1260 : received=0x1309daf expected=0x13098c3
+stream_in_port 22 skip 1260 : received=0x1309daf expected=0x13098c3
+stream_in_port 20 skip 504 : received=0x1309c78 expected=0x1309a80
+stream_in_port 24 skip 20160 : received=0x1309a80 expected=0x1304bc0
+stream_in_port 25 skip 20160 : received=0x1309a80 expected=0x1304bc0
+SerialDevice entering port /dev/cu.usbmodem141201, entry_count (before increment) = 0
+Skipping sync_baud(115200) - Not supported/needed.
+WARNING: Ignoring undecodeable byte: b'\x94'
+RX:DEBUG: Energy Mode Ready. Timestamp GPIO 5
+RX:m-init-done
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+Retrieving name from DUT ...
+WARNING: Failed to get name.
+Retrying _get_name (1/3)...
+Retrieving name from DUT ...
+RX:m-name-dut-[ESP32-S3]
+RX:m-ready
+Device name retrieved: ESP32-S3
+debugkrams: Retrieving profile from DUT ...
+RX:m-name-dut-[ESP32-S3]
+RX:m-ready
+debugkrams:
+m-name-dut-[ESP32-S3]
+debugkrams:
+m-ready
+Retrying _get_profile (1/3)...
+debugkrams: Retrieving profile from DUT ...
+RX:m-profile-[ULPMark for tinyML Firmware V0.0.1]
+RX:m-model-[kws01]
+RX:m-ready
+debugkrams:
+m-profile-[ULPMark for tinyML Firmware V0.0.1]
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+debugkrams:
+m-model-[kws01]
+Device model retrieved: kws01
+debugkrams:
+m-ready
+1208.010922 ulp-mlperf: Loading file tst_000000_Stop_7.bin segment 0
+RX:m-profile-[ULPMark for tinyML Firmware V0.0.1]
+RX:m-model-[kws01]
+RX:m-ready
+RX:m-[Expecting 490 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 105084 : received=0x325309b expected=0x323961f
+stream_in_port 21 skip 104958 : received=0x3253119 expected=0x323971b
+stream_in_port 23 skip 103542 : received=0x3252a95 expected=0x323961f
+stream_in_port 21 skip 1386 : received=0x325377f expected=0x3253215
+stream_in_port 22 skip 1260 : received=0x325377f expected=0x3253293
+stream_in_port 20 skip 106848 : received=0x3253648 expected=0x32394e8
+stream_in_port 24 skip 106848 : received=0x3253060 expected=0x3238f00
+stream_in_port 25 skip 106848 : received=0x3253060 expected=0x3238f00
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1208.010924 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/300 (warmup/measured) iterations ...
+done
+Captured samples:17601 timestamps:2
+RX:m-warmup-start-50
+1208.010924 ulp-mlperf: Loading file tst_000001_Left_2.bin segment 0
+stream_in_port 21 skip 119448 : received=0x340887f expected=0x33eb5e7
+stream_in_port 21 skip 1260 : received=0x3408e67 expected=0x340897b
+stream_in_port 22 skip 121212 : received=0x3408e67 expected=0x33eb4eb
+stream_in_port 23 skip 119418 : received=0x3408765 expected=0x33eb4eb
+stream_in_port 20 skip 120456 : received=0x3408d30 expected=0x33eb6a8
+stream_in_port 24 skip 120960 : received=0x3408940 expected=0x33eb0c0
+stream_in_port 25 skip 120960 : received=0x3408940 expected=0x33eb0c0
+bulk_out_send(u/js220/005284) 48 bytes
+RX:io: trigger-detected
+RX:m-warmup-done
+RX:m-infer-start-300
+bulk_out_send(u/js220/005284) 48 bytes
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.996094,0.000000,0.000000,0.000000,0.000000]
+RX:m-ready
+RX:m-[Expecting 490 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1208.010938 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/300 (warmup/measured) iterations ...
+done
+Captured samples:14404 timestamps:2
+RX:m-warmup-start-50
+1208.010938 ulp-mlperf: Loading file tst_000002_Right_6.bin segment 0
+RX:io: trigger-detected
+RX:m-warmup-done
+RX:m-infer-start-300
+bulk_out_send(u/js220/005284) 48 bytes
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.996094,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.003906]
+RX:m-ready
+RX:m-[Expecting 490 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1208.010953 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/300 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+Captured samples:14415 timestamps:2
+1208.010953 ulp-mlperf: Loading file tst_000003_Up_8.bin segment 0
+RX:io: trigger-detected
+RX:m-warmup-done
+RX:m-infer-start-300
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.996094,0.000000,0.000000,0.000000,0.000000,0.000000]
+RX:m-ready
+RX:m-[Expecting 490 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1208.011007 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/300 (warmup/measured) iterations ...
+done
+Captured samples:14395 timestamps:2
+RX:m-warmup-start-50
+1208.011007 ulp-mlperf: Loading file tst_000004_On_5.bin segment 0
+RX:io: trigger-detected
+RX:m-warmup-done
+RX:m-infer-start-300
+bulk_out_send(u/js220/005284) 48 bytes
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.000000,0.000000,0.003906,0.000000,0.000000,0.000000,0.992188,0.000000,0.000000,0.000000]
+RX:m-ready
+RX:m-[Expecting 490 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1208.011021 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/300 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+Captured samples:14435 timestamps:2
+SerialDevice exiting port /dev/cu.usbmodem141201, entry_count (before decrement) = 1
+--------------------
+[JS220] Shutting down stream...
+[JS220] Stream reading loop exited.
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+close
+device_close(u/js220/005284)
+device_close(u/js220/005284)
+[JS220] Shutdown complete.
+Power Edition Output
+Energy data for trial 0
+Elapsed time  : 0.2300000000000001  <<<< below minimum duration
+Inferences    : 300
+Power         :   nan mW.
+Total Energy  : nan uJ
+Energy/Inf    : nan uJ/inf
+Energy data for trial 1
+Elapsed time  : 11.074
+Inferences    : 300
+Power         : 212.1009 mW.
+Total Energy  : 2348805.246 uJ
+Energy/Inf    : 7829.351 uJ/inf
+Energy data for trial 2
+Elapsed time  : 11.076
+Inferences    : 300
+Power         : 212.4189 mW.
+Total Energy  : 2352751.436 uJ
+Energy/Inf    : 7842.505 uJ/inf
+Energy data for trial 3
+Elapsed time  : 11.074
+Inferences    : 300
+Power         : 212.0769 mW.
+Total Energy  : 2348539.676 uJ
+Energy/Inf    : 7828.466 uJ/inf
+Energy data for trial 4
+Elapsed time  : 11.078000000000001
+Inferences    : 300
+Power         : 212.7153 mW.
+Total Energy  : 2356460.590 uJ
+Energy/Inf    : 7854.869 uJ/inf
+---------------------------------------------------------
+Median energy cost is 7835.9278 uJ/inf.
+---------------------------------------------------------
+ERROR: Not valid for submission.  All inference times must be at least 10 seconds.
+Session logged in file sessions/20251208_010905/log.txt
+close
+jsdrv_finalize 0x7fd39598d800
+USB backend finalize
+JS220 USB upper-level thread done u/js220/005284
+backend finalize
+libusb backend finalize
+jsdrv_usb_backend_thread exit

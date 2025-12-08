@@ -85,7 +85,7 @@ tflite::MicroOpResolver* op_resolver = nullptr;
 uint8_t* tensor_arena = nullptr;
 
 #if EE_CFG_ENERGY_MODE
-  constexpr int TH_GPIO_TIMESTAMP_PIN = 7;
+  constexpr int TH_GPIO_TIMESTAMP_PIN = 5;
 #endif
 } // namespace
 
@@ -205,9 +205,9 @@ void th_infer() {
 
 void th_timestamp(void) {
 #if EE_CFG_ENERGY_MODE
-  digitalWrite(TH_GPIO_TIMESTAMP_PIN, LOW);
-  delayMicroseconds(2);
   digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
+  delayMicroseconds(500);
+  digitalWrite(TH_GPIO_TIMESTAMP_PIN, LOW);
 #else 
   th_printf(EE_MSG_TIMESTAMP, micros());
 #endif
@@ -221,8 +221,10 @@ void th_printf(const char *fmt, ...) {
   va_end(args);
 
 #if EE_CFG_ENERGY_MODE
-  Serial1.print(buffer);
-  Serial1.flush(); // Sicherstellen, dass alles rausgeht
+  Serial2.print(buffer);
+  Serial2.flush(); // Sicherstellen, dass alles rausgeht
+  Serial.print(buffer);
+  Serial.flush(); // <--- FIX: Warten bis Daten gesendet sind, bevor CPU belastet wird
 #else
   Serial.print(buffer);
   Serial.flush(); // <--- FIX: Warten bis Daten gesendet sind, bevor CPU belastet wird
@@ -231,7 +233,7 @@ void th_printf(const char *fmt, ...) {
 
 char th_getchar() {
 #if EE_CFG_ENERGY_MODE
-  HardwareSerial& active_serial = Serial1;
+  HardwareSerial& active_serial = Serial2;
 #else
   Stream& active_serial = Serial;
 #endif
@@ -240,13 +242,13 @@ char th_getchar() {
     yield(); 
   }
   char message = active_serial.read();
-  th_printf("%c", message); 
+  //th_printf("%c", message); 
   return message;
 }
 
 void th_serialport_initialize(void) {
 #if EE_CFG_ENERGY_MODE
-  Serial1.begin(9600); 
+  Serial2.begin(9600); 
   Serial.begin(115200); 
 #else 
   Serial.begin(115200); 
@@ -316,7 +318,7 @@ void th_final_initialize(void) {
   
   #if EE_CFG_ENERGY_MODE
     pinMode(TH_GPIO_TIMESTAMP_PIN, OUTPUT);
-    digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
+    digitalWrite(TH_GPIO_TIMESTAMP_PIN, LOW);
   #endif
 }
 

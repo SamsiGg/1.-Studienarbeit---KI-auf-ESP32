@@ -1,0 +1,82 @@
+ARENA IM PSRAM!!!
+
+Logging initialized. Writing output to sessions/20251127_132529/log.txt
+Initializing SerialDevice on port: /dev/cu.usbmodem14101 at 115200 baud
+SerialDevice entering port /dev/cu.usbmodem14101, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: ESP32-S3
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: vww01
+SerialDevice exiting port /dev/cu.usbmodem14101, entry_count (before decrement) = 1
+SerialDevice entering port /dev/cu.usbmodem14101, entry_count (before increment) = 0
+1127.132532 ulp-mlperf: Loading file COCO_train2014_000000417160.bin segment 0
+1127.132533 ulp-mlperf: Load complete.
+Running inference with 5/70 (warmup/measured) iterations ...
+done
+1127.132541 ulp-mlperf: Performance results for window 1:
+1127.132541 ulp-mlperf:   # Inferences :            70
+1127.132541 ulp-mlperf:   Runtime      :      7.753 sec.
+1127.132541 ulp-mlperf:   Throughput   :      9.029 inf./sec.
+1127.132541 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132541 ulp-mlperf: Loading file COCO_val2014_000000098141.bin segment 0
+1127.132542 ulp-mlperf: Load complete.
+Running inference with 5/70 (warmup/measured) iterations ...
+done
+1127.132551 ulp-mlperf: Performance results for window 2:
+1127.132551 ulp-mlperf:   # Inferences :            70
+1127.132551 ulp-mlperf:   Runtime      :      7.753 sec.
+1127.132551 ulp-mlperf:   Throughput   :      9.029 inf./sec.
+1127.132551 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132551 ulp-mlperf: Loading file COCO_train2014_000000205047.bin segment 0
+1127.132552 ulp-mlperf: Load complete.
+Running inference with 5/70 (warmup/measured) iterations ...
+done
+1127.132600 ulp-mlperf: Performance results for window 3:
+1127.132600 ulp-mlperf:   # Inferences :            70
+1127.132600 ulp-mlperf:   Runtime      :      7.753 sec.
+1127.132600 ulp-mlperf:   Throughput   :      9.029 inf./sec.
+1127.132600 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132600 ulp-mlperf: Loading file COCO_train2014_000000161597.bin segment 0
+1127.132601 ulp-mlperf: Load complete.
+Running inference with 5/70 (warmup/measured) iterations ...
+done
+1127.132610 ulp-mlperf: Performance results for window 4:
+1127.132610 ulp-mlperf:   # Inferences :            70
+1127.132610 ulp-mlperf:   Runtime      :      7.753 sec.
+1127.132610 ulp-mlperf:   Throughput   :      9.029 inf./sec.
+1127.132610 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132610 ulp-mlperf: Loading file COCO_val2014_000000080013.bin segment 0
+1127.132610 ulp-mlperf: Load complete.
+Running inference with 5/70 (warmup/measured) iterations ...
+done
+1127.132619 ulp-mlperf: Performance results for window 5:
+1127.132619 ulp-mlperf:   # Inferences :            70
+1127.132619 ulp-mlperf:   Runtime      :      7.753 sec.
+1127.132619 ulp-mlperf:   Throughput   :      9.029 inf./sec.
+1127.132619 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+SerialDevice exiting port /dev/cu.usbmodem14101, entry_count (before decrement) = 1
+--------------------
+Performance results for window 1
+# Inferences : 70
+Runtime: 7.753072 sec.
+Throughput: 9.02867921257535 inf./sec.
+Performance results for window 2
+# Inferences : 70
+Runtime: 7.75311 sec.
+Throughput: 9.028634960680295 inf./sec.
+Performance results for window 3
+# Inferences : 70
+Runtime: 7.753212 sec.
+Throughput: 9.028516181422615 inf./sec.
+Performance results for window 4
+# Inferences : 70
+Runtime: 7.753153 sec.
+Throughput: 9.028584886690615 inf./sec.
+Performance results for window 5
+# Inferences : 70
+Runtime: 7.7531 sec.
+Throughput: 9.02864660587378 inf./sec.
+1127.132619 ulp-mlperf: ---------------------------------------------------------
+1127.132619 ulp-mlperf: Median throughput is      9.029 inf./sec.
+1127.132619 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions/20251127_132529/log.txt

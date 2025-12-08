@@ -31,7 +31,7 @@
 #include "tensorflow/lite/schema/schema_generated.h"
 
 // Konfiguration UART
-#define EX_UART_NUM UART_NUM_0
+#define EX_UART_NUM UART_NUM_2
 
 // ===================================================================
 // DEINE MODELL-KONFIGURATION
@@ -83,7 +83,7 @@ tflite::MicroOpResolver* op_resolver = nullptr;
 uint8_t* tensor_arena = nullptr;
 
 #if EE_CFG_ENERGY_MODE
-  const gpio_num_t TH_GPIO_TIMESTAMP_PIN = GPIO_NUM_4;
+  const gpio_num_t TH_GPIO_TIMESTAMP_PIN = GPIO_NUM_13;
 #endif
 } // namespace
 
@@ -207,15 +207,14 @@ void th_infer() {
 void th_timestamp(void) {
 #if EE_CFG_ENERGY_MODE
   gpio_set_level(TH_GPIO_TIMESTAMP_PIN, 1);
+  ets_delay_us(500);
   gpio_set_level(TH_GPIO_TIMESTAMP_PIN, 0);
-  ets_delay_us(2);
-  gpio_set_level(TH_GPIO_TIMESTAMP_PIN, 1);
 #else 
   th_printf(EE_MSG_TIMESTAMP, (unsigned long)esp_timer_get_time());
 #endif
 }
 
-void th_printf(const char *fmt, ...) {
+void th_printf(const char *fmt, ...) { //Muss hier noch die Energy Alternative hin?
   char buffer[128];
   va_list args;
   va_start(args, fmt);
@@ -233,7 +232,7 @@ char th_getchar() {
         taskYIELD(); 
     }
   }
-  th_printf("%c", (char)data);
+  //th_printf("R:%c\n", (char)data);
   return (char)data;
 }
 
@@ -242,7 +241,33 @@ char th_getchar() {
 // ===================================================================
 
 void th_serialport_initialize(void) {
-  uart_flush_input(EX_UART_NUM);
+    uart_config_t uart_config = {};
+    
+    // Konfiguration setup
+    uart_config.data_bits = UART_DATA_8_BITS;
+    uart_config.parity    = UART_PARITY_DISABLE;
+    uart_config.stop_bits = UART_STOP_BITS_1;
+    uart_config.flow_ctrl = UART_HW_FLOWCTRL_DISABLE;
+    uart_config.source_clk = UART_SCLK_APB;
+
+#if EE_CFG_ENERGY_MODE
+    // ENERGIE-MODUS: Standard ist meist 9600 Baud für den IO Manager
+    uart_config.baud_rate = 9600;
+#else
+    // PERFORMANCE-MODUS: Schnell für USB-Ausgabe
+    uart_config.baud_rate = 115200;
+#endif
+
+    // Treiber installieren für UART 1
+    ESP_ERROR_CHECK(uart_driver_install(EX_UART_NUM, 256, 0, 0, NULL, 0));
+    
+    // Konfiguration anwenden
+    ESP_ERROR_CHECK(uart_param_config(EX_UART_NUM, &uart_config));
+    
+    // --- ÄNDERUNG: Pins explizit zuweisen ---
+    // TX = 26, RX = 27 (statt NO_CHANGE)
+    ESP_ERROR_CHECK(uart_set_pin(EX_UART_NUM, 17, 16, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+  
 }
 
 void th_timestamp_initialize(void) {
@@ -300,7 +325,7 @@ void th_final_initialize(void) {
   io_conf.pull_down_en = GPIO_PULLDOWN_DISABLE;
   io_conf.pull_up_en = GPIO_PULLUP_DISABLE;
   gpio_config(&io_conf);
-  gpio_set_level(TH_GPIO_TIMESTAMP_PIN, 1);
+  gpio_set_level(TH_GPIO_TIMESTAMP_PIN, 0);
   th_printf("DEBUG: Energie-Modus initialisiert. GPIO %d\r\n", TH_GPIO_TIMESTAMP_PIN);
   #else
   th_printf("DEBUG: Performance-Modus initialisiert.\r\n");

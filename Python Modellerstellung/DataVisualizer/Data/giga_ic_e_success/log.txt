@@ -1,0 +1,888 @@
+Logging initialized. Writing output to sessions/20251201_174111/log.txt
+Initializing SerialDevice on port: /dev/cu.usbmodem142301 at 115200 baud
+open_ll(opt=0)
+device_open(u/js220/005284)
+device_open(u/js220/005284) => 0
+open(opt=0)
+bulk_in_open(255037992, endpoint=0x82)
+port0 connect rsp
+JS220 app_id=3, FW=1.3.0, HW=1.0.0, FPGA=1.3.3, protocol=1.0.0
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+open complete
+on_sampling_frequency(2000000)
+jsdrv_downsample_alloc signal_n=1, gpi_n=1
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+_on_sampling_frequency 10000
+on_sampling_frequency(10000)
+jsdrv_downsample_alloc idx=5, decimate_factor=2
+jsdrv_downsample_alloc idx=6, decimate_factor=2
+jsdrv_downsample_alloc idx=7, decimate_factor=2
+jsdrv_downsample_alloc signal_n=1, gpi_n=200
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+JS220 PowerManager initialized with commands:
+<power_manager.power_manager_js220.JoulescopeCommands object at 0x1174f7e00>
+[JS220] Stream reading started...
+stream_in_port 21 skip 86814 : received=0xae4b5fef expected=0xae4a0cd1
+stream_in_port 22 skip 88200 : received=0xae4b65d7 expected=0xae4a0d4f
+stream_in_port 23 skip 86532 : received=0xae4b5ed5 expected=0xae4a0cd1
+stream_in_port 21 skip 1386 : received=0xae4b6655 expected=0xae4b60eb
+stream_in_port 20 skip 88200 : received=0xae4b64a0 expected=0xae4a0c18
+stream_in_port 24 skip 88704 : received=0xae4b64a0 expected=0xae4a0a20
+stream_in_port 25 skip 88704 : received=0xae4b64a0 expected=0xae4a0a20
+stream_in_port 22 skip 47250 : received=0xae4d196d expected=0xae4c60db
+stream_in_port 21 skip 47250 : received=0xae4d19eb expected=0xae4c6159
+stream_in_port 21 skip 7434 : received=0xae4d37f1 expected=0xae4d1ae7
+stream_in_port 22 skip 7560 : received=0xae4d37f1 expected=0xae4d1a69
+stream_in_port 23 skip 53394 : received=0xae4d30ef expected=0xae4c605d
+stream_in_port 20 skip 54936 : received=0xae4d3738 expected=0xae4c60a0
+stream_in_port 24 skip 54432 : received=0xae4d3540 expected=0xae4c60a0
+stream_in_port 25 skip 54432 : received=0xae4d3540 expected=0xae4c60a0
+stream_in_port 21 skip 88452 : received=0xae4ef5dd expected=0xae4d9c59
+stream_in_port 21 skip 1386 : received=0xae4efc43 expected=0xae4ef6d9
+stream_in_port 22 skip 90342 : received=0xae4efc43 expected=0xae4d9b5d
+stream_in_port 23 skip 88548 : received=0xae4ef541 expected=0xae4d9b5d
+stream_in_port 25 skip 86688 : received=0xae4eee40 expected=0xae4d9ba0
+stream_in_port 20 skip 89712 : received=0xae4efc08 expected=0xae4d9d98
+stream_in_port 24 skip 88704 : received=0xae4ef620 expected=0xae4d9ba0
+stream_in_port 22 skip 252 : received=0xae575a43 expected=0xae575947
+stream_in_port 21 skip 16002 : received=0xae5bb9fd expected=0xae5b7b7b
+stream_in_port 22 skip 16002 : received=0xae5bb9fd expected=0xae5b7b7b
+stream_in_port 23 skip 14208 : received=0xae5bb2fb expected=0xae5b7b7b
+stream_in_port 21 skip 1386 : received=0xae5bc063 expected=0xae5bbaf9
+stream_in_port 22 skip 1386 : received=0xae5bc063 expected=0xae5bbaf9
+stream_in_port 25 skip 16128 : received=0xae5bb260 expected=0xae5b7360
+stream_in_port 20 skip 18144 : received=0xae5bc028 expected=0xae5b7948
+stream_in_port 24 skip 16128 : received=0xae5bba40 expected=0xae5b7b40
+SerialDevice entering port /dev/cu.usbmodem142301, entry_count (before increment) = 0
+Skipping sync_baud(115200) - Not supported/needed.
+RX:DEBUG: Interner RAM voll. Versuche SDRAM...
+RX:Arena Adresse: 0x60000010 (SDRAM)
+RX:DEBUG: Initialisierung abgeschlossen.
+RX:Arena Used Bytes: 54932
+RX:m-init-done
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+Retrieving name from DUT ...
+WARNING: Failed to get name.
+Retrying _get_name (1/3)...
+Retrieving name from DUT ...
+RX:m-name-dut-[ArduinoGiga]
+RX:m-ready
+Device name retrieved: ArduinoGiga
+debugkrams: Retrieving profile from DUT ...
+RX:m-name-dut-[ArduinoGiga]
+RX:m-ready
+debugkrams:
+m-name-dut-[ArduinoGiga]
+debugkrams:
+m-ready
+Retrying _get_profile (1/3)...
+debugkrams: Retrieving profile from DUT ...
+RX:m-profile-[ULPMark for tinyML Firmware V0.0.1]
+RX:m-model-[ic01]
+RX:m-ready
+debugkrams:
+m-profile-[ULPMark for tinyML Firmware V0.0.1]
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+debugkrams:
+m-model-[ic01]
+Device model retrieved: ic01
+debugkrams:
+m-ready
+1201.174127 ulp-mlperf: Loading file emu_s_002009.bin segment 0
+RX:m-profile-[ULPMark for tinyML Firmware V0.0.1]
+RX:m-model-[ic01]
+RX:m-ready
+RX:m-[Expecting 3072 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 126756 : received=0xb09d6ff7 expected=0xb09b80d3
+stream_in_port 21 skip 126882 : received=0xb09d7075 expected=0xb09b80d3
+stream_in_port 20 skip 126504 : received=0xb09d6ec0 expected=0xb09b8098
+stream_in_port 21 skip 1134 : received=0xb09d75df expected=0xb09d7171
+stream_in_port 22 skip 1260 : received=0xb09d75df expected=0xb09d70f3
+stream_in_port 23 skip 126474 : received=0xb09d6edd expected=0xb09b80d3
+stream_in_port 20 skip 504 : received=0xb09d74a8 expected=0xb09d72b0
+stream_in_port 24 skip 127008 : received=0xb09d6ec0 expected=0xb09b7ea0
+stream_in_port 25 skip 127008 : received=0xb09d6ec0 expected=0xb09b7ea0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1201.174134 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 10/20 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-10
+Captured samples:23190 timestamps:4
+1201.174134 ulp-mlperf: Loading file taxi_s_001241.bin segment 0
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.878906,0.093750,0.023438,0.000000,0.000000,0.000000,0.000000,0.000000]
+RX:m-ready
+RX:m-[Expecting 3072 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 204876 : received=0xb21cbe67 expected=0xb2199e1b
+stream_in_port 22 skip 204876 : received=0xb21cbe67 expected=0xb2199e1b
+stream_in_port 23 skip 203082 : received=0xb21cb765 expected=0xb2199e1b
+stream_in_port 20 skip 205128 : received=0xb21cbd30 expected=0xb2199be8
+stream_in_port 21 skip 1134 : received=0xb21cc3d1 expected=0xb21cbf63
+stream_in_port 22 skip 1134 : received=0xb21cc3d1 expected=0xb21cbf63
+stream_in_port 20 skip 504 : received=0xb21cc318 expected=0xb21cc120
+stream_in_port 24 skip 205632 : received=0xb21cc120 expected=0xb2199de0
+stream_in_port 25 skip 207648 : received=0xb21cc120 expected=0xb2199600
+RX:m-ready
+stream_in_port 21 skip 31626 : received=0xb2206493 expected=0xb21fe909
+stream_in_port 22 skip 31878 : received=0xb2206493 expected=0xb21fe80d
+RX:m-ready
+stream_in_port 23 skip 30084 : received=0xb2205d91 expected=0xb21fe80d
+stream_in_port 21 skip 1134 : received=0xb22069fd expected=0xb220658f
+stream_in_port 22 skip 1134 : received=0xb22069fd expected=0xb220658f
+stream_in_port 20 skip 32256 : received=0xb2206848 expected=0xb21fea48
+stream_in_port 25 skip 32256 : received=0xb2206260 expected=0xb21fe460
+stream_in_port 24 skip 34272 : received=0xb2206a40 expected=0xb21fe460
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1201.174145 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 10/20 (warmup/measured) iterations ...
+done
+Captured samples:10262 timestamps:2
+RX:m-warmup-start-10
+1201.174145 ulp-mlperf: Loading file accentor_s_001031.bin segment 0
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.843750,0.105469,0.046875,0.000000,0.003906,0.000000,0.000000,0.000000]
+RX:m-ready
+RX:m-[Expecting 3072 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1201.174155 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 10/20 (warmup/measured) iterations ...
+done
+Captured samples:10232 timestamps:2
+RX:m-warmup-start-10
+1201.174155 ulp-mlperf: Loading file mongrel_s_000686.bin segment 0
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.792969,0.140625,0.058594,0.000000,0.000000,0.000000,0.000000,0.000000]
+RX:m-ready
+stream_in_port 21 skip 223272 : received=0xb3df795d expected=0xb3dc1135
+stream_in_port 22 skip 223524 : received=0xb3df795d expected=0xb3dc1039
+stream_in_port 23 skip 221730 : received=0xb3df725b expected=0xb3dc1039
+stream_in_port 22 skip 1260 : received=0xb3df7f45 expected=0xb3df7a59
+stream_in_port 21 skip 1386 : received=0xb3df7fc3 expected=0xb3df7a59
+stream_in_port 20 skip 224784 : received=0xb3df7f88 expected=0xb3dc1178
+stream_in_port 24 skip 223776 : received=0xb3df79a0 expected=0xb3dc0f80
+RX:m-[Expecting 3072 bytes]
+stream_in_port 25 skip 223776 : received=0xb3df79a0 expected=0xb3dc0f80
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 5922 : received=0xb3e2d537 expected=0xb3e2be15
+stream_in_port 20 skip 5544 : received=0xb3e2d400 expected=0xb3e2be58
+stream_in_port 22 skip 5796 : received=0xb3e2ecd7 expected=0xb3e2d633
+stream_in_port 21 skip 12222 : received=0xb3e2ed55 expected=0xb3e2bd97
+stream_in_port 23 skip 10554 : received=0xb3e2e6d1 expected=0xb3e2bd97
+stream_in_port 20 skip 5040 : received=0xb3e2eba0 expected=0xb3e2d7f0
+stream_in_port 24 skip 12096 : received=0xb3e2eba0 expected=0xb3e2bc60
+stream_in_port 25 skip 12096 : received=0xb3e2eba0 expected=0xb3e2bc60
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1201.174205 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 10/20 (warmup/measured) iterations ...
+done
+Captured samples:10276 timestamps:2
+RX:m-warmup-start-10
+1201.174205 ulp-mlperf: Loading file stealth_bomber_s_002204.bin segment 0
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.000000,0.000000,0.843750,0.109375,0.046875,0.000000,0.000000,0.000000,0.000000,0.000000]
+RX:m-ready
+RX:m-[Expecting 3072 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 20 skip 247464 : received=0xb5617b18 expected=0xb55db470
+bulk_out_send(u/js220/005284) 48 bytes
+stream_in_port 22 skip 248724 : received=0xb561813b expected=0xb55db5a7
+stream_in_port 21 skip 248976 : received=0xb56181b9 expected=0xb55db529
+stream_in_port 23 skip 247308 : received=0xb5617b35 expected=0xb55db529
+stream_in_port 20 skip 504 : received=0xb5618100 expected=0xb5617f08
+stream_in_port 24 skip 249984 : received=0xb5618100 expected=0xb55db080
+stream_in_port 25 skip 249984 : received=0xb5618100 expected=0xb55db080
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1201.174215 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 10/20 (warmup/measured) iterations ...
+done
+Captured samples:10270 timestamps:2
+SerialDevice exiting port /dev/cu.usbmodem142301, entry_count (before decrement) = 1
+RX:m-warmup-start-10
+--------------------
+[JS220] Shutting down stream...
+[JS220] Stream reading loop exited.
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+close
+device_close(u/js220/005284)
+device_close(u/js220/005284)
+[JS220] Shutdown complete.
+Power Edition Output
+Energy data for trial 0
+Elapsed time  : 0.41900000000000004  <<<< below minimum duration
+Inferences    : 20
+Power         :   nan mW.
+Total Energy  : nan uJ
+Energy/Inf    : nan uJ/inf
+Energy data for trial 1
+Elapsed time  : 2.081  <<<< below minimum duration
+Inferences    : 20
+Power         : 740.3449 mW.
+Total Energy  : 1540657.727 uJ
+Energy/Inf    : 77032.886 uJ/inf
+Energy data for trial 2
+Elapsed time  : 2.081  <<<< below minimum duration
+Inferences    : 20
+Power         : 741.3808 mW.
+Total Energy  : 1542813.458 uJ
+Energy/Inf    : 77140.673 uJ/inf
+Energy data for trial 3
+Elapsed time  : 2.0810000000000004  <<<< below minimum duration
+Inferences    : 20
+Power         : 742.0562 mW.
+Total Energy  : 1544218.922 uJ
+Energy/Inf    : 77210.946 uJ/inf
+Energy data for trial 4
+Elapsed time  : 2.0809999999999995  <<<< below minimum duration
+Inferences    : 20
+Power         : 742.2703 mW.
+Total Energy  : 1544664.393 uJ
+Energy/Inf    : 77233.220 uJ/inf
+---------------------------------------------------------
+Median energy cost is   nan uJ/inf.
+---------------------------------------------------------
+ERROR: Not valid for submission.  All inference times must be at least 10 seconds.
+Session logged in file sessions/20251201_174111/log.txt
+close
+jsdrv_finalize 0x7fdf12029400
+USB backend finalize
+JS220 USB upper-level thread done u/js220/005284
+backend finalize
+libusb backend finalize
+jsdrv_usb_backend_thread exit

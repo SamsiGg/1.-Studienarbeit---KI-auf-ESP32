@@ -293,31 +293,24 @@ void th_infer() {
  * Das Verhalten hängt vom EE_CFG_ENERGY_MODE ab.
  */
 void th_timestamp(void) {
-
 #if EE_CFG_ENERGY_MODE
-  // ENERGIE-MODUS: Erzeuge einen kurzen Puls auf einem GPIO-Pin.
-  // Die Spezifikation verlangt eine HALT-Zeit von mindestens 1µs (fallende Flanke).
+  // ENERGIE-MODUS: Erzeuge Puls auf GPIO-Pin.
+  // Der Runner erwartet eine "Rising Edge" (0 -> 1).
   
-  // High setzen (Start-Zustand des GPIOs)
+  // 1. Trigger Start: Sofort auf HIGH (Rising Edge -> Joulescope Event!)
   digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
-  // Optional: Füge eine kleine Verzögerung hinzu, um sicherzustellen, dass der High-Zustand stabil ist
-  // delayMicroseconds(10); // Normalerweise nicht nötig, kann aber bei Debugging helfen
   
-  // LOW setzen -> TRIGGERSIGNAL (FALLENDE FLANKE)
-  digitalWrite(TH_GPIO_TIMESTAMP_PIN, LOW);
-  
-  // Wichtig: Kurze Verzögerung, um die Mindest-Haltedauer von 1µs zu garantieren.
-  // Teensy/Arduino Code läuft sehr schnell, delayMicroseconds(2) ist sicher.
-  delayMicroseconds(2); 
+  // 2. Haltezeit: Damit das Joulescope (bei 10kHz Sampling) das sicher sieht.
+  // 2µs sind bei 10kHz Sampling (100µs Periode) evtl. zu kurz für den Downsampler, 
+  // aber da der LSB-Modus analog arbeitet, sollte es klappen. 
+  // Sicherer für langsame Sampling-Raten wären evtl. 10-20µs, aber probier es erst soj.
+  delayMicroseconds(500); 
 
-  // Zurück auf HIGH, um den Puls zu beenden und für den nächsten Durchlauf vorzubereiten
-  digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
-  
-  // HINWEIS: Es ist KEINE serielle Ausgabe (th_printf) im Energiemodus erforderlich.
+  // 3. Reset: Zurück auf LOW (Idle-Zustand)
+  digitalWrite(TH_GPIO_TIMESTAMP_PIN, LOW);
 
 #else 
-  // PERFORMANCE-MODUS: Sende die Zeit in Mikrosekunden an den Host
-  // EE_MSG_TIMESTAMP ist in internally_implemented.h als "m-lap-us-%lu\r\n" definiert
+  // PERFORMANCE-MODUS
   th_printf(EE_MSG_TIMESTAMP, micros());
 #endif
 }
@@ -362,6 +355,7 @@ char th_getchar() {
     yield();
   }
   char message = active_serial.read();
+  //message = Serial.read(); // Debug-Zwecke
   //th_printf("%c", message); // Echo zurück an den Sender; Debug-Zwecke
   return message;
 }
@@ -441,7 +435,7 @@ void th_final_initialize(void) {
   model_input = interpreter->input(0);
   model_output = interpreter->output(0);
 
-  // DEBUG: Zeige Input-Tensor-Infos
+  /*// DEBUG: Zeige Input-Tensor-Infos
   th_printf("DEBUG Input Tensor:\r\n");
   th_printf("  Type: %d (0=float32, 1=int32, 2=uint8, 3=int64, 9=int8)\r\n", model_input->type);
   th_printf("  Bytes: %d\r\n", model_input->bytes);
@@ -458,14 +452,14 @@ void th_final_initialize(void) {
   th_printf("  Type: %d\r\n", model_output->type);
   th_printf("  Bytes: %d\r\n", model_output->bytes);
   th_printf("  Scale: %f\r\n", model_output->params.scale);
-  th_printf("  Zero point: %d\r\n", model_output->params.zero_point);
+  th_printf("  Zero point: %d\r\n", model_output->params.zero_point);*/
 
   #if EE_CFG_ENERGY_MODE
   // Initialisiere den GPIO-Pin für den Timestamp im Energiemodus
   pinMode(TH_GPIO_TIMESTAMP_PIN, OUTPUT);
   // Setze den Pin auf HIGH als Standardzustand (Ruhezustand)
-  digitalWrite(TH_GPIO_TIMESTAMP_PIN, HIGH);
-  th_printf("DEBUG: Energie-Modus initialisiert. Timestamp-Pin %d\r\n", TH_GPIO_TIMESTAMP_PIN);
+  digitalWrite(TH_GPIO_TIMESTAMP_PIN, LOW);
+  //th_printf("DEBUG: Energie-Modus initialisiert. Timestamp-Pin %d\r\n", TH_GPIO_TIMESTAMP_PIN);
   #else
     th_printf("DEBUG: Performance-Modus initialisiert.\r\n");
   #endif

@@ -1,0 +1,7249 @@
+Logging initialized. Writing output to sessions/20251207_204441/log.txt
+Initializing SerialDevice on port: /dev/cu.usbmodem141201 at 115200 baud
+open_ll(opt=0)
+device_open(u/js220/005284)
+device_open(u/js220/005284) => 0
+open(opt=0)
+bulk_in_open(-834432472, endpoint=0x82)
+port0 connect rsp
+JS220 app_id=3, FW=1.3.0, HW=1.0.0, FPGA=1.3.3, protocol=1.0.0
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+open complete
+on_sampling_frequency(2000000)
+jsdrv_downsample_alloc signal_n=1, gpi_n=1
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+_on_sampling_frequency 10000
+on_sampling_frequency(10000)
+jsdrv_downsample_alloc idx=5, decimate_factor=2
+jsdrv_downsample_alloc idx=6, decimate_factor=2
+jsdrv_downsample_alloc idx=7, decimate_factor=2
+jsdrv_downsample_alloc signal_n=1, gpi_n=200
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+JS220 PowerManager initialized with commands:
+[JS220] Stream reading started...
+stream_in_port 21 skip 50652 : received=0x7b52b4ad expected=0x7b51eed1
+stream_in_port 22 skip 50904 : received=0x7b52b4ad expected=0x7b51edd5
+stream_in_port 23 skip 49110 : received=0x7b52adab expected=0x7b51edd5
+stream_in_port 21 skip 3402 : received=0x7b52c2f3 expected=0x7b52b5a9
+stream_in_port 22 skip 3402 : received=0x7b52c2f3 expected=0x7b52b5a9
+stream_in_port 23 skip 1608 : received=0x7b52bbf1 expected=0x7b52b5a9
+stream_in_port 20 skip 54432 : received=0x7b52c2b8 expected=0x7b51ee18
+stream_in_port 24 skip 54432 : received=0x7b52c0c0 expected=0x7b51ec20
+stream_in_port 25 skip 54432 : received=0x7b52c0c0 expected=0x7b51ec20
+stream_in_port 21 skip 4536 : received=0x7b53e947 expected=0x7b53d78f
+stream_in_port 22 skip 4788 : received=0x7b53e947 expected=0x7b53d693
+stream_in_port 23 skip 2994 : received=0x7b53e245 expected=0x7b53d693
+stream_in_port 21 skip 1260 : received=0x7b53ef2f expected=0x7b53ea43
+stream_in_port 22 skip 1260 : received=0x7b53ef2f expected=0x7b53ea43
+stream_in_port 20 skip 6048 : received=0x7b53edf8 expected=0x7b53d658
+stream_in_port 24 skip 6048 : received=0x7b53ec00 expected=0x7b53d460
+stream_in_port 25 skip 6048 : received=0x7b53ec00 expected=0x7b53d460
+stream_in_port 21 skip 504 : received=0x7b54558f expected=0x7b545397
+stream_in_port 22 skip 756 : received=0x7b54558f expected=0x7b54529b
+stream_in_port 22 skip 1260 : received=0x7b545b77 expected=0x7b54568b
+stream_in_port 21 skip 1386 : received=0x7b545bf5 expected=0x7b54568b
+stream_in_port 20 skip 1512 : received=0x7b545a40 expected=0x7b545458
+stream_in_port 24 skip 2016 : received=0x7b545a40 expected=0x7b545260
+stream_in_port 25 skip 2016 : received=0x7b545a40 expected=0x7b545260
+stream_in_port 21 skip 4788 : received=0x7b54a0dd expected=0x7b548e29
+stream_in_port 22 skip 4662 : received=0x7b54a0dd expected=0x7b548ea7
+stream_in_port 23 skip 2994 : received=0x7b5499db expected=0x7b548e29
+stream_in_port 20 skip 5040 : received=0x7b54a120 expected=0x7b548d70
+stream_in_port 25 skip 4032 : received=0x7b549940 expected=0x7b548980
+stream_in_port 24 skip 6048 : received=0x7b54a120 expected=0x7b548980
+stream_in_port 21 skip 32256 : received=0x7b559be1 expected=0x7b551de1
+stream_in_port 22 skip 32256 : received=0x7b559be1 expected=0x7b551de1
+stream_in_port 23 skip 30462 : received=0x7b5594df expected=0x7b551de1
+stream_in_port 21 skip 1260 : received=0x7b55a1c9 expected=0x7b559cdd
+stream_in_port 22 skip 1260 : received=0x7b55a1c9 expected=0x7b559cdd
+stream_in_port 20 skip 33264 : received=0x7b55a110 expected=0x7b551f20
+stream_in_port 24 skip 34272 : received=0x7b559d20 expected=0x7b551740
+stream_in_port 25 skip 34272 : received=0x7b559d20 expected=0x7b551740
+SerialDevice entering port /dev/cu.usbmodem141201, entry_count (before increment) = 0
+Skipping sync_baud(115200) - Not supported/needed.
+RX:DEBUG: Interner RAM erfolgreich zugewiesen!
+RX:Arena Adresse: 0x24019150 (INTERNAL)
+RX:DEBUG: Initialisierung abgeschlossen.
+RX:Arena Used Bytes: 100676
+RX:m-init-done
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+stream_in_port 21 skip 209538 : received=0x7c9a394f expected=0x7c9706cd
+stream_in_port 22 skip 209790 : received=0x7c9a394f expected=0x7c9705d1
+stream_in_port 23 skip 207996 : received=0x7c9a324d expected=0x7c9705d1
+stream_in_port 21 skip 1260 : received=0x7c9a3f37 expected=0x7c9a3a4b
+stream_in_port 22 skip 1260 : received=0x7c9a3f37 expected=0x7c9a3a4b
+stream_in_port 20 skip 210672 : received=0x7c9a3e00 expected=0x7c970710
+stream_in_port 24 skip 211680 : received=0x7c9a3e00 expected=0x7c970320
+stream_in_port 25 skip 211680 : received=0x7c9a3e00 expected=0x7c970320
+stream_in_port 22 skip 504 : received=0x7c9e169b expected=0x7c9e14a3
+stream_in_port 21 skip 630 : received=0x7c9e1719 expected=0x7c9e14a3
+stream_in_port 21 skip 1386 : received=0x7c9e1d7f expected=0x7c9e1815
+stream_in_port 22 skip 1260 : received=0x7c9e1d7f expected=0x7c9e1893
+stream_in_port 20 skip 1512 : received=0x7c9e1c48 expected=0x7c9e1660
+stream_in_port 24 skip 2016 : received=0x7c9e1660 expected=0x7c9e0e80
+stream_in_port 25 skip 2016 : received=0x7c9e1660 expected=0x7c9e0e80
+Retrieving name from DUT ...
+WARNING: Failed to get name.
+Retrying _get_name (1/3)...
+Retrieving name from DUT ...
+RX:m-name-dut-[ArduinoGiga]
+RX:m-ready
+Device name retrieved: ArduinoGiga
+debugkrams: Retrieving profile from DUT ...
+RX:m-name-dut-[ArduinoGiga]
+RX:m-ready
+debugkrams:
+m-name-dut-[ArduinoGiga]
+debugkrams:
+m-ready
+Retrying _get_profile (1/3)...
+debugkrams: Retrieving profile from DUT ...
+RX:m-profile-[ULPMark for tinyML Firmware V0.0.1]
+RX:m-model-[vww01]
+RX:m-ready
+debugkrams:
+m-profile-[ULPMark for tinyML Firmware V0.0.1]
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+debugkrams:
+m-model-[vww01]
+Device model retrieved: vww01
+debugkrams:
+m-ready
+1207.204458 ulp-mlperf: Loading file COCO_train2014_000000417160.bin segment 0
+RX:m-profile-[ULPMark for tinyML Firmware V0.0.1]
+RX:m-model-[vww01]
+RX:m-ready
+RX:m-[Expecting 27648 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 132426 : received=0x7e01b705 expected=0x7dffb1bb
+stream_in_port 21 skip 132552 : received=0x7e01b783 expected=0x7dffb1bb
+stream_in_port 23 skip 130884 : received=0x7e01b0ff expected=0x7dffb1bb
+stream_in_port 21 skip 1386 : received=0x7e01bde9 expected=0x7e01b87f
+stream_in_port 22 skip 1260 : received=0x7e01bde9 expected=0x7e01b8fd
+stream_in_port 20 skip 134568 : received=0x7e01bd30 expected=0x7dffaf88
+stream_in_port 24 skip 133056 : received=0x7e01b940 expected=0x7dffb180
+stream_in_port 25 skip 135072 : received=0x7e01b940 expected=0x7dffa9a0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 290430 : received=0x7ed8223b expected=0x7ed3b3bd
+stream_in_port 21 skip 290304 : received=0x7ed822b9 expected=0x7ed3b4b9
+stream_in_port 23 skip 288888 : received=0x7ed81c35 expected=0x7ed3b3bd
+stream_in_port 21 skip 1512 : received=0x7ed8299d expected=0x7ed823b5
+stream_in_port 22 skip 1386 : received=0x7ed8299d expected=0x7ed82433
+stream_in_port 20 skip 292320 : received=0x7ed829e0 expected=0x7ed3b400
+stream_in_port 25 skip 292320 : received=0x7ed82200 expected=0x7ed3ac20
+stream_in_port 24 skip 292320 : received=0x7ed829e0 expected=0x7ed3b400
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 243558 : received=0x7f966a07 expected=0x7f92b2a1
+stream_in_port 22 skip 243558 : received=0x7f966a07 expected=0x7f92b2a1
+stream_in_port 23 skip 241764 : received=0x7f966305 expected=0x7f92b2a1
+stream_in_port 21 skip 1386 : received=0x7f96706d expected=0x7f966b03
+stream_in_port 22 skip 1386 : received=0x7f96706d expected=0x7f966b03
+stream_in_port 20 skip 244944 : received=0x7f9670b0 expected=0x7f92b3e0
+stream_in_port 24 skip 245952 : received=0x7f966cc0 expected=0x7f92ac00
+stream_in_port 25 skip 245952 : received=0x7f966cc0 expected=0x7f92ac00
+stream_in_port 21 skip 19530 : received=0x7f97211f expected=0x7f96d4d5
+stream_in_port 22 skip 19782 : received=0x7f97211f expected=0x7f96d3d9
+stream_in_port 23 skip 17988 : received=0x7f971a1d expected=0x7f96d3d9
+stream_in_port 21 skip 1260 : received=0x7f972707 expected=0x7f97221b
+stream_in_port 22 skip 1260 : received=0x7f972707 expected=0x7f97221b
+stream_in_port 24 skip 18144 : received=0x7f971a00 expected=0x7f96d320
+stream_in_port 20 skip 21168 : received=0x7f9725d0 expected=0x7f96d320
+stream_in_port 25 skip 20160 : received=0x7f9721e0 expected=0x7f96d320
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 250614 : received=0x806c3f9d expected=0x80686ca7
+stream_in_port 21 skip 1512 : received=0x806c4681 expected=0x806c4099
+stream_in_port 22 skip 252630 : received=0x806c4681 expected=0x80686bab
+stream_in_port 23 skip 250836 : received=0x806c3f7f expected=0x80686bab
+stream_in_port 25 skip 249984 : received=0x806c3800 expected=0x80686780
+stream_in_port 20 skip 252504 : received=0x806c45c8 expected=0x80686b70
+stream_in_port 24 skip 252000 : received=0x806c3fe0 expected=0x80686780
+stream_in_port 22 skip 14490 : received=0x806d15b7 expected=0x806cdd1d
+stream_in_port 20 skip 14616 : received=0x806d1480 expected=0x806cdb68
+stream_in_port 21 skip 16128 : received=0x806d1c1d expected=0x806cdd1d
+stream_in_port 22 skip 1386 : received=0x806d1c1d expected=0x806d16b3
+stream_in_port 23 skip 14334 : received=0x806d151b expected=0x806cdd1d
+stream_in_port 20 skip 1008 : received=0x806d1c60 expected=0x806d1870
+stream_in_port 25 skip 16128 : received=0x806d1480 expected=0x806cd580
+stream_in_port 24 skip 18144 : received=0x806d1c60 expected=0x806cd580
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 164682 : received=0x813eed07 expected=0x813c69bd
+stream_in_port 22 skip 164682 : received=0x813eed07 expected=0x813c69bd
+stream_in_port 23 skip 162888 : received=0x813ee605 expected=0x813c69bd
+stream_in_port 21 skip 1260 : received=0x813ef2ef expected=0x813eee03
+stream_in_port 22 skip 1260 : received=0x813ef2ef expected=0x813eee03
+stream_in_port 20 skip 165816 : received=0x813ef1b8 expected=0x813c6a00
+stream_in_port 24 skip 167328 : received=0x813eefc0 expected=0x813c6220
+stream_in_port 25 skip 167328 : received=0x813eefc0 expected=0x813c6220
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 224028 : received=0x821455d7 expected=0x8210eabb
+stream_in_port 22 skip 224280 : received=0x821455d7 expected=0x8210e9bf
+stream_in_port 23 skip 222486 : received=0x82144ed5 expected=0x8210e9bf
+stream_in_port 21 skip 1260 : received=0x82145bbf expected=0x821456d3
+stream_in_port 22 skip 1260 : received=0x82145bbf expected=0x821456d3
+stream_in_port 20 skip 225792 : received=0x82145a88 expected=0x8210e888
+stream_in_port 24 skip 225792 : received=0x821454a0 expected=0x8210e2a0
+stream_in_port 25 skip 225792 : received=0x821454a0 expected=0x8210e2a0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 232722 : received=0x82e9f83d expected=0x82e66b2b
+stream_in_port 22 skip 232974 : received=0x82e9f83d expected=0x82e66a2f
+stream_in_port 23 skip 231180 : received=0x82e9f13b expected=0x82e66a2f
+stream_in_port 21 skip 1386 : received=0x82e9fea3 expected=0x82e9f939
+stream_in_port 22 skip 1386 : received=0x82e9fea3 expected=0x82e9f939
+stream_in_port 25 skip 231840 : received=0x82e9f0a0 expected=0x82e66700
+stream_in_port 20 skip 234864 : received=0x82e9fe68 expected=0x82e668f8
+stream_in_port 24 skip 233856 : received=0x82e9f880 expected=0x82e66700
+stream_in_port 21 skip 7812 : received=0x82eacc5f expected=0x82eaaddb
+stream_in_port 22 skip 7812 : received=0x82eacc5f expected=0x82eaaddb
+stream_in_port 23 skip 6018 : received=0x82eac55d expected=0x82eaaddb
+stream_in_port 22 skip 1134 : received=0x82ead1c9 expected=0x82eacd5b
+stream_in_port 21 skip 1260 : received=0x82ead247 expected=0x82eacd5b
+stream_in_port 24 skip 6048 : received=0x82eac540 expected=0x82eaada0
+stream_in_port 20 skip 9576 : received=0x82ead110 expected=0x82eaaba8
+stream_in_port 25 skip 10080 : received=0x82eacd20 expected=0x82eaa5c0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 111762 : received=0x838f87fb expected=0x838dd369
+stream_in_port 21 skip 113400 : received=0x838f8edf expected=0x838dd3e7
+stream_in_port 22 skip 1512 : received=0x838f8edf expected=0x838f88f7
+stream_in_port 23 skip 111858 : received=0x838f87dd expected=0x838dd2eb
+stream_in_port 20 skip 113400 : received=0x838f8da8 expected=0x838dd2b0
+stream_in_port 24 skip 112896 : received=0x838f87c0 expected=0x838dcec0
+stream_in_port 25 skip 112896 : received=0x838f87c0 expected=0x838dcec0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 225288 : received=0x846c714f expected=0x84690147
+stream_in_port 22 skip 225540 : received=0x846c714f expected=0x8469004b
+stream_in_port 23 skip 223746 : received=0x846c6a4d expected=0x8469004b
+stream_in_port 21 skip 1512 : received=0x846c7833 expected=0x846c724b
+stream_in_port 22 skip 1512 : received=0x846c7833 expected=0x846c724b
+stream_in_port 20 skip 226800 : received=0x846c77f8 expected=0x84690208
+stream_in_port 24 skip 227808 : received=0x846c7600 expected=0x8468fc20
+stream_in_port 25 skip 227808 : received=0x846c7600 expected=0x8468fc20
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1207.204601 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/20 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+bulk_out_send(u/js220/005284) 48 bytes
+Captured samples:78873 timestamps:5
+1207.204601 ulp-mlperf: Loading file COCO_val2014_000000098141.bin segment 0
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.960938,0.039062]
+RX:m-ready
+RX:m-[Expecting 27648 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 194292 : received=0x85a1f78f expected=0x859f009b
+stream_in_port 22 skip 194544 : received=0x85a1f78f expected=0x859eff9f
+stream_in_port 23 skip 192750 : received=0x85a1f08d expected=0x859eff9f
+stream_in_port 21 skip 1134 : received=0x85a1fcf9 expected=0x85a1f88b
+stream_in_port 22 skip 1134 : received=0x85a1fcf9 expected=0x85a1f88b
+stream_in_port 20 skip 196056 : received=0x85a1fc40 expected=0x859efe68
+stream_in_port 25 skip 195552 : received=0x85a1f460 expected=0x859ef880
+stream_in_port 24 skip 197568 : received=0x85a1fc40 expected=0x859ef880
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 219618 : received=0x8677caaf expected=0x867470cd
+stream_in_port 22 skip 219870 : received=0x8677caaf expected=0x86746fd1
+stream_in_port 23 skip 218076 : received=0x8677c3ad expected=0x86746fd1
+stream_in_port 22 skip 1260 : received=0x8677d097 expected=0x8677cbab
+stream_in_port 21 skip 1386 : received=0x8677d115 expected=0x8677cbab
+stream_in_port 20 skip 220752 : received=0x8677cf60 expected=0x86747110
+stream_in_port 24 skip 221760 : received=0x8677cf60 expected=0x86746d20
+stream_in_port 25 skip 221760 : received=0x8677cf60 expected=0x86746d20
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 131166 : received=0x874dc043 expected=0x874bbfe5
+stream_in_port 22 skip 131292 : received=0x874dc043 expected=0x874bbf67
+stream_in_port 23 skip 129624 : received=0x874db941 expected=0x874bbee9
+stream_in_port 21 skip 882 : received=0x874dc5ad expected=0x874dc23b
+stream_in_port 22 skip 1134 : received=0x874dc5ad expected=0x874dc13f
+stream_in_port 20 skip 132552 : received=0x874dc3f8 expected=0x874bbe30
+stream_in_port 24 skip 133056 : received=0x874dc200 expected=0x874bba40
+stream_in_port 25 skip 133056 : received=0x874dc200 expected=0x874bba40
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 17010 : received=0x8751dd8b expected=0x87519b19
+stream_in_port 22 skip 17262 : received=0x8751dd8b expected=0x87519a1d
+stream_in_port 23 skip 15468 : received=0x8751d689 expected=0x87519a1d
+stream_in_port 21 skip 1260 : received=0x8751e373 expected=0x8751de87
+stream_in_port 22 skip 1260 : received=0x8751e373 expected=0x8751de87
+stream_in_port 20 skip 18144 : received=0x8751e338 expected=0x87519c58
+stream_in_port 24 skip 18144 : received=0x8751e140 expected=0x87519a60
+stream_in_port 25 skip 18144 : received=0x8751e140 expected=0x87519a60
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 153720 : received=0x88277a87 expected=0x8825220f
+stream_in_port 22 skip 153972 : received=0x88277a87 expected=0x88252113
+stream_in_port 23 skip 152178 : received=0x88277385 expected=0x88252113
+stream_in_port 21 skip 1260 : received=0x8827806f expected=0x88277b83
+stream_in_port 22 skip 1260 : received=0x8827806f expected=0x88277b83
+stream_in_port 20 skip 155232 : received=0x88277f38 expected=0x882520d8
+stream_in_port 24 skip 155232 : received=0x88277d40 expected=0x88251ee0
+stream_in_port 25 skip 155232 : received=0x88277d40 expected=0x88251ee0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 193536 : received=0x8900290b expected=0x88fd350b
+stream_in_port 22 skip 193788 : received=0x8900290b expected=0x88fd340f
+stream_in_port 23 skip 191994 : received=0x89002209 expected=0x88fd340f
+stream_in_port 21 skip 1008 : received=0x89002ef3 expected=0x89002b03
+stream_in_port 22 skip 1260 : received=0x89002ef3 expected=0x89002a07
+stream_in_port 20 skip 195552 : received=0x89002eb8 expected=0x88fd32d8
+stream_in_port 24 skip 195552 : received=0x89002cc0 expected=0x88fd30e0
+stream_in_port 25 skip 195552 : received=0x89002cc0 expected=0x88fd30e0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 195174 : received=0x89d7172d expected=0x89d41cc7
+stream_in_port 22 skip 195426 : received=0x89d7172d expected=0x89d41bcb
+stream_in_port 23 skip 193632 : received=0x89d7102b expected=0x89d41bcb
+stream_in_port 21 skip 1386 : received=0x89d71d93 expected=0x89d71829
+stream_in_port 22 skip 1386 : received=0x89d71d93 expected=0x89d71829
+stream_in_port 20 skip 196560 : received=0x89d71d58 expected=0x89d41d88
+stream_in_port 24 skip 197568 : received=0x89d71b60 expected=0x89d417a0
+stream_in_port 25 skip 197568 : received=0x89d71b60 expected=0x89d417a0
+stream_in_port 22 skip 22428 : received=0x89d7d997 expected=0x89d781fb
+stream_in_port 21 skip 22554 : received=0x89d7da15 expected=0x89d781fb
+stream_in_port 20 skip 22680 : received=0x89d7d860 expected=0x89d77fc8
+stream_in_port 22 skip 1260 : received=0x89d7df7f expected=0x89d7da93
+stream_in_port 23 skip 22146 : received=0x89d7d87d expected=0x89d781fb
+stream_in_port 21 skip 1260 : received=0x89d7dffd expected=0x89d7db11
+stream_in_port 20 skip 504 : received=0x89d7de48 expected=0x89d7dc50
+stream_in_port 24 skip 22176 : received=0x89d7d860 expected=0x89d781c0
+stream_in_port 25 skip 24192 : received=0x89d7d860 expected=0x89d779e0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 171864 : received=0x8ab1155d expected=0x8aae7605
+stream_in_port 22 skip 171990 : received=0x8ab1155d expected=0x8aae7587
+stream_in_port 23 skip 170322 : received=0x8ab10e5b expected=0x8aae7509
+stream_in_port 21 skip 1512 : received=0x8ab11c41 expected=0x8ab11659
+stream_in_port 22 skip 1512 : received=0x8ab11c41 expected=0x8ab11659
+stream_in_port 20 skip 173376 : received=0x8ab11b88 expected=0x8aae7648
+stream_in_port 24 skip 173376 : received=0x8ab115a0 expected=0x8aae7060
+stream_in_port 25 skip 173376 : received=0x8ab115a0 expected=0x8aae7060
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 2898 : received=0x8ab4cbc7 expected=0x8ab4c075
+stream_in_port 22 skip 3150 : received=0x8ab4cbc7 expected=0x8ab4bf79
+stream_in_port 23 skip 1356 : received=0x8ab4c4c5 expected=0x8ab4bf79
+stream_in_port 20 skip 2520 : received=0x8ab4ca90 expected=0x8ab4c0b8
+stream_in_port 24 skip 2016 : received=0x8ab4c6a0 expected=0x8ab4bec0
+stream_in_port 25 skip 2016 : received=0x8ab4c6a0 expected=0x8ab4bec0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 228438 : received=0x8b8a2651 expected=0x8b86a9fb
+stream_in_port 22 skip 228690 : received=0x8b8a2651 expected=0x8b86a8ff
+stream_in_port 23 skip 226896 : received=0x8b8a1f4f expected=0x8b86a8ff
+stream_in_port 22 skip 1134 : received=0x8b8a2bbb expected=0x8b8a274d
+stream_in_port 21 skip 1260 : received=0x8b8a2c39 expected=0x8b8a274d
+stream_in_port 20 skip 229824 : received=0x8b8a2b80 expected=0x8b86a9c0
+stream_in_port 24 skip 231840 : received=0x8b8a2b80 expected=0x8b86a1e0
+stream_in_port 25 skip 231840 : received=0x8b8a2b80 expected=0x8b86a1e0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 121086 : received=0x8c3a3f3f expected=0x8c386641
+stream_in_port 22 skip 121212 : received=0x8c3a3f3f expected=0x8c3865c3
+stream_in_port 23 skip 119544 : received=0x8c3a383d expected=0x8c386545
+stream_in_port 21 skip 1260 : received=0x8c3a4527 expected=0x8c3a403b
+stream_in_port 22 skip 1260 : received=0x8c3a4527 expected=0x8c3a403b
+stream_in_port 24 skip 120960 : received=0x8c3a3820 expected=0x8c385fa0
+stream_in_port 20 skip 121968 : received=0x8c3a43f0 expected=0x8c386780
+stream_in_port 25 skip 122976 : received=0x8c3a4000 expected=0x8c385fa0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 126882 : received=0x8c54cfcd expected=0x8c52e02b
+stream_in_port 21 skip 126756 : received=0x8c54d04b expected=0x8c52e127
+RX:m-ready
+stream_in_port 22 skip 1134 : received=0x8c54d537 expected=0x8c54d0c9
+stream_in_port 23 skip 126474 : received=0x8c54ce35 expected=0x8c52e02b
+stream_in_port 21 skip 1134 : received=0x8c54d5b5 expected=0x8c54d147
+stream_in_port 20 skip 128016 : received=0x8c54d400 expected=0x8c52dff0
+stream_in_port 24 skip 129024 : received=0x8c54d400 expected=0x8c52dc00
+stream_in_port 25 skip 129024 : received=0x8c54d400 expected=0x8c52dc00
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 18144 : received=0x8c7776fd expected=0x8c77301d
+stream_in_port 22 skip 18018 : received=0x8c7776fd expected=0x8c77309b
+stream_in_port 23 skip 16350 : received=0x8c776ffb expected=0x8c77301d
+stream_in_port 20 skip 18144 : received=0x8c777740 expected=0x8c773060
+stream_in_port 25 skip 18144 : received=0x8c776f60 expected=0x8c772880
+stream_in_port 24 skip 20160 : received=0x8c777740 expected=0x8c772880
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 22806 : received=0x8c7fc8af expected=0x8c7f6f99
+stream_in_port 22 skip 23058 : received=0x8c7fc8af expected=0x8c7f6e9d
+stream_in_port 23 skip 21264 : received=0x8c7fc1ad expected=0x8c7f6e9d
+stream_in_port 20 skip 22680 : received=0x8c7fc778 expected=0x8c7f6ee0
+stream_in_port 22 skip 1008 : received=0x8c7fcd9b expected=0x8c7fc9ab
+stream_in_port 21 skip 1134 : received=0x8c7fce19 expected=0x8c7fc9ab
+stream_in_port 20 skip 504 : received=0x8c7fcd60 expected=0x8c7fcb68
+stream_in_port 24 skip 24192 : received=0x8c7fcd60 expected=0x8c7f6ee0
+stream_in_port 25 skip 26208 : received=0x8c7fcd60 expected=0x8c7f6700
+stream_in_port 21 skip 11970 : received=0x8c806143 expected=0x8c803281
+RX:m-ready
+stream_in_port 22 skip 12096 : received=0x8c806143 expected=0x8c803203
+stream_in_port 23 skip 10428 : received=0x8c805a41 expected=0x8c803185
+stream_in_port 22 skip 1134 : received=0x8c8066ad expected=0x8c80623f
+stream_in_port 21 skip 1008 : received=0x8c80672b expected=0x8c80633b
+stream_in_port 20 skip 13104 : received=0x8c8066f0 expected=0x8c8033c0
+stream_in_port 24 skip 14112 : received=0x8c806300 expected=0x8c802be0
+stream_in_port 25 skip 14112 : received=0x8c806300 expected=0x8c802be0
+stream_in_port 21 skip 29988 : received=0x8c813fbb expected=0x8c80ca97
+stream_in_port 22 skip 29862 : received=0x8c813fbb expected=0x8c80cb15
+stream_in_port 23 skip 28194 : received=0x8c8138b9 expected=0x8c80ca97
+stream_in_port 21 skip 1386 : received=0x8c814621 expected=0x8c8140b7
+stream_in_port 22 skip 1386 : received=0x8c814621 expected=0x8c8140b7
+stream_in_port 25 skip 28224 : received=0x8c8137a0 expected=0x8c80c960
+stream_in_port 20 skip 31752 : received=0x8c814568 expected=0x8c80c960
+stream_in_port 24 skip 30240 : received=0x8c813f80 expected=0x8c80c960
+stream_in_port 22 skip 21546 : received=0x8c81fcbb expected=0x8c81a891
+stream_in_port 21 skip 21420 : received=0x8c81fd39 expected=0x8c81a98d
+stream_in_port 23 skip 20004 : received=0x8c81f6b5 expected=0x8c81a891
+stream_in_port 21 skip 1386 : received=0x8c82039f expected=0x8c81fe35
+stream_in_port 22 skip 1260 : received=0x8c82039f expected=0x8c81feb3
+stream_in_port 20 skip 23184 : received=0x8c820268 expected=0x8c81a7d8
+stream_in_port 24 skip 22176 : received=0x8c81fc80 expected=0x8c81a5e0
+stream_in_port 25 skip 22176 : received=0x8c81fc80 expected=0x8c81a5e0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1207.204707 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/20 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+Captured samples:66345 timestamps:2
+1207.204707 ulp-mlperf: Loading file COCO_train2014_000000205047.bin segment 0
+stream_in_port 21 skip 145026 : received=0x8ccc9325 expected=0x8cca5ca3
+stream_in_port 22 skip 145026 : received=0x8ccc9325 expected=0x8cca5ca3
+stream_in_port 23 skip 143232 : received=0x8ccc8c23 expected=0x8cca5ca3
+stream_in_port 21 skip 1008 : received=0x8ccc990d expected=0x8ccc951d
+stream_in_port 22 skip 1260 : received=0x8ccc990d expected=0x8ccc9421
+stream_in_port 20 skip 146160 : received=0x8ccc9758 expected=0x8cca5c68
+stream_in_port 24 skip 147168 : received=0x8ccc9560 expected=0x8cca5680
+stream_in_port 25 skip 147168 : received=0x8ccc9560 expected=0x8cca5680
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.964844,0.035156]
+RX:m-ready
+RX:m-[Expecting 27648 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 138096 : received=0x92b15e2d expected=0x92af42bd
+stream_in_port 21 skip 138222 : received=0x92b15eab expected=0x92af42bd
+stream_in_port 23 skip 136554 : received=0x92b15827 expected=0x92af42bd
+stream_in_port 21 skip 1134 : received=0x92b16511 expected=0x92b160a3
+stream_in_port 22 skip 1260 : received=0x92b16511 expected=0x92b16025
+stream_in_port 20 skip 139104 : received=0x92b16458 expected=0x92af44f8
+stream_in_port 24 skip 139104 : received=0x92b16260 expected=0x92af4300
+stream_in_port 25 skip 141120 : received=0x92b16260 expected=0x92af3b20
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 94752 : received=0x938e3fa1 expected=0x938ccd81
+stream_in_port 22 skip 94752 : received=0x938e3fa1 expected=0x938ccd81
+stream_in_port 23 skip 92958 : received=0x938e389f expected=0x938ccd81
+stream_in_port 22 skip 1260 : received=0x938e4589 expected=0x938e409d
+stream_in_port 21 skip 1386 : received=0x938e4607 expected=0x938e409d
+stream_in_port 20 skip 96264 : received=0x938e44d0 expected=0x938cccc8
+stream_in_port 24 skip 96768 : received=0x938e40e0 expected=0x938cc6e0
+stream_in_port 25 skip 96768 : received=0x938e40e0 expected=0x938cc6e0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1207.204813 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/20 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+Captured samples:65684 timestamps:2
+1207.204813 ulp-mlperf: Loading file COCO_train2014_000000161597.bin segment 0
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.960938,0.039062]
+RX:m-ready
+RX:m-[Expecting 27648 bytes]
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 202356 : received=0x94e58e1b expected=0x94e277a7
+stream_in_port 22 skip 202230 : received=0x94e58e1b expected=0x94e27825
+stream_in_port 23 skip 200562 : received=0x94e58719 expected=0x94e277a7
+stream_in_port 21 skip 1386 : received=0x94e59481 expected=0x94e58f17
+stream_in_port 22 skip 1386 : received=0x94e59481 expected=0x94e58f17
+stream_in_port 25 skip 201600 : received=0x94e58600 expected=0x94e27280
+stream_in_port 20 skip 204120 : received=0x94e593c8 expected=0x94e27670
+stream_in_port 24 skip 203616 : received=0x94e58de0 expected=0x94e27280
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 193032 : received=0x95e1c2c5 expected=0x95ded0bd
+stream_in_port 21 skip 193158 : received=0x95e1c343 expected=0x95ded0bd
+stream_in_port 21 skip 1386 : received=0x95e1c9a9 expected=0x95e1c43f
+stream_in_port 22 skip 1512 : received=0x95e1c9a9 expected=0x95e1c3c1
+stream_in_port 23 skip 193002 : received=0x95e1c2a7 expected=0x95ded0bd
+stream_in_port 20 skip 195048 : received=0x95e1c8f0 expected=0x95decf08
+stream_in_port 24 skip 193536 : received=0x95e1c500 expected=0x95ded100
+stream_in_port 25 skip 195552 : received=0x95e1c500 expected=0x95dec920
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 194418 : received=0x96ddb287 expected=0x96dabb15
+stream_in_port 22 skip 194670 : received=0x96ddb287 expected=0x96daba19
+stream_in_port 23 skip 192876 : received=0x96ddab85 expected=0x96daba19
+stream_in_port 20 skip 194544 : received=0x96ddb150 expected=0x96dab960
+stream_in_port 21 skip 1260 : received=0x96ddb86f expected=0x96ddb383
+stream_in_port 22 skip 1260 : received=0x96ddb86f expected=0x96ddb383
+stream_in_port 20 skip 504 : received=0x96ddb738 expected=0x96ddb540
+stream_in_port 24 skip 195552 : received=0x96ddb540 expected=0x96dab960
+stream_in_port 25 skip 195552 : received=0x96ddb540 expected=0x96dab960
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 230580 : received=0x97ba4a27 expected=0x97b6c573
+stream_in_port 22 skip 230832 : received=0x97ba4a27 expected=0x97b6c477
+stream_in_port 23 skip 229038 : received=0x97ba4325 expected=0x97b6c477
+stream_in_port 22 skip 2772 : received=0x97ba55f7 expected=0x97ba4b23
+stream_in_port 21 skip 2898 : received=0x97ba5675 expected=0x97ba4b23
+stream_in_port 23 skip 1230 : received=0x97ba4ff1 expected=0x97ba4b23
+stream_in_port 20 skip 233352 : received=0x97ba54c0 expected=0x97b6c538
+stream_in_port 24 skip 233856 : received=0x97ba54c0 expected=0x97b6c340
+stream_in_port 25 skip 233856 : received=0x97ba54c0 expected=0x97b6c340
+stream_in_port 21 skip 8442 : received=0x97bb26a7 expected=0x97bb05ad
+stream_in_port 22 skip 8568 : received=0x97bb26a7 expected=0x97bb052f
+stream_in_port 23 skip 6900 : received=0x97bb1fa5 expected=0x97bb04b1
+stream_in_port 21 skip 1260 : received=0x97bb2c8f expected=0x97bb27a3
+stream_in_port 22 skip 1260 : received=0x97bb2c8f expected=0x97bb27a3
+stream_in_port 20 skip 9576 : received=0x97bb2b58 expected=0x97bb05f0
+stream_in_port 24 skip 10080 : received=0x97bb2960 expected=0x97bb0200
+stream_in_port 25 skip 10080 : received=0x97bb2960 expected=0x97bb0200
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 124992 : received=0x97cd8407 expected=0x97cb9bc7
+stream_in_port 22 skip 125244 : received=0x97cd8407 expected=0x97cb9acb
+stream_in_port 23 skip 123450 : received=0x97cd7d05 expected=0x97cb9acb
+stream_in_port 21 skip 1386 : received=0x97cd8a6d expected=0x97cd8503
+stream_in_port 22 skip 1386 : received=0x97cd8a6d expected=0x97cd8503
+stream_in_port 20 skip 126504 : received=0x97cd8ab0 expected=0x97cb9c88
+stream_in_port 24 skip 127008 : received=0x97cd86c0 expected=0x97cb96a0
+stream_in_port 25 skip 127008 : received=0x97cd86c0 expected=0x97cb96a0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 227682 : received=0x98afdf3b expected=0x98ac65d9
+stream_in_port 21 skip 227556 : received=0x98afdfb9 expected=0x98ac66d5
+stream_in_port 23 skip 226140 : received=0x98afd935 expected=0x98ac65d9
+stream_in_port 21 skip 1386 : received=0x98afe61f expected=0x98afe0b5
+stream_in_port 22 skip 1260 : received=0x98afe61f expected=0x98afe133
+stream_in_port 20 skip 229320 : received=0x98afe4e8 expected=0x98ac6520
+stream_in_port 24 skip 227808 : received=0x98afdf00 expected=0x98ac6520
+stream_in_port 25 skip 227808 : received=0x98afdf00 expected=0x98ac6520
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 131418 : received=0x9ab8441d expected=0x9ab642c3
+stream_in_port 21 skip 1386 : received=0x9ab84a83 expected=0x9ab84519
+stream_in_port 22 skip 133056 : received=0x9ab84a83 expected=0x9ab642c3
+stream_in_port 23 skip 131262 : received=0x9ab84381 expected=0x9ab642c3
+stream_in_port 25 skip 131040 : received=0x9ab83c80 expected=0x9ab63ca0
+stream_in_port 20 skip 133056 : received=0x9ab84a48 expected=0x9ab64288
+stream_in_port 24 skip 133056 : received=0x9ab84460 expected=0x9ab63ca0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 295596 : received=0x9b9106cf expected=0x9b8c8423
+stream_in_port 22 skip 295596 : received=0x9b9106cf expected=0x9b8c8423
+stream_in_port 23 skip 293802 : received=0x9b90ffcd expected=0x9b8c8423
+stream_in_port 20 skip 295344 : received=0x9b910598 expected=0x9b8c83e8
+stream_in_port 22 skip 1260 : received=0x9b910cb7 expected=0x9b9107cb
+stream_in_port 21 skip 1386 : received=0x9b910d35 expected=0x9b9107cb
+stream_in_port 20 skip 504 : received=0x9b910b80 expected=0x9b910988
+stream_in_port 24 skip 298368 : received=0x9b910b80 expected=0x9b8c7e00
+stream_in_port 25 skip 298368 : received=0x9b910b80 expected=0x9b8c7e00
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1207.204919 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/20 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+Captured samples:66242 timestamps:2
+1207.204919 ulp-mlperf: Loading file COCO_val2014_000000080013.bin segment 0
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.960938,0.039062]
+RX:m-ready
+RX:m-[Expecting 27648 bytes]
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 225036 : received=0x9cd1a3ff expected=0x9cce34f3
+stream_in_port 20 skip 225288 : received=0x9cd1a2c8 expected=0x9cce32c0
+stream_in_port 22 skip 1386 : received=0x9cd1aa65 expected=0x9cd1a4fb
+stream_in_port 21 skip 226926 : received=0x9cd1aae3 expected=0x9cce3475
+stream_in_port 23 skip 225258 : received=0x9cd1a45f expected=0x9cce3475
+stream_in_port 24 skip 223776 : received=0x9cd19ce0 expected=0x9cce32c0
+stream_in_port 20 skip 1008 : received=0x9cd1aaa8 expected=0x9cd1a6b8
+stream_in_port 25 skip 225792 : received=0x9cd1a4c0 expected=0x9cce32c0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 216090 : received=0x9dcac1b7 expected=0x9dc7759d
+stream_in_port 21 skip 216090 : received=0x9dcac235 expected=0x9dc7761b
+stream_in_port 20 skip 216216 : received=0x9dcac080 expected=0x9dc773e8
+stream_in_port 22 skip 1260 : received=0x9dcac79f expected=0x9dcac2b3
+stream_in_port 23 skip 215934 : received=0x9dcac09d expected=0x9dc7751f
+stream_in_port 21 skip 1260 : received=0x9dcac81d expected=0x9dcac331
+stream_in_port 20 skip 504 : received=0x9dcac668 expected=0x9dcac470
+stream_in_port 24 skip 215712 : received=0x9dcac080 expected=0x9dc775e0
+stream_in_port 25 skip 217728 : received=0x9dcac080 expected=0x9dc76e00
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 237258 : received=0x9fefbbf3 expected=0x9fec1d29
+stream_in_port 21 skip 2394 : received=0x9fefc649 expected=0x9fefbcef
+stream_in_port 22 skip 239778 : received=0x9fefc649 expected=0x9fec1da7
+stream_in_port 23 skip 238110 : received=0x9fefbf47 expected=0x9fec1d29
+stream_in_port 20 skip 239400 : received=0x9fefc590 expected=0x9fec1e68
+stream_in_port 24 skip 239904 : received=0x9fefc1a0 expected=0x9fec1880
+stream_in_port 25 skip 239904 : received=0x9fefc1a0 expected=0x9fec1880
+stream_in_port 21 skip 10080 : received=0x9ff09ddd expected=0x9ff0767d
+stream_in_port 22 skip 10080 : received=0x9ff09ddd expected=0x9ff0767d
+stream_in_port 23 skip 8286 : received=0x9ff096db expected=0x9ff0767d
+stream_in_port 21 skip 1512 : received=0x9ff0a4c1 expected=0x9ff09ed9
+stream_in_port 22 skip 1512 : received=0x9ff0a4c1 expected=0x9ff09ed9
+stream_in_port 20 skip 11592 : received=0x9ff0a408 expected=0x9ff076c0
+stream_in_port 24 skip 12096 : received=0x9ff09e20 expected=0x9ff06ee0
+stream_in_port 25 skip 12096 : received=0x9ff09e20 expected=0x9ff06ee0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 164304 : received=0xa20dfd01 expected=0xa20b7b31
+stream_in_port 22 skip 164556 : received=0xa20dfd01 expected=0xa20b7a35
+stream_in_port 23 skip 162762 : received=0xa20df5ff expected=0xa20b7a35
+stream_in_port 21 skip 1260 : received=0xa20e02e9 expected=0xa20dfdfd
+stream_in_port 22 skip 1260 : received=0xa20e02e9 expected=0xa20dfdfd
+stream_in_port 20 skip 165816 : received=0xa20e0230 expected=0xa20b7a78
+stream_in_port 24 skip 165312 : received=0xa20dfe40 expected=0xa20b7880
+stream_in_port 25 skip 165312 : received=0xa20dfe40 expected=0xa20b7880
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 756 : received=0xa263db15 expected=0xa263d821
+stream_in_port 21 skip 882 : received=0xa263db93 expected=0xa263d821
+stream_in_port 21 skip 1134 : received=0xa263e0fd expected=0xa263dc8f
+stream_in_port 22 skip 1260 : received=0xa263e0fd expected=0xa263dc11
+stream_in_port 23 skip 474 : received=0xa263d9fb expected=0xa263d821
+stream_in_port 20 skip 2016 : received=0xa263e140 expected=0xa263d960
+stream_in_port 25 skip 2016 : received=0xa263d960 expected=0xa263d180
+stream_in_port 24 skip 4032 : received=0xa263e140 expected=0xa263d180
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 11340 : received=0xa26e177d expected=0xa26deb31
+RX:m-ready
+stream_in_port 22 skip 11592 : received=0xa26e177d expected=0xa26dea35
+stream_in_port 23 skip 9798 : received=0xa26e107b expected=0xa26dea35
+stream_in_port 21 skip 33390 : received=0xa26e9ae7 expected=0xa26e1879
+stream_in_port 22 skip 33390 : received=0xa26e9ae7 expected=0xa26e1879
+stream_in_port 23 skip 31596 : received=0xa26e93e5 expected=0xa26e1879
+stream_in_port 20 skip 44352 : received=0xa26e99b0 expected=0xa26dec70
+stream_in_port 24 skip 44352 : received=0xa26e95c0 expected=0xa26de880
+stream_in_port 25 skip 44352 : received=0xa26e95c0 expected=0xa26de880
+stream_in_port 22 skip 4914 : received=0xa26f1089 expected=0xa26efd57
+stream_in_port 21 skip 4788 : received=0xa26f1107 expected=0xa26efe53
+stream_in_port 20 skip 5040 : received=0xa26f0fd0 expected=0xa26efc20
+stream_in_port 21 skip 1134 : received=0xa26f1671 expected=0xa26f1203
+stream_in_port 22 skip 1260 : received=0xa26f1671 expected=0xa26f1185
+stream_in_port 23 skip 4632 : received=0xa26f0f6f expected=0xa26efd57
+stream_in_port 20 skip 504 : received=0xa26f15b8 expected=0xa26f13c0
+stream_in_port 24 skip 6048 : received=0xa26f13c0 expected=0xa26efc20
+stream_in_port 25 skip 6048 : received=0xa26f13c0 expected=0xa26efc20
+RX:m-ready
+stream_in_port 21 skip 69300 : received=0xa270898d expected=0xa26f7ad9
+stream_in_port 20 skip 68544 : received=0xa27087d8 expected=0xa26f7c18
+stream_in_port 22 skip 70686 : received=0xa2708ef7 expected=0xa26f7ad9
+stream_in_port 23 skip 68892 : received=0xa27087f5 expected=0xa26f7ad9
+stream_in_port 21 skip 1260 : received=0xa2708f75 expected=0xa2708a89
+stream_in_port 20 skip 504 : received=0xa2708dc0 expected=0xa2708bc8
+stream_in_port 24 skip 70560 : received=0xa2708dc0 expected=0xa26f7a20
+stream_in_port 25 skip 72576 : received=0xa2708dc0 expected=0xa26f7240
+stream_in_port 21 skip 82530 : received=0xa2723543 expected=0xa270f2e1
+stream_in_port 22 skip 82656 : received=0xa2723543 expected=0xa270f263
+stream_in_port 23 skip 80988 : received=0xa2722e41 expected=0xa270f1e5
+stream_in_port 21 skip 25704 : received=0xa2729ba3 expected=0xa272373b
+stream_in_port 22 skip 25956 : received=0xa2729ba3 expected=0xa272363f
+stream_in_port 23 skip 24162 : received=0xa27294a1 expected=0xa272363f
+stream_in_port 20 skip 108360 : received=0xa2729b68 expected=0xa270f420
+stream_in_port 24 skip 108864 : received=0xa2729580 expected=0xa270ec40
+stream_in_port 25 skip 108864 : received=0xa2729580 expected=0xa270ec40
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 9072 : received=0xa2818217 expected=0xa2815ea7
+stream_in_port 21 skip 10332 : received=0xa28187ff expected=0xa2815fa3
+stream_in_port 22 skip 1260 : received=0xa28187ff expected=0xa2818313
+stream_in_port 23 skip 8790 : received=0xa28180fd expected=0xa2815ea7
+stream_in_port 20 skip 10080 : received=0xa28186c8 expected=0xa2815f68
+stream_in_port 24 skip 10080 : received=0xa28180e0 expected=0xa2815980
+stream_in_port 25 skip 10080 : received=0xa28180e0 expected=0xa2815980
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 11592 : received=0xa28315af expected=0xa282e867
+stream_in_port 22 skip 11844 : received=0xa28315af expected=0xa282e76b
+stream_in_port 23 skip 10050 : received=0xa2830ead expected=0xa282e76b
+stream_in_port 22 skip 4410 : received=0xa28327e5 expected=0xa28316ab
+stream_in_port 21 skip 4536 : received=0xa2832863 expected=0xa28316ab
+stream_in_port 23 skip 2868 : received=0xa28321df expected=0xa28316ab
+stream_in_port 20 skip 16128 : received=0xa2832828 expected=0xa282e928
+stream_in_port 24 skip 16128 : received=0xa2832240 expected=0xa282e340
+stream_in_port 25 skip 16128 : received=0xa2832240 expected=0xa282e340
+bulk_out_send(u/js220/005284) 48 bytes
+stream_in_port 22 skip 15120 : received=0xa2842ac9 expected=0xa283efb9
+stream_in_port 21 skip 15372 : received=0xa2842b47 expected=0xa283ef3b
+stream_in_port 21 skip 1008 : received=0xa2843033 expected=0xa2842c43
+stream_in_port 22 skip 1134 : received=0xa2843033 expected=0xa2842bc5
+stream_in_port 23 skip 14838 : received=0xa2842931 expected=0xa283ef3b
+stream_in_port 20 skip 16128 : received=0xa2842ff8 expected=0xa283f0f8
+stream_in_port 24 skip 16128 : received=0xa2842e00 expected=0xa283ef00
+stream_in_port 25 skip 16128 : received=0xa2842e00 expected=0xa283ef00
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 16632 : received=0xa2dfc9fb expected=0xa2df8903
+stream_in_port 21 skip 16758 : received=0xa2dfca79 expected=0xa2df8903
+stream_in_port 23 skip 15090 : received=0xa2dfc3f5 expected=0xa2df8903
+stream_in_port 21 skip 1260 : received=0xa2dfd061 expected=0xa2dfcb75
+stream_in_port 22 skip 1134 : received=0xa2dfd061 expected=0xa2dfcbf3
+stream_in_port 20 skip 18144 : received=0xa2dfcfa8 expected=0xa2df88c8
+stream_in_port 24 skip 18144 : received=0xa2dfc9c0 expected=0xa2df82e0
+stream_in_port 25 skip 18144 : received=0xa2dfc9c0 expected=0xa2df82e0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 217854 : received=0xa2e84097 expected=0xa2e4ed99
+stream_in_port 20 skip 217224 : received=0xa2e83f60 expected=0xa2e4eed8
+stream_in_port 21 skip 221508 : received=0xa2e84edd expected=0xa2e4ed99
+stream_in_port 22 skip 3402 : received=0xa2e84edd expected=0xa2e84193
+stream_in_port 23 skip 219714 : received=0xa2e847db expected=0xa2e4ed99
+stream_in_port 20 skip 3024 : received=0xa2e84f20 expected=0xa2e84350
+stream_in_port 25 skip 221760 : received=0xa2e84740 expected=0xa2e4e500
+stream_in_port 24 skip 221760 : received=0xa2e84f20 expected=0xa2e4ece0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1207.205025 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/20 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+Captured samples:66116 timestamps:2
+1207.205025 ulp-mlperf: Loading file COCO_train2014_000000377160.bin segment 0
+RX:m-warmup-done
+RX:m-infer-start-20io: trigger-detected
+RX:
+RX:io: trigger-detected
+RX:m-infer-done
+RX:m-results-[0.960938,0.039062]
+RX:m-ready
+RX:m-[Expecting 27648 bytes]
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 64638 : received=0xa4ab5797 expected=0xa4aa5b19
+stream_in_port 21 skip 64512 : received=0xa4ab5815 expected=0xa4aa5c15
+stream_in_port 20 skip 64512 : received=0xa4ab5660 expected=0xa4aa5a60
+stream_in_port 21 skip 1260 : received=0xa4ab5dfd expected=0xa4ab5911
+stream_in_port 22 skip 1386 : received=0xa4ab5dfd expected=0xa4ab5893
+stream_in_port 23 skip 64482 : received=0xa4ab56fb expected=0xa4aa5b19
+stream_in_port 20 skip 1008 : received=0xa4ab5e40 expected=0xa4ab5a50
+stream_in_port 25 skip 64512 : received=0xa4ab5660 expected=0xa4aa5a60
+stream_in_port 24 skip 66528 : received=0xa4ab5e40 expected=0xa4aa5a60
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 127260 : received=0xa65b13bd expected=0xa65922a1
+stream_in_port 21 skip 1386 : received=0xa65b1a23 expected=0xa65b14b9
+stream_in_port 22 skip 128898 : received=0xa65b1a23 expected=0xa65922a1
+stream_in_port 23 skip 127104 : received=0xa65b1321 expected=0xa65922a1
+stream_in_port 25 skip 127008 : received=0xa65b0c20 expected=0xa6591c00
+stream_in_port 20 skip 128520 : received=0xa65b19e8 expected=0xa65923e0
+stream_in_port 24 skip 129024 : received=0xa65b1400 expected=0xa6591c00
+RX:m-ready
+stream_in_port 21 skip 5796 : received=0xa65c7797 expected=0xa65c60f3
+stream_in_port 21 skip 1260 : received=0xa65c7d7f expected=0xa65c7893
+stream_in_port 22 skip 7560 : received=0xa65c7d7f expected=0xa65c5ff7
+stream_in_port 23 skip 5766 : received=0xa65c767d expected=0xa65c5ff7
+stream_in_port 20 skip 7056 : received=0xa65c7c48 expected=0xa65c60b8
+stream_in_port 24 skip 6048 : received=0xa65c7660 expected=0xa65c5ec0
+stream_in_port 25 skip 6048 : received=0xa65c7660 expected=0xa65c5ec0
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 9702 : received=0xa65eb401 expected=0xa65e8e1b
+stream_in_port 22 skip 9702 : received=0xa65eb401 expected=0xa65e8e1b
+stream_in_port 23 skip 7908 : received=0xa65eacff expected=0xa65e8e1b
+stream_in_port 21 skip 1260 : received=0xa65eb9e9 expected=0xa65eb4fd
+stream_in_port 22 skip 1260 : received=0xa65eb9e9 expected=0xa65eb4fd
+stream_in_port 24 skip 8064 : received=0xa65ead60 expected=0xa65e8de0
+stream_in_port 20 skip 11592 : received=0xa65eb930 expected=0xa65e8be8
+stream_in_port 25 skip 12096 : received=0xa65eb540 expected=0xa65e8600
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 232974 : received=0xa73f5d97 expected=0xa73bcf89
+stream_in_port 21 skip 232848 : received=0xa73f5e15 expected=0xa73bd085
+stream_in_port 23 skip 231432 : received=0xa73f5791 expected=0xa73bcf89
+stream_in_port 20 skip 232848 : received=0xa73f5c60 expected=0xa73bced0
+stream_in_port 21 skip 1890 : received=0xa73f6673 expected=0xa73f5f11
+stream_in_port 22 skip 1764 : received=0xa73f6673 expected=0xa73f5f8f
+stream_in_port 23 skip 96 : received=0xa73f5f71 expected=0xa73f5f11
+stream_in_port 20 skip 1512 : received=0xa73f6638 expected=0xa73f6050
+stream_in_port 24 skip 235872 : received=0xa73f6440 expected=0xa73bcae0
+stream_in_port 25 skip 235872 : received=0xa73f6440 expected=0xa73bcae0
+stream_in_port 21 skip 22176 : received=0xa740207f expected=0xa73fc9df
+stream_in_port 22 skip 22176 : received=0xa740207f expected=0xa73fc9df
+stream_in_port 23 skip 20382 : received=0xa740197d expected=0xa73fc9df
+stream_in_port 24 skip 22176 : received=0xa7401960 expected=0xa73fc2c0
+stream_in_port 21 skip 3780 : received=0xa740303f expected=0xa740217b
+stream_in_port 22 skip 3780 : received=0xa740303f expected=0xa740217b
+stream_in_port 23 skip 1986 : received=0xa740293d expected=0xa740217b
+stream_in_port 20 skip 26208 : received=0xa7402f08 expected=0xa73fc8a8
+stream_in_port 24 skip 2016 : received=0xa7402920 expected=0xa7402140
+stream_in_port 25 skip 26208 : received=0xa7402920 expected=0xa73fc2c0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 22 skip 167076 : received=0xa81e89bb expected=0xa81bfd17
+RX:m-ready
+stream_in_port 21 skip 168462 : received=0xa81e9021 expected=0xa81bfe13
+stream_in_port 22 skip 1386 : received=0xa81e9021 expected=0xa81e8ab7
+stream_in_port 23 skip 166920 : received=0xa81e891f expected=0xa81bfd17
+stream_in_port 20 skip 168336 : received=0xa81e8f68 expected=0xa81bfdd8
+stream_in_port 24 skip 167328 : received=0xa81e8980 expected=0xa81bfbe0
+stream_in_port 25 skip 167328 : received=0xa81e8980 expected=0xa81bfbe0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 125874 : received=0xa90b720f expected=0xa909865d
+stream_in_port 22 skip 125874 : received=0xa90b720f expected=0xa909865d
+stream_in_port 23 skip 124080 : received=0xa90b6b0d expected=0xa909865d
+stream_in_port 20 skip 124992 : received=0xa90b70d8 expected=0xa9098898
+stream_in_port 22 skip 1008 : received=0xa90b76fb expected=0xa90b730b
+stream_in_port 21 skip 882 : received=0xa90b7779 expected=0xa90b7407
+stream_in_port 20 skip 504 : received=0xa90b76c0 expected=0xa90b74c8
+stream_in_port 24 skip 127008 : received=0xa90b76c0 expected=0xa90986a0
+stream_in_port 25 skip 129024 : received=0xa90b76c0 expected=0xa9097ec0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 128520 : received=0xa9e18d89 expected=0xa9df9781
+stream_in_port 22 skip 128646 : received=0xa9e18d89 expected=0xa9df9703
+stream_in_port 23 skip 126978 : received=0xa9e18687 expected=0xa9df9685
+stream_in_port 20 skip 128016 : received=0xa9e18cd0 expected=0xa9df98c0
+stream_in_port 21 skip 1134 : received=0xa9e192f3 expected=0xa9e18e85
+stream_in_port 22 skip 1134 : received=0xa9e192f3 expected=0xa9e18e85
+stream_in_port 20 skip 504 : received=0xa9e192b8 expected=0xa9e190c0
+stream_in_port 24 skip 131040 : received=0xa9e190c0 expected=0xa9df90e0
+stream_in_port 25 skip 131040 : received=0xa9e190c0 expected=0xa9df90e0
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+stream_in_port 21 skip 235242 : received=0xaae0457d expected=0xaadcae93
+stream_in_port 22 skip 235494 : received=0xaae0457d expected=0xaadcad97
+stream_in_port 23 skip 233700 : received=0xaae03e7b expected=0xaadcad97
+stream_in_port 21 skip 2646 : received=0xaae050cf expected=0xaae04679
+stream_in_port 22 skip 2646 : received=0xaae050cf expected=0xaae04679
+stream_in_port 23 skip 852 : received=0xaae049cd expected=0xaae04679
+stream_in_port 20 skip 237888 : received=0xaae04f98 expected=0xaadcae58
+stream_in_port 24 skip 237888 : received=0xaae04da0 expected=0xaadcac60
+stream_in_port 25 skip 237888 : received=0xaae04da0 expected=0xaadcac60
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+bulk_out_send(u/js220/005284) 48 bytes
+RX:m-ready
+RX:m-ready
+RX:m-ready
+RX:m-ready
+1207.205131 ulp-mlperf: Load complete.
+RX:m-load-done
+RX:m-ready
+Running inference with 50/20 (warmup/measured) iterations ...
+done
+RX:m-warmup-start-50
+Captured samples:65941 timestamps:2
+SerialDevice exiting port /dev/cu.usbmodem141201, entry_count (before decrement) = 1
+--------------------
+[JS220] Shutting down stream...
+[JS220] Stream reading loop exited.
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+bulk_out_send(u/js220/005284) 48 bytes
+close
+device_close(u/js220/005284)
+device_close(u/js220/005284)
+[JS220] Shutdown complete.
+Power Edition Output
+Energy data for trial 0
+Elapsed time  : 0.033  <<<< below minimum duration
+Inferences    : 20
+Power         :   nan mW.
+Total Energy  : nan uJ
+Energy/Inf    : nan uJ/inf
+Energy data for trial 1
+Elapsed time  : 1.025  <<<< below minimum duration
+Inferences    : 20
+Power         : 677.2618 mW.
+Total Energy  : 694193.321 uJ
+Energy/Inf    : 34709.666 uJ/inf
+Energy data for trial 2
+Elapsed time  : 1.025  <<<< below minimum duration
+Inferences    : 20
+Power         : 677.5621 mW.
+Total Energy  : 694501.202 uJ
+Energy/Inf    : 34725.060 uJ/inf
+Energy data for trial 3
+Elapsed time  : 1.025  <<<< below minimum duration
+Inferences    : 20
+Power         : 677.6767 mW.
+Total Energy  : 694618.635 uJ
+Energy/Inf    : 34730.932 uJ/inf
+Energy data for trial 4
+Elapsed time  : 1.025  <<<< below minimum duration
+Inferences    : 20
+Power         : 677.7753 mW.
+Total Energy  : 694719.699 uJ
+Energy/Inf    : 34735.985 uJ/inf
+Energy data for trial 5
+Elapsed time  : 1.025  <<<< below minimum duration
+Inferences    : 20
+Power         : 678.0359 mW.
+Total Energy  : 694986.807 uJ
+Energy/Inf    : 34749.340 uJ/inf
+---------------------------------------------------------
+Median energy cost is   nan uJ/inf.
+---------------------------------------------------------
+ERROR: Not valid for submission.  All inference times must be at least 10 seconds.
+ERROR: Not valid for submission.  Energy mode must include exactly 5 measurements.
+Session logged in file sessions/20251207_204441/log.txt
+close
+jsdrv_finalize 0x7facd11cf600
+USB backend finalize
+JS220 USB upper-level thread done u/js220/005284
+backend finalize
+libusb backend finalize
+jsdrv_usb_backend_thread exit

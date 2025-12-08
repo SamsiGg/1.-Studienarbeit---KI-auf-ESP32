@@ -1,0 +1,2 @@
+1130.121156 ulp-mlperf: Top 1% = 87.5
+1130.121156 ulp-mlperf: AUC = 0.988

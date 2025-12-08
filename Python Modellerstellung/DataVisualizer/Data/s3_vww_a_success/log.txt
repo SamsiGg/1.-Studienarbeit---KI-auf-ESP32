@@ -1,0 +1,1815 @@
+Logging initialized. Writing output to sessions/20251127_132116/log.txt
+Initializing SerialDevice on port: /dev/cu.usbmodem14101 at 115200 baud
+SerialDevice entering port /dev/cu.usbmodem14101, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: ESP32-S3
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: vww01
+SerialDevice exiting port /dev/cu.usbmodem14101, entry_count (before decrement) = 1
+SerialDevice entering port /dev/cu.usbmodem14101, entry_count (before increment) = 0
+No loop count specified.  Using full set (200 test files)
+1127.132118 ulp-mlperf: Loading file COCO_train2014_000000417160.bin segment 0
+1127.132119 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132119 ulp-mlperf: Performance results for window 1:
+1127.132119 ulp-mlperf:   # Inferences :             1
+1127.132119 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132119 ulp-mlperf:   Throughput   :      8.994 inf./sec.
+1127.132119 ulp-mlperf:   m-results    : [0.238281, 0.761719]
+1127.132119 ulp-mlperf: Loading file COCO_val2014_000000098141.bin segment 0
+1127.132119 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132119 ulp-mlperf: Performance results for window 2:
+1127.132119 ulp-mlperf:   # Inferences :             1
+1127.132119 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132119 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132119 ulp-mlperf:   m-results    : [0.910156, 0.089844]
+1127.132119 ulp-mlperf: Loading file COCO_train2014_000000205047.bin segment 0
+1127.132120 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132120 ulp-mlperf: Performance results for window 3:
+1127.132120 ulp-mlperf:   # Inferences :             1
+1127.132120 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132120 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132120 ulp-mlperf:   m-results    : [0.308594, 0.691406]
+1127.132120 ulp-mlperf: Loading file COCO_train2014_000000161597.bin segment 0
+1127.132121 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132121 ulp-mlperf: Performance results for window 4:
+1127.132121 ulp-mlperf:   # Inferences :             1
+1127.132121 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132121 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132121 ulp-mlperf:   m-results    : [0.4375, 0.5625]
+1127.132121 ulp-mlperf: Loading file COCO_val2014_000000080013.bin segment 0
+1127.132122 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132122 ulp-mlperf: Performance results for window 5:
+1127.132122 ulp-mlperf:   # Inferences :             1
+1127.132122 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132122 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132122 ulp-mlperf:   m-results    : [0.0625, 0.9375]
+1127.132122 ulp-mlperf: Loading file COCO_train2014_000000377160.bin segment 0
+1127.132122 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132123 ulp-mlperf: Performance results for window 6:
+1127.132123 ulp-mlperf:   # Inferences :             1
+1127.132123 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132123 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132123 ulp-mlperf:   m-results    : [0.480469, 0.519531]
+1127.132123 ulp-mlperf: Loading file COCO_train2014_000000000625.bin segment 0
+1127.132123 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132123 ulp-mlperf: Performance results for window 7:
+1127.132123 ulp-mlperf:   # Inferences :             1
+1127.132123 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132123 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132123 ulp-mlperf:   m-results    : [0.085938, 0.914062]
+1127.132123 ulp-mlperf: Loading file COCO_val2014_000000206800.bin segment 0
+1127.132124 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132124 ulp-mlperf: Performance results for window 8:
+1127.132124 ulp-mlperf:   # Inferences :             1
+1127.132124 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132124 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132124 ulp-mlperf:   m-results    : [0.867188, 0.132812]
+1127.132124 ulp-mlperf: Loading file COCO_train2014_000000290185.bin segment 0
+1127.132125 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132125 ulp-mlperf: Performance results for window 9:
+1127.132125 ulp-mlperf:   # Inferences :             1
+1127.132125 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132125 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132125 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132125 ulp-mlperf: Loading file COCO_val2014_000000187001.bin segment 0
+1127.132125 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132126 ulp-mlperf: Performance results for window 10:
+1127.132126 ulp-mlperf:   # Inferences :             1
+1127.132126 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132126 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132126 ulp-mlperf:   m-results    : [0.578125, 0.421875]
+1127.132126 ulp-mlperf: Loading file COCO_val2014_000000163782.bin segment 0
+1127.132126 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132126 ulp-mlperf: Performance results for window 11:
+1127.132126 ulp-mlperf:   # Inferences :             1
+1127.132126 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132126 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132126 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132126 ulp-mlperf: Loading file COCO_train2014_000000310203.bin segment 0
+1127.132127 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132127 ulp-mlperf: Performance results for window 12:
+1127.132127 ulp-mlperf:   # Inferences :             1
+1127.132127 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132127 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132127 ulp-mlperf:   m-results    : [0.566406, 0.433594]
+1127.132127 ulp-mlperf: Loading file COCO_train2014_000000117679.bin segment 0
+1127.132128 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132128 ulp-mlperf: Performance results for window 13:
+1127.132128 ulp-mlperf:   # Inferences :             1
+1127.132128 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132128 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132128 ulp-mlperf:   m-results    : [0.925781, 0.074219]
+1127.132128 ulp-mlperf: Loading file COCO_train2014_000000385107.bin segment 0
+1127.132128 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132129 ulp-mlperf: Performance results for window 14:
+1127.132129 ulp-mlperf:   # Inferences :             1
+1127.132129 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132129 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132129 ulp-mlperf:   m-results    : [0.25, 0.75]
+1127.132129 ulp-mlperf: Loading file COCO_train2014_000000262528.bin segment 0
+1127.132129 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132129 ulp-mlperf: Performance results for window 15:
+1127.132129 ulp-mlperf:   # Inferences :             1
+1127.132129 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132129 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132129 ulp-mlperf:   m-results    : [0.125, 0.875]
+1127.132129 ulp-mlperf: Loading file COCO_val2014_000000566321.bin segment 0
+1127.132130 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132130 ulp-mlperf: Performance results for window 16:
+1127.132130 ulp-mlperf:   # Inferences :             1
+1127.132130 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132130 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132130 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132130 ulp-mlperf: Loading file COCO_train2014_000000223888.bin segment 0
+1127.132131 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132131 ulp-mlperf: Performance results for window 17:
+1127.132131 ulp-mlperf:   # Inferences :             1
+1127.132131 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132131 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132131 ulp-mlperf:   m-results    : [0.160156, 0.839844]
+1127.132131 ulp-mlperf: Loading file COCO_train2014_000000403080.bin segment 0
+1127.132132 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132132 ulp-mlperf: Performance results for window 18:
+1127.132132 ulp-mlperf:   # Inferences :             1
+1127.132132 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132132 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132132 ulp-mlperf:   m-results    : [0.863281, 0.136719]
+1127.132132 ulp-mlperf: Loading file COCO_train2014_000000148422.bin segment 0
+1127.132132 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132132 ulp-mlperf: Performance results for window 19:
+1127.132132 ulp-mlperf:   # Inferences :             1
+1127.132132 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132132 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132132 ulp-mlperf:   m-results    : [0.570312, 0.429688]
+1127.132132 ulp-mlperf: Loading file COCO_train2014_000000543697.bin segment 0
+1127.132133 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132133 ulp-mlperf: Performance results for window 20:
+1127.132133 ulp-mlperf:   # Inferences :             1
+1127.132133 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132133 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132133 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132133 ulp-mlperf: Loading file COCO_train2014_000000455565.bin segment 0
+1127.132134 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132134 ulp-mlperf: Performance results for window 21:
+1127.132134 ulp-mlperf:   # Inferences :             1
+1127.132134 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132134 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132134 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132134 ulp-mlperf: Loading file COCO_train2014_000000210000.bin segment 0
+1127.132135 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132135 ulp-mlperf: Performance results for window 22:
+1127.132135 ulp-mlperf:   # Inferences :             1
+1127.132135 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132135 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132135 ulp-mlperf:   m-results    : [0.027344, 0.972656]
+1127.132135 ulp-mlperf: Loading file COCO_train2014_000000218539.bin segment 0
+1127.132135 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132136 ulp-mlperf: Performance results for window 23:
+1127.132136 ulp-mlperf:   # Inferences :             1
+1127.132136 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132136 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132136 ulp-mlperf:   m-results    : [0.054688, 0.945312]
+1127.132136 ulp-mlperf: Loading file COCO_train2014_000000147270.bin segment 0
+1127.132136 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132136 ulp-mlperf: Performance results for window 24:
+1127.132136 ulp-mlperf:   # Inferences :             1
+1127.132136 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132136 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132136 ulp-mlperf:   m-results    : [0.898438, 0.101562]
+1127.132136 ulp-mlperf: Loading file COCO_val2014_000000229383.bin segment 0
+1127.132137 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132137 ulp-mlperf: Performance results for window 25:
+1127.132137 ulp-mlperf:   # Inferences :             1
+1127.132137 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132137 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132137 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132137 ulp-mlperf: Loading file COCO_train2014_000000439463.bin segment 0
+1127.132138 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132138 ulp-mlperf: Performance results for window 26:
+1127.132138 ulp-mlperf:   # Inferences :             1
+1127.132138 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132138 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132138 ulp-mlperf:   m-results    : [0.871094, 0.128906]
+1127.132138 ulp-mlperf: Loading file COCO_train2014_000000393680.bin segment 0
+1127.132139 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132139 ulp-mlperf: Performance results for window 27:
+1127.132139 ulp-mlperf:   # Inferences :             1
+1127.132139 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132139 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132139 ulp-mlperf:   m-results    : [0.976562, 0.023438]
+1127.132139 ulp-mlperf: Loading file COCO_train2014_000000440666.bin segment 0
+1127.132139 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132139 ulp-mlperf: Performance results for window 28:
+1127.132139 ulp-mlperf:   # Inferences :             1
+1127.132139 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132139 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132139 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132139 ulp-mlperf: Loading file COCO_train2014_000000284131.bin segment 0
+1127.132140 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132140 ulp-mlperf: Performance results for window 29:
+1127.132140 ulp-mlperf:   # Inferences :             1
+1127.132140 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132140 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132140 ulp-mlperf:   m-results    : [0.253906, 0.746094]
+1127.132140 ulp-mlperf: Loading file COCO_val2014_000000483999.bin segment 0
+1127.132141 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132141 ulp-mlperf: Performance results for window 30:
+1127.132141 ulp-mlperf:   # Inferences :             1
+1127.132141 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132141 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132141 ulp-mlperf:   m-results    : [0.292969, 0.707031]
+1127.132141 ulp-mlperf: Loading file COCO_train2014_000000346936.bin segment 0
+1127.132142 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132142 ulp-mlperf: Performance results for window 31:
+1127.132142 ulp-mlperf:   # Inferences :             1
+1127.132142 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132142 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132142 ulp-mlperf:   m-results    : [0.664062, 0.335938]
+1127.132142 ulp-mlperf: Loading file COCO_train2014_000000363718.bin segment 0
+1127.132142 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132143 ulp-mlperf: Performance results for window 32:
+1127.132143 ulp-mlperf:   # Inferences :             1
+1127.132143 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132143 ulp-mlperf:   Throughput   :      9.001 inf./sec.
+1127.132143 ulp-mlperf:   m-results    : [0.1875, 0.8125]
+1127.132143 ulp-mlperf: Loading file COCO_val2014_000000205258.bin segment 0
+1127.132143 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132143 ulp-mlperf: Performance results for window 33:
+1127.132143 ulp-mlperf:   # Inferences :             1
+1127.132143 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132143 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132143 ulp-mlperf:   m-results    : [0.035156, 0.964844]
+1127.132143 ulp-mlperf: Loading file COCO_train2014_000000005614.bin segment 0
+1127.132144 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132144 ulp-mlperf: Performance results for window 34:
+1127.132144 ulp-mlperf:   # Inferences :             1
+1127.132144 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132144 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132144 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132144 ulp-mlperf: Loading file COCO_train2014_000000249764.bin segment 0
+1127.132145 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132145 ulp-mlperf: Performance results for window 35:
+1127.132145 ulp-mlperf:   # Inferences :             1
+1127.132145 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132145 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132145 ulp-mlperf:   m-results    : [0.121094, 0.878906]
+1127.132145 ulp-mlperf: Loading file COCO_train2014_000000465090.bin segment 0
+1127.132145 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132146 ulp-mlperf: Performance results for window 36:
+1127.132146 ulp-mlperf:   # Inferences :             1
+1127.132146 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132146 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132146 ulp-mlperf:   m-results    : [0.03125, 0.96875]
+1127.132146 ulp-mlperf: Loading file COCO_val2014_000000012543.bin segment 0
+1127.132146 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132146 ulp-mlperf: Performance results for window 37:
+1127.132146 ulp-mlperf:   # Inferences :             1
+1127.132146 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132146 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132146 ulp-mlperf:   m-results    : [0.09375, 0.90625]
+1127.132146 ulp-mlperf: Loading file COCO_train2014_000000216531.bin segment 0
+1127.132147 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132147 ulp-mlperf: Performance results for window 38:
+1127.132147 ulp-mlperf:   # Inferences :             1
+1127.132147 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132147 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132147 ulp-mlperf:   m-results    : [0.523438, 0.476562]
+1127.132147 ulp-mlperf: Loading file COCO_val2014_000000521819.bin segment 0
+1127.132148 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132148 ulp-mlperf: Performance results for window 39:
+1127.132148 ulp-mlperf:   # Inferences :             1
+1127.132148 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132148 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132148 ulp-mlperf:   m-results    : [0.128906, 0.871094]
+1127.132148 ulp-mlperf: Loading file COCO_val2014_000000424227.bin segment 0
+1127.132148 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132149 ulp-mlperf: Performance results for window 40:
+1127.132149 ulp-mlperf:   # Inferences :             1
+1127.132149 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132149 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132149 ulp-mlperf:   m-results    : [0.476562, 0.523438]
+1127.132149 ulp-mlperf: Loading file COCO_train2014_000000110371.bin segment 0
+1127.132149 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132149 ulp-mlperf: Performance results for window 41:
+1127.132149 ulp-mlperf:   # Inferences :             1
+1127.132149 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132149 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132149 ulp-mlperf:   m-results    : [0.449219, 0.550781]
+1127.132149 ulp-mlperf: Loading file COCO_val2014_000000375143.bin segment 0
+1127.132150 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132150 ulp-mlperf: Performance results for window 42:
+1127.132150 ulp-mlperf:   # Inferences :             1
+1127.132150 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132150 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132150 ulp-mlperf:   m-results    : [0.058594, 0.941406]
+1127.132150 ulp-mlperf: Loading file COCO_train2014_000000189491.bin segment 0
+1127.132151 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132151 ulp-mlperf: Performance results for window 43:
+1127.132151 ulp-mlperf:   # Inferences :             1
+1127.132151 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132151 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132151 ulp-mlperf:   m-results    : [0.027344, 0.972656]
+1127.132151 ulp-mlperf: Loading file COCO_val2014_000000383359.bin segment 0
+1127.132152 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132152 ulp-mlperf: Performance results for window 44:
+1127.132152 ulp-mlperf:   # Inferences :             1
+1127.132152 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132152 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132152 ulp-mlperf:   m-results    : [0.039062, 0.960938]
+1127.132152 ulp-mlperf: Loading file COCO_val2014_000000107304.bin segment 0
+1127.132152 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132152 ulp-mlperf: Performance results for window 45:
+1127.132152 ulp-mlperf:   # Inferences :             1
+1127.132152 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132152 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132152 ulp-mlperf:   m-results    : [0.105469, 0.894531]
+1127.132152 ulp-mlperf: Loading file COCO_train2014_000000438878.bin segment 0
+1127.132153 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132153 ulp-mlperf: Performance results for window 46:
+1127.132153 ulp-mlperf:   # Inferences :             1
+1127.132153 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132153 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132153 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132153 ulp-mlperf: Loading file COCO_train2014_000000398704.bin segment 0
+1127.132154 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132154 ulp-mlperf: Performance results for window 47:
+1127.132154 ulp-mlperf:   # Inferences :             1
+1127.132154 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132154 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132154 ulp-mlperf:   m-results    : [0.109375, 0.890625]
+1127.132154 ulp-mlperf: Loading file COCO_train2014_000000026833.bin segment 0
+1127.132155 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132155 ulp-mlperf: Performance results for window 48:
+1127.132155 ulp-mlperf:   # Inferences :             1
+1127.132155 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132155 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132155 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132155 ulp-mlperf: Loading file COCO_train2014_000000065179.bin segment 0
+1127.132155 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132155 ulp-mlperf: Performance results for window 49:
+1127.132155 ulp-mlperf:   # Inferences :             1
+1127.132155 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132155 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132155 ulp-mlperf:   m-results    : [0.183594, 0.816406]
+1127.132155 ulp-mlperf: Loading file COCO_train2014_000000144641.bin segment 0
+1127.132156 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132156 ulp-mlperf: Performance results for window 50:
+1127.132156 ulp-mlperf:   # Inferences :             1
+1127.132156 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132156 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132156 ulp-mlperf:   m-results    : [0.53125, 0.46875]
+1127.132156 ulp-mlperf: Loading file COCO_train2014_000000087101.bin segment 0
+1127.132157 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132157 ulp-mlperf: Performance results for window 51:
+1127.132157 ulp-mlperf:   # Inferences :             1
+1127.132157 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132157 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132157 ulp-mlperf:   m-results    : [0.066406, 0.933594]
+1127.132157 ulp-mlperf: Loading file COCO_train2014_000000458355.bin segment 0
+1127.132158 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132158 ulp-mlperf: Performance results for window 52:
+1127.132158 ulp-mlperf:   # Inferences :             1
+1127.132158 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132158 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132158 ulp-mlperf:   m-results    : [0.078125, 0.921875]
+1127.132158 ulp-mlperf: Loading file COCO_train2014_000000052209.bin segment 0
+1127.132158 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132158 ulp-mlperf: Performance results for window 53:
+1127.132158 ulp-mlperf:   # Inferences :             1
+1127.132158 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132158 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132158 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132158 ulp-mlperf: Loading file COCO_train2014_000000200971.bin segment 0
+1127.132159 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132159 ulp-mlperf: Performance results for window 54:
+1127.132159 ulp-mlperf:   # Inferences :             1
+1127.132159 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132159 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132159 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132159 ulp-mlperf: Loading file COCO_train2014_000000024081.bin segment 0
+1127.132200 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132200 ulp-mlperf: Performance results for window 55:
+1127.132200 ulp-mlperf:   # Inferences :             1
+1127.132200 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132200 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132200 ulp-mlperf:   m-results    : [0.511719, 0.488281]
+1127.132200 ulp-mlperf: Loading file COCO_val2014_000000175570.bin segment 0
+1127.132201 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132201 ulp-mlperf: Performance results for window 56:
+1127.132201 ulp-mlperf:   # Inferences :             1
+1127.132201 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132201 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132201 ulp-mlperf:   m-results    : [0.207031, 0.792969]
+1127.132201 ulp-mlperf: Loading file COCO_train2014_000000409216.bin segment 0
+1127.132201 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132202 ulp-mlperf: Performance results for window 57:
+1127.132202 ulp-mlperf:   # Inferences :             1
+1127.132202 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132202 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132202 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132202 ulp-mlperf: Loading file COCO_train2014_000000329640.bin segment 0
+1127.132202 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132202 ulp-mlperf: Performance results for window 58:
+1127.132202 ulp-mlperf:   # Inferences :             1
+1127.132202 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132202 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132202 ulp-mlperf:   m-results    : [0.078125, 0.921875]
+1127.132202 ulp-mlperf: Loading file COCO_train2014_000000209089.bin segment 0
+1127.132203 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132203 ulp-mlperf: Performance results for window 59:
+1127.132203 ulp-mlperf:   # Inferences :             1
+1127.132203 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132203 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132203 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132203 ulp-mlperf: Loading file COCO_train2014_000000481861.bin segment 0
+1127.132204 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132204 ulp-mlperf: Performance results for window 60:
+1127.132204 ulp-mlperf:   # Inferences :             1
+1127.132204 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132204 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132204 ulp-mlperf:   m-results    : [0.03125, 0.96875]
+1127.132204 ulp-mlperf: Loading file COCO_val2014_000000148662.bin segment 0
+1127.132205 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132205 ulp-mlperf: Performance results for window 61:
+1127.132205 ulp-mlperf:   # Inferences :             1
+1127.132205 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132205 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132205 ulp-mlperf:   m-results    : [0.085938, 0.914062]
+1127.132205 ulp-mlperf: Loading file COCO_val2014_000000300323.bin segment 0
+1127.132205 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132205 ulp-mlperf: Performance results for window 62:
+1127.132205 ulp-mlperf:   # Inferences :             1
+1127.132205 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132205 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132205 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132205 ulp-mlperf: Loading file COCO_val2014_000000164602.bin segment 0
+1127.132206 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132206 ulp-mlperf: Performance results for window 63:
+1127.132206 ulp-mlperf:   # Inferences :             1
+1127.132206 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132206 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132206 ulp-mlperf:   m-results    : [0.082031, 0.917969]
+1127.132206 ulp-mlperf: Loading file COCO_train2014_000000010877.bin segment 0
+1127.132207 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132207 ulp-mlperf: Performance results for window 64:
+1127.132207 ulp-mlperf:   # Inferences :             1
+1127.132207 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132207 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132207 ulp-mlperf:   m-results    : [0.300781, 0.699219]
+1127.132207 ulp-mlperf: Loading file COCO_train2014_000000280778.bin segment 0
+1127.132208 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132208 ulp-mlperf: Performance results for window 65:
+1127.132208 ulp-mlperf:   # Inferences :             1
+1127.132208 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132208 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132208 ulp-mlperf:   m-results    : [0.746094, 0.253906]
+1127.132208 ulp-mlperf: Loading file COCO_train2014_000000494236.bin segment 0
+1127.132208 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132208 ulp-mlperf: Performance results for window 66:
+1127.132208 ulp-mlperf:   # Inferences :             1
+1127.132208 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132208 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132208 ulp-mlperf:   m-results    : [0.039062, 0.960938]
+1127.132208 ulp-mlperf: Loading file COCO_train2014_000000039778.bin segment 0
+1127.132209 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132209 ulp-mlperf: Performance results for window 67:
+1127.132209 ulp-mlperf:   # Inferences :             1
+1127.132209 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132209 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132209 ulp-mlperf:   m-results    : [0.027344, 0.972656]
+1127.132209 ulp-mlperf: Loading file COCO_train2014_000000092951.bin segment 0
+1127.132210 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132210 ulp-mlperf: Performance results for window 68:
+1127.132210 ulp-mlperf:   # Inferences :             1
+1127.132210 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132210 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132210 ulp-mlperf:   m-results    : [0.074219, 0.925781]
+1127.132210 ulp-mlperf: Loading file COCO_val2014_000000010678.bin segment 0
+1127.132211 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132211 ulp-mlperf: Performance results for window 69:
+1127.132211 ulp-mlperf:   # Inferences :             1
+1127.132211 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132211 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132211 ulp-mlperf:   m-results    : [0.585938, 0.414062]
+1127.132211 ulp-mlperf: Loading file COCO_train2014_000000316555.bin segment 0
+1127.132212 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132212 ulp-mlperf: Performance results for window 70:
+1127.132212 ulp-mlperf:   # Inferences :             1
+1127.132212 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132212 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132212 ulp-mlperf:   m-results    : [0.054688, 0.945312]
+1127.132212 ulp-mlperf: Loading file COCO_val2014_000000183319.bin segment 0
+1127.132212 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132212 ulp-mlperf: Performance results for window 71:
+1127.132212 ulp-mlperf:   # Inferences :             1
+1127.132212 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132212 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132212 ulp-mlperf:   m-results    : [0.695312, 0.304688]
+1127.132212 ulp-mlperf: Loading file COCO_train2014_000000190141.bin segment 0
+1127.132213 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132213 ulp-mlperf: Performance results for window 72:
+1127.132213 ulp-mlperf:   # Inferences :             1
+1127.132213 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132213 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132213 ulp-mlperf:   m-results    : [0.128906, 0.871094]
+1127.132213 ulp-mlperf: Loading file COCO_train2014_000000535218.bin segment 0
+1127.132214 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132214 ulp-mlperf: Performance results for window 73:
+1127.132214 ulp-mlperf:   # Inferences :             1
+1127.132214 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132214 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132214 ulp-mlperf:   m-results    : [0.042969, 0.957031]
+1127.132214 ulp-mlperf: Loading file COCO_train2014_000000539589.bin segment 0
+1127.132215 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132215 ulp-mlperf: Performance results for window 74:
+1127.132215 ulp-mlperf:   # Inferences :             1
+1127.132215 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132215 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132215 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132215 ulp-mlperf: Loading file COCO_train2014_000000545163.bin segment 0
+1127.132215 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132215 ulp-mlperf: Performance results for window 75:
+1127.132215 ulp-mlperf:   # Inferences :             1
+1127.132215 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132215 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132215 ulp-mlperf:   m-results    : [0.144531, 0.855469]
+1127.132215 ulp-mlperf: Loading file COCO_train2014_000000284940.bin segment 0
+1127.132216 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132216 ulp-mlperf: Performance results for window 76:
+1127.132216 ulp-mlperf:   # Inferences :             1
+1127.132216 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132216 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132216 ulp-mlperf:   m-results    : [0.058594, 0.941406]
+1127.132216 ulp-mlperf: Loading file COCO_train2014_000000432704.bin segment 0
+1127.132217 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132217 ulp-mlperf: Performance results for window 77:
+1127.132217 ulp-mlperf:   # Inferences :             1
+1127.132217 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132217 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132217 ulp-mlperf:   m-results    : [0.847656, 0.152344]
+1127.132217 ulp-mlperf: Loading file COCO_train2014_000000483766.bin segment 0
+1127.132218 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132218 ulp-mlperf: Performance results for window 78:
+1127.132218 ulp-mlperf:   # Inferences :             1
+1127.132218 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132218 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132218 ulp-mlperf:   m-results    : [0.203125, 0.796875]
+1127.132218 ulp-mlperf: Loading file COCO_val2014_000000398188.bin segment 0
+1127.132218 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132219 ulp-mlperf: Performance results for window 79:
+1127.132219 ulp-mlperf:   # Inferences :             1
+1127.132219 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132219 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132219 ulp-mlperf:   m-results    : [0.417969, 0.582031]
+1127.132219 ulp-mlperf: Loading file COCO_train2014_000000138103.bin segment 0
+1127.132219 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132219 ulp-mlperf: Performance results for window 80:
+1127.132219 ulp-mlperf:   # Inferences :             1
+1127.132219 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132219 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132219 ulp-mlperf:   m-results    : [0.027344, 0.972656]
+1127.132219 ulp-mlperf: Loading file COCO_val2014_000000258628.bin segment 0
+1127.132220 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132220 ulp-mlperf: Performance results for window 81:
+1127.132220 ulp-mlperf:   # Inferences :             1
+1127.132220 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132220 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132220 ulp-mlperf:   m-results    : [0.039062, 0.960938]
+1127.132220 ulp-mlperf: Loading file COCO_val2014_000000181786.bin segment 0
+1127.132221 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132221 ulp-mlperf: Performance results for window 82:
+1127.132221 ulp-mlperf:   # Inferences :             1
+1127.132221 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132221 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132221 ulp-mlperf:   m-results    : [0.585938, 0.414062]
+1127.132221 ulp-mlperf: Loading file COCO_train2014_000000210957.bin segment 0
+1127.132221 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132222 ulp-mlperf: Performance results for window 83:
+1127.132222 ulp-mlperf:   # Inferences :             1
+1127.132222 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132222 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132222 ulp-mlperf:   m-results    : [0.492188, 0.507812]
+1127.132222 ulp-mlperf: Loading file COCO_train2014_000000403677.bin segment 0
+1127.132222 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132222 ulp-mlperf: Performance results for window 84:
+1127.132222 ulp-mlperf:   # Inferences :             1
+1127.132222 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132222 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132222 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132222 ulp-mlperf: Loading file COCO_train2014_000000166207.bin segment 0
+1127.132223 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132223 ulp-mlperf: Performance results for window 85:
+1127.132223 ulp-mlperf:   # Inferences :             1
+1127.132223 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132223 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132223 ulp-mlperf:   m-results    : [0.492188, 0.507812]
+1127.132223 ulp-mlperf: Loading file COCO_train2014_000000433985.bin segment 0
+1127.132224 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132224 ulp-mlperf: Performance results for window 86:
+1127.132224 ulp-mlperf:   # Inferences :             1
+1127.132224 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132224 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132224 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132224 ulp-mlperf: Loading file COCO_train2014_000000098190.bin segment 0
+1127.132224 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132225 ulp-mlperf: Performance results for window 87:
+1127.132225 ulp-mlperf:   # Inferences :             1
+1127.132225 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132225 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132225 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132225 ulp-mlperf: Loading file COCO_train2014_000000123647.bin segment 0
+1127.132225 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132225 ulp-mlperf: Performance results for window 88:
+1127.132225 ulp-mlperf:   # Inferences :             1
+1127.132225 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132225 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132225 ulp-mlperf:   m-results    : [0.132812, 0.867188]
+1127.132225 ulp-mlperf: Loading file COCO_train2014_000000541868.bin segment 0
+1127.132226 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132226 ulp-mlperf: Performance results for window 89:
+1127.132226 ulp-mlperf:   # Inferences :             1
+1127.132226 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132226 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132226 ulp-mlperf:   m-results    : [0.320312, 0.679688]
+1127.132226 ulp-mlperf: Loading file COCO_train2014_000000551466.bin segment 0
+1127.132227 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132227 ulp-mlperf: Performance results for window 90:
+1127.132227 ulp-mlperf:   # Inferences :             1
+1127.132227 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132227 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132227 ulp-mlperf:   m-results    : [0.074219, 0.925781]
+1127.132227 ulp-mlperf: Loading file COCO_train2014_000000356174.bin segment 0
+1127.132228 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132228 ulp-mlperf: Performance results for window 91:
+1127.132228 ulp-mlperf:   # Inferences :             1
+1127.132228 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132228 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132228 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132228 ulp-mlperf: Loading file COCO_val2014_000000038029.bin segment 0
+1127.132228 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132229 ulp-mlperf: Performance results for window 92:
+1127.132229 ulp-mlperf:   # Inferences :             1
+1127.132229 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132229 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132229 ulp-mlperf:   m-results    : [0.566406, 0.433594]
+1127.132229 ulp-mlperf: Loading file COCO_val2014_000000375521.bin segment 0
+1127.132229 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132229 ulp-mlperf: Performance results for window 93:
+1127.132229 ulp-mlperf:   # Inferences :             1
+1127.132229 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132229 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132229 ulp-mlperf:   m-results    : [0.484375, 0.515625]
+1127.132229 ulp-mlperf: Loading file COCO_val2014_000000500543.bin segment 0
+1127.132230 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132230 ulp-mlperf: Performance results for window 94:
+1127.132230 ulp-mlperf:   # Inferences :             1
+1127.132230 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132230 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132230 ulp-mlperf:   m-results    : [0.230469, 0.769531]
+1127.132230 ulp-mlperf: Loading file COCO_train2014_000000289895.bin segment 0
+1127.132231 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132231 ulp-mlperf: Performance results for window 95:
+1127.132231 ulp-mlperf:   # Inferences :             1
+1127.132231 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132231 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132231 ulp-mlperf:   m-results    : [0.671875, 0.328125]
+1127.132231 ulp-mlperf: Loading file COCO_train2014_000000296847.bin segment 0
+1127.132232 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132232 ulp-mlperf: Performance results for window 96:
+1127.132232 ulp-mlperf:   # Inferences :             1
+1127.132232 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132232 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132232 ulp-mlperf:   m-results    : [0.027344, 0.972656]
+1127.132232 ulp-mlperf: Loading file COCO_train2014_000000353754.bin segment 0
+1127.132232 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132232 ulp-mlperf: Performance results for window 97:
+1127.132232 ulp-mlperf:   # Inferences :             1
+1127.132232 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132232 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132232 ulp-mlperf:   m-results    : [0.496094, 0.503906]
+1127.132232 ulp-mlperf: Loading file COCO_train2014_000000328242.bin segment 0
+1127.132233 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132233 ulp-mlperf: Performance results for window 98:
+1127.132233 ulp-mlperf:   # Inferences :             1
+1127.132233 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132233 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132233 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132233 ulp-mlperf: Loading file COCO_train2014_000000282466.bin segment 0
+1127.132234 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132234 ulp-mlperf: Performance results for window 99:
+1127.132234 ulp-mlperf:   # Inferences :             1
+1127.132234 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132234 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132234 ulp-mlperf:   m-results    : [0.074219, 0.925781]
+1127.132234 ulp-mlperf: Loading file COCO_train2014_000000083481.bin segment 0
+1127.132235 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132235 ulp-mlperf: Performance results for window 100:
+1127.132235 ulp-mlperf:   # Inferences :             1
+1127.132235 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132235 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132235 ulp-mlperf:   m-results    : [0.023438, 0.976562]
+1127.132235 ulp-mlperf: Loading file COCO_val2014_000000473069.bin segment 0
+1127.132235 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132235 ulp-mlperf: Performance results for window 101:
+1127.132235 ulp-mlperf:   # Inferences :             1
+1127.132235 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132235 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132235 ulp-mlperf:   m-results    : [0.65625, 0.34375]
+1127.132235 ulp-mlperf: Loading file COCO_train2014_000000196131.bin segment 0
+1127.132236 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132236 ulp-mlperf: Performance results for window 102:
+1127.132236 ulp-mlperf:   # Inferences :             1
+1127.132236 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132236 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132236 ulp-mlperf:   m-results    : [0.921875, 0.078125]
+1127.132236 ulp-mlperf: Loading file COCO_train2014_000000048134.bin segment 0
+1127.132237 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132237 ulp-mlperf: Performance results for window 103:
+1127.132237 ulp-mlperf:   # Inferences :             1
+1127.132237 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132237 ulp-mlperf:   Throughput   :      9.001 inf./sec.
+1127.132237 ulp-mlperf:   m-results    : [0.621094, 0.378906]
+1127.132237 ulp-mlperf: Loading file COCO_train2014_000000562527.bin segment 0
+1127.132238 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132238 ulp-mlperf: Performance results for window 104:
+1127.132238 ulp-mlperf:   # Inferences :             1
+1127.132238 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132238 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132238 ulp-mlperf:   m-results    : [0.949219, 0.050781]
+1127.132238 ulp-mlperf: Loading file COCO_train2014_000000444015.bin segment 0
+1127.132238 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132238 ulp-mlperf: Performance results for window 105:
+1127.132238 ulp-mlperf:   # Inferences :             1
+1127.132238 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132238 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132238 ulp-mlperf:   m-results    : [0.949219, 0.050781]
+1127.132238 ulp-mlperf: Loading file COCO_val2014_000000139567.bin segment 0
+1127.132239 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132239 ulp-mlperf: Performance results for window 106:
+1127.132239 ulp-mlperf:   # Inferences :             1
+1127.132239 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132239 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132239 ulp-mlperf:   m-results    : [0.859375, 0.140625]
+1127.132239 ulp-mlperf: Loading file COCO_train2014_000000108718.bin segment 0
+1127.132240 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132240 ulp-mlperf: Performance results for window 107:
+1127.132240 ulp-mlperf:   # Inferences :             1
+1127.132240 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132240 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132240 ulp-mlperf:   m-results    : [0.640625, 0.359375]
+1127.132240 ulp-mlperf: Loading file COCO_train2014_000000234929.bin segment 0
+1127.132241 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132241 ulp-mlperf: Performance results for window 108:
+1127.132241 ulp-mlperf:   # Inferences :             1
+1127.132241 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132241 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132241 ulp-mlperf:   m-results    : [0.558594, 0.441406]
+1127.132241 ulp-mlperf: Loading file COCO_val2014_000000526956.bin segment 0
+1127.132241 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132241 ulp-mlperf: Performance results for window 109:
+1127.132241 ulp-mlperf:   # Inferences :             1
+1127.132241 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132241 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132241 ulp-mlperf:   m-results    : [0.8125, 0.1875]
+1127.132241 ulp-mlperf: Loading file COCO_val2014_000000463588.bin segment 0
+1127.132242 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132242 ulp-mlperf: Performance results for window 110:
+1127.132242 ulp-mlperf:   # Inferences :             1
+1127.132242 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132242 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132242 ulp-mlperf:   m-results    : [0.910156, 0.089844]
+1127.132242 ulp-mlperf: Loading file COCO_train2014_000000152108.bin segment 0
+1127.132243 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132243 ulp-mlperf: Performance results for window 111:
+1127.132243 ulp-mlperf:   # Inferences :             1
+1127.132243 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132243 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132243 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132243 ulp-mlperf: Loading file COCO_train2014_000000203166.bin segment 0
+1127.132244 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132244 ulp-mlperf: Performance results for window 112:
+1127.132244 ulp-mlperf:   # Inferences :             1
+1127.132244 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132244 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132244 ulp-mlperf:   m-results    : [0.871094, 0.128906]
+1127.132244 ulp-mlperf: Loading file COCO_train2014_000000224128.bin segment 0
+1127.132244 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132244 ulp-mlperf: Performance results for window 113:
+1127.132244 ulp-mlperf:   # Inferences :             1
+1127.132244 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132244 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132244 ulp-mlperf:   m-results    : [0.449219, 0.550781]
+1127.132244 ulp-mlperf: Loading file COCO_val2014_000000575958.bin segment 0
+1127.132245 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132245 ulp-mlperf: Performance results for window 114:
+1127.132245 ulp-mlperf:   # Inferences :             1
+1127.132245 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132245 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132245 ulp-mlperf:   m-results    : [0.855469, 0.144531]
+1127.132245 ulp-mlperf: Loading file COCO_train2014_000000334470.bin segment 0
+1127.132246 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132246 ulp-mlperf: Performance results for window 115:
+1127.132246 ulp-mlperf:   # Inferences :             1
+1127.132246 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132246 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132246 ulp-mlperf:   m-results    : [0.039062, 0.960938]
+1127.132246 ulp-mlperf: Loading file COCO_train2014_000000002496.bin segment 0
+1127.132247 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132247 ulp-mlperf: Performance results for window 116:
+1127.132247 ulp-mlperf:   # Inferences :             1
+1127.132247 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132247 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132247 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132247 ulp-mlperf: Loading file COCO_val2014_000000396204.bin segment 0
+1127.132247 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132247 ulp-mlperf: Performance results for window 117:
+1127.132247 ulp-mlperf:   # Inferences :             1
+1127.132247 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132247 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132247 ulp-mlperf:   m-results    : [0.484375, 0.515625]
+1127.132247 ulp-mlperf: Loading file COCO_train2014_000000520764.bin segment 0
+1127.132248 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132248 ulp-mlperf: Performance results for window 118:
+1127.132248 ulp-mlperf:   # Inferences :             1
+1127.132248 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132248 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132248 ulp-mlperf:   m-results    : [0.859375, 0.140625]
+1127.132248 ulp-mlperf: Loading file COCO_train2014_000000570333.bin segment 0
+1127.132249 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132249 ulp-mlperf: Performance results for window 119:
+1127.132249 ulp-mlperf:   # Inferences :             1
+1127.132249 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132249 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132249 ulp-mlperf:   m-results    : [0.953125, 0.046875]
+1127.132249 ulp-mlperf: Loading file COCO_train2014_000000093487.bin segment 0
+1127.132250 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132250 ulp-mlperf: Performance results for window 120:
+1127.132250 ulp-mlperf:   # Inferences :             1
+1127.132250 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132250 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132250 ulp-mlperf:   m-results    : [0.761719, 0.238281]
+1127.132250 ulp-mlperf: Loading file COCO_train2014_000000278639.bin segment 0
+1127.132250 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132250 ulp-mlperf: Performance results for window 121:
+1127.132250 ulp-mlperf:   # Inferences :             1
+1127.132250 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132250 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132250 ulp-mlperf:   m-results    : [0.90625, 0.09375]
+1127.132250 ulp-mlperf: Loading file COCO_train2014_000000405934.bin segment 0
+1127.132251 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132251 ulp-mlperf: Performance results for window 122:
+1127.132251 ulp-mlperf:   # Inferences :             1
+1127.132251 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132251 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132251 ulp-mlperf:   m-results    : [0.480469, 0.519531]
+1127.132251 ulp-mlperf: Loading file COCO_train2014_000000365312.bin segment 0
+1127.132252 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132252 ulp-mlperf: Performance results for window 123:
+1127.132252 ulp-mlperf:   # Inferences :             1
+1127.132252 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132252 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132252 ulp-mlperf:   m-results    : [0.964844, 0.035156]
+1127.132252 ulp-mlperf: Loading file COCO_val2014_000000051174.bin segment 0
+1127.132253 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132253 ulp-mlperf: Performance results for window 124:
+1127.132253 ulp-mlperf:   # Inferences :             1
+1127.132253 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132253 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132253 ulp-mlperf:   m-results    : [0.945312, 0.054688]
+1127.132253 ulp-mlperf: Loading file COCO_train2014_000000467909.bin segment 0
+1127.132254 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132254 ulp-mlperf: Performance results for window 125:
+1127.132254 ulp-mlperf:   # Inferences :             1
+1127.132254 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132254 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132254 ulp-mlperf:   m-results    : [0.710938, 0.289062]
+1127.132254 ulp-mlperf: Loading file COCO_val2014_000000518255.bin segment 0
+1127.132255 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132255 ulp-mlperf: Performance results for window 126:
+1127.132255 ulp-mlperf:   # Inferences :             1
+1127.132255 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132255 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132255 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132255 ulp-mlperf: Loading file COCO_train2014_000000554996.bin segment 0
+1127.132256 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132256 ulp-mlperf: Performance results for window 127:
+1127.132256 ulp-mlperf:   # Inferences :             1
+1127.132256 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132256 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132256 ulp-mlperf:   m-results    : [0.859375, 0.140625]
+1127.132256 ulp-mlperf: Loading file COCO_val2014_000000214124.bin segment 0
+1127.132257 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132257 ulp-mlperf: Performance results for window 128:
+1127.132257 ulp-mlperf:   # Inferences :             1
+1127.132257 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132257 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132257 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132257 ulp-mlperf: Loading file COCO_train2014_000000106435.bin segment 0
+1127.132257 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132258 ulp-mlperf: Performance results for window 129:
+1127.132258 ulp-mlperf:   # Inferences :             1
+1127.132258 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132258 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132258 ulp-mlperf:   m-results    : [0.949219, 0.050781]
+1127.132258 ulp-mlperf: Loading file COCO_val2014_000000104572.bin segment 0
+1127.132258 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132258 ulp-mlperf: Performance results for window 130:
+1127.132258 ulp-mlperf:   # Inferences :             1
+1127.132258 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132258 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132258 ulp-mlperf:   m-results    : [0.9375, 0.0625]
+1127.132258 ulp-mlperf: Loading file COCO_val2014_000000378605.bin segment 0
+1127.132259 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132259 ulp-mlperf: Performance results for window 131:
+1127.132259 ulp-mlperf:   # Inferences :             1
+1127.132259 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132259 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132259 ulp-mlperf:   m-results    : [0.839844, 0.160156]
+1127.132259 ulp-mlperf: Loading file COCO_train2014_000000099628.bin segment 0
+1127.132300 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132300 ulp-mlperf: Performance results for window 132:
+1127.132300 ulp-mlperf:   # Inferences :             1
+1127.132300 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132300 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132300 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132300 ulp-mlperf: Loading file COCO_train2014_000000352732.bin segment 0
+1127.132300 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132301 ulp-mlperf: Performance results for window 133:
+1127.132301 ulp-mlperf:   # Inferences :             1
+1127.132301 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132301 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132301 ulp-mlperf:   m-results    : [0.941406, 0.058594]
+1127.132301 ulp-mlperf: Loading file COCO_train2014_000000229407.bin segment 0
+1127.132301 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132301 ulp-mlperf: Performance results for window 134:
+1127.132301 ulp-mlperf:   # Inferences :             1
+1127.132301 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132301 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132301 ulp-mlperf:   m-results    : [0.960938, 0.039062]
+1127.132301 ulp-mlperf: Loading file COCO_val2014_000000020972.bin segment 0
+1127.132302 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132302 ulp-mlperf: Performance results for window 135:
+1127.132302 ulp-mlperf:   # Inferences :             1
+1127.132302 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132302 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132302 ulp-mlperf:   m-results    : [0.878906, 0.121094]
+1127.132302 ulp-mlperf: Loading file COCO_val2014_000000226938.bin segment 0
+1127.132303 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132303 ulp-mlperf: Performance results for window 136:
+1127.132303 ulp-mlperf:   # Inferences :             1
+1127.132303 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132303 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132303 ulp-mlperf:   m-results    : [0.742188, 0.257812]
+1127.132303 ulp-mlperf: Loading file COCO_train2014_000000268130.bin segment 0
+1127.132304 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132304 ulp-mlperf: Performance results for window 137:
+1127.132304 ulp-mlperf:   # Inferences :             1
+1127.132304 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132304 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132304 ulp-mlperf:   m-results    : [0.875, 0.125]
+1127.132304 ulp-mlperf: Loading file COCO_val2014_000000066499.bin segment 0
+1127.132304 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132305 ulp-mlperf: Performance results for window 138:
+1127.132305 ulp-mlperf:   # Inferences :             1
+1127.132305 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132305 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132305 ulp-mlperf:   m-results    : [0.882812, 0.117188]
+1127.132305 ulp-mlperf: Loading file COCO_train2014_000000474373.bin segment 0
+1127.132305 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132305 ulp-mlperf: Performance results for window 139:
+1127.132305 ulp-mlperf:   # Inferences :             1
+1127.132305 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132305 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132305 ulp-mlperf:   m-results    : [0.890625, 0.109375]
+1127.132305 ulp-mlperf: Loading file COCO_val2014_000000011727.bin segment 0
+1127.132306 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132306 ulp-mlperf: Performance results for window 140:
+1127.132306 ulp-mlperf:   # Inferences :             1
+1127.132306 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132306 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132306 ulp-mlperf:   m-results    : [0.964844, 0.035156]
+1127.132306 ulp-mlperf: Loading file COCO_train2014_000000174896.bin segment 0
+1127.132307 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132307 ulp-mlperf: Performance results for window 141:
+1127.132307 ulp-mlperf:   # Inferences :             1
+1127.132307 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132307 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132307 ulp-mlperf:   m-results    : [0.636719, 0.363281]
+1127.132307 ulp-mlperf: Loading file COCO_train2014_000000563048.bin segment 0
+1127.132308 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132308 ulp-mlperf: Performance results for window 142:
+1127.132308 ulp-mlperf:   # Inferences :             1
+1127.132308 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132308 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132308 ulp-mlperf:   m-results    : [0.882812, 0.117188]
+1127.132308 ulp-mlperf: Loading file COCO_val2014_000000340305.bin segment 0
+1127.132308 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132308 ulp-mlperf: Performance results for window 143:
+1127.132308 ulp-mlperf:   # Inferences :             1
+1127.132308 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132308 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132308 ulp-mlperf:   m-results    : [0.746094, 0.253906]
+1127.132308 ulp-mlperf: Loading file COCO_train2014_000000078077.bin segment 0
+1127.132309 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132309 ulp-mlperf: Performance results for window 144:
+1127.132309 ulp-mlperf:   # Inferences :             1
+1127.132309 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132309 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132309 ulp-mlperf:   m-results    : [0.898438, 0.101562]
+1127.132309 ulp-mlperf: Loading file COCO_val2014_000000183348.bin segment 0
+1127.132310 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132310 ulp-mlperf: Performance results for window 145:
+1127.132310 ulp-mlperf:   # Inferences :             1
+1127.132310 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132310 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132310 ulp-mlperf:   m-results    : [0.945312, 0.054688]
+1127.132310 ulp-mlperf: Loading file COCO_train2014_000000399011.bin segment 0
+1127.132311 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132311 ulp-mlperf: Performance results for window 146:
+1127.132311 ulp-mlperf:   # Inferences :             1
+1127.132311 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132311 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132311 ulp-mlperf:   m-results    : [0.414062, 0.585938]
+1127.132311 ulp-mlperf: Loading file COCO_train2014_000000261481.bin segment 0
+1127.132311 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132312 ulp-mlperf: Performance results for window 147:
+1127.132312 ulp-mlperf:   # Inferences :             1
+1127.132312 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132312 ulp-mlperf:   Throughput   :      9.001 inf./sec.
+1127.132312 ulp-mlperf:   m-results    : [0.949219, 0.050781]
+1127.132312 ulp-mlperf: Loading file COCO_train2014_000000542060.bin segment 0
+1127.132312 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132312 ulp-mlperf: Performance results for window 148:
+1127.132312 ulp-mlperf:   # Inferences :             1
+1127.132312 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132312 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132312 ulp-mlperf:   m-results    : [0.871094, 0.128906]
+1127.132312 ulp-mlperf: Loading file COCO_val2014_000000009381.bin segment 0
+1127.132313 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132313 ulp-mlperf: Performance results for window 149:
+1127.132313 ulp-mlperf:   # Inferences :             1
+1127.132313 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132313 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132313 ulp-mlperf:   m-results    : [0.957031, 0.042969]
+1127.132313 ulp-mlperf: Loading file COCO_train2014_000000045153.bin segment 0
+1127.132314 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132314 ulp-mlperf: Performance results for window 150:
+1127.132314 ulp-mlperf:   # Inferences :             1
+1127.132314 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132314 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132314 ulp-mlperf:   m-results    : [0.976562, 0.023438]
+1127.132314 ulp-mlperf: Loading file COCO_train2014_000000330729.bin segment 0
+1127.132314 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132315 ulp-mlperf: Performance results for window 151:
+1127.132315 ulp-mlperf:   # Inferences :             1
+1127.132315 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132315 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132315 ulp-mlperf:   m-results    : [0.949219, 0.050781]
+1127.132315 ulp-mlperf: Loading file COCO_train2014_000000160906.bin segment 0
+1127.132316 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132316 ulp-mlperf: Performance results for window 152:
+1127.132316 ulp-mlperf:   # Inferences :             1
+1127.132316 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132316 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132316 ulp-mlperf:   m-results    : [0.761719, 0.238281]
+1127.132316 ulp-mlperf: Loading file COCO_train2014_000000343503.bin segment 0
+1127.132317 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132317 ulp-mlperf: Performance results for window 153:
+1127.132317 ulp-mlperf:   # Inferences :             1
+1127.132317 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132317 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132317 ulp-mlperf:   m-results    : [0.777344, 0.222656]
+1127.132317 ulp-mlperf: Loading file COCO_val2014_000000168817.bin segment 0
+1127.132317 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132317 ulp-mlperf: Performance results for window 154:
+1127.132317 ulp-mlperf:   # Inferences :             1
+1127.132317 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132317 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132317 ulp-mlperf:   m-results    : [0.964844, 0.035156]
+1127.132317 ulp-mlperf: Loading file COCO_train2014_000000106585.bin segment 0
+1127.132318 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132318 ulp-mlperf: Performance results for window 155:
+1127.132318 ulp-mlperf:   # Inferences :             1
+1127.132318 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132318 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132318 ulp-mlperf:   m-results    : [0.964844, 0.035156]
+1127.132318 ulp-mlperf: Loading file COCO_train2014_000000571885.bin segment 0
+1127.132319 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132319 ulp-mlperf: Performance results for window 156:
+1127.132319 ulp-mlperf:   # Inferences :             1
+1127.132319 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132319 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132319 ulp-mlperf:   m-results    : [0.957031, 0.042969]
+1127.132319 ulp-mlperf: Loading file COCO_val2014_000000446703.bin segment 0
+1127.132320 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132320 ulp-mlperf: Performance results for window 157:
+1127.132320 ulp-mlperf:   # Inferences :             1
+1127.132320 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132320 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132320 ulp-mlperf:   m-results    : [0.820312, 0.179688]
+1127.132320 ulp-mlperf: Loading file COCO_train2014_000000337806.bin segment 0
+1127.132320 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132321 ulp-mlperf: Performance results for window 158:
+1127.132321 ulp-mlperf:   # Inferences :             1
+1127.132321 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132321 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132321 ulp-mlperf:   m-results    : [0.773438, 0.226562]
+1127.132321 ulp-mlperf: Loading file COCO_train2014_000000139758.bin segment 0
+1127.132321 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132321 ulp-mlperf: Performance results for window 159:
+1127.132321 ulp-mlperf:   # Inferences :             1
+1127.132321 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132321 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132321 ulp-mlperf:   m-results    : [0.917969, 0.082031]
+1127.132321 ulp-mlperf: Loading file COCO_val2014_000000283163.bin segment 0
+1127.132322 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132322 ulp-mlperf: Performance results for window 160:
+1127.132322 ulp-mlperf:   # Inferences :             1
+1127.132322 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132322 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132322 ulp-mlperf:   m-results    : [0.949219, 0.050781]
+1127.132322 ulp-mlperf: Loading file COCO_val2014_000000011156.bin segment 0
+1127.132323 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132323 ulp-mlperf: Performance results for window 161:
+1127.132323 ulp-mlperf:   # Inferences :             1
+1127.132323 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132323 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132323 ulp-mlperf:   m-results    : [0.90625, 0.09375]
+1127.132323 ulp-mlperf: Loading file COCO_train2014_000000477646.bin segment 0
+1127.132323 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132324 ulp-mlperf: Performance results for window 162:
+1127.132324 ulp-mlperf:   # Inferences :             1
+1127.132324 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132324 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132324 ulp-mlperf:   m-results    : [0.941406, 0.058594]
+1127.132324 ulp-mlperf: Loading file COCO_val2014_000000469577.bin segment 0
+1127.132324 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132324 ulp-mlperf: Performance results for window 163:
+1127.132324 ulp-mlperf:   # Inferences :             1
+1127.132324 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132324 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132324 ulp-mlperf:   m-results    : [0.621094, 0.378906]
+1127.132324 ulp-mlperf: Loading file COCO_train2014_000000093786.bin segment 0
+1127.132325 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132325 ulp-mlperf: Performance results for window 164:
+1127.132325 ulp-mlperf:   # Inferences :             1
+1127.132325 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132325 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132325 ulp-mlperf:   m-results    : [0.964844, 0.035156]
+1127.132325 ulp-mlperf: Loading file COCO_train2014_000000516823.bin segment 0
+1127.132326 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132326 ulp-mlperf: Performance results for window 165:
+1127.132326 ulp-mlperf:   # Inferences :             1
+1127.132326 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132326 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132326 ulp-mlperf:   m-results    : [0.195312, 0.804688]
+1127.132326 ulp-mlperf: Loading file COCO_train2014_000000168999.bin segment 0
+1127.132327 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132327 ulp-mlperf: Performance results for window 166:
+1127.132327 ulp-mlperf:   # Inferences :             1
+1127.132327 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132327 ulp-mlperf:   Throughput   :      9.001 inf./sec.
+1127.132327 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132327 ulp-mlperf: Loading file COCO_train2014_000000146886.bin segment 0
+1127.132327 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132327 ulp-mlperf: Performance results for window 167:
+1127.132327 ulp-mlperf:   # Inferences :             1
+1127.132327 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132327 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132327 ulp-mlperf:   m-results    : [0.929688, 0.070312]
+1127.132327 ulp-mlperf: Loading file COCO_train2014_000000508488.bin segment 0
+1127.132328 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132328 ulp-mlperf: Performance results for window 168:
+1127.132328 ulp-mlperf:   # Inferences :             1
+1127.132328 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132328 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132328 ulp-mlperf:   m-results    : [0.847656, 0.152344]
+1127.132328 ulp-mlperf: Loading file COCO_train2014_000000365488.bin segment 0
+1127.132329 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132329 ulp-mlperf: Performance results for window 169:
+1127.132329 ulp-mlperf:   # Inferences :             1
+1127.132329 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132329 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132329 ulp-mlperf:   m-results    : [0.679688, 0.320312]
+1127.132329 ulp-mlperf: Loading file COCO_val2014_000000555772.bin segment 0
+1127.132330 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132330 ulp-mlperf: Performance results for window 170:
+1127.132330 ulp-mlperf:   # Inferences :             1
+1127.132330 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132330 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132330 ulp-mlperf:   m-results    : [0.804688, 0.195312]
+1127.132330 ulp-mlperf: Loading file COCO_val2014_000000249273.bin segment 0
+1127.132330 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132331 ulp-mlperf: Performance results for window 171:
+1127.132331 ulp-mlperf:   # Inferences :             1
+1127.132331 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132331 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132331 ulp-mlperf:   m-results    : [0.847656, 0.152344]
+1127.132331 ulp-mlperf: Loading file COCO_train2014_000000376283.bin segment 0
+1127.132331 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132331 ulp-mlperf: Performance results for window 172:
+1127.132331 ulp-mlperf:   # Inferences :             1
+1127.132331 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132331 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132331 ulp-mlperf:   m-results    : [0.40625, 0.59375]
+1127.132331 ulp-mlperf: Loading file COCO_val2014_000000247838.bin segment 0
+1127.132332 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132332 ulp-mlperf: Performance results for window 173:
+1127.132332 ulp-mlperf:   # Inferences :             1
+1127.132332 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132332 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132332 ulp-mlperf:   m-results    : [0.953125, 0.046875]
+1127.132332 ulp-mlperf: Loading file COCO_train2014_000000480409.bin segment 0
+1127.132333 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132333 ulp-mlperf: Performance results for window 174:
+1127.132333 ulp-mlperf:   # Inferences :             1
+1127.132333 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132333 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132333 ulp-mlperf:   m-results    : [0.839844, 0.160156]
+1127.132333 ulp-mlperf: Loading file COCO_train2014_000000472823.bin segment 0
+1127.132334 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132334 ulp-mlperf: Performance results for window 175:
+1127.132334 ulp-mlperf:   # Inferences :             1
+1127.132334 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132334 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132334 ulp-mlperf:   m-results    : [0.976562, 0.023438]
+1127.132334 ulp-mlperf: Loading file COCO_val2014_000000034183.bin segment 0
+1127.132335 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132335 ulp-mlperf: Performance results for window 176:
+1127.132335 ulp-mlperf:   # Inferences :             1
+1127.132335 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132335 ulp-mlperf:   Throughput   :      9.000 inf./sec.
+1127.132335 ulp-mlperf:   m-results    : [0.820312, 0.179688]
+1127.132335 ulp-mlperf: Loading file COCO_train2014_000000357925.bin segment 0
+1127.132336 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132336 ulp-mlperf: Performance results for window 177:
+1127.132336 ulp-mlperf:   # Inferences :             1
+1127.132336 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132336 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132336 ulp-mlperf:   m-results    : [0.917969, 0.082031]
+1127.132336 ulp-mlperf: Loading file COCO_train2014_000000499204.bin segment 0
+1127.132336 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132337 ulp-mlperf: Performance results for window 178:
+1127.132337 ulp-mlperf:   # Inferences :             1
+1127.132337 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132337 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132337 ulp-mlperf:   m-results    : [0.9375, 0.0625]
+1127.132337 ulp-mlperf: Loading file COCO_train2014_000000315036.bin segment 0
+1127.132337 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132337 ulp-mlperf: Performance results for window 179:
+1127.132337 ulp-mlperf:   # Inferences :             1
+1127.132337 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132337 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132337 ulp-mlperf:   m-results    : [0.957031, 0.042969]
+1127.132337 ulp-mlperf: Loading file COCO_val2014_000000325867.bin segment 0
+1127.132338 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132338 ulp-mlperf: Performance results for window 180:
+1127.132338 ulp-mlperf:   # Inferences :             1
+1127.132338 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132338 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132338 ulp-mlperf:   m-results    : [0.589844, 0.410156]
+1127.132338 ulp-mlperf: Loading file COCO_train2014_000000425653.bin segment 0
+1127.132339 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132339 ulp-mlperf: Performance results for window 181:
+1127.132339 ulp-mlperf:   # Inferences :             1
+1127.132339 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132339 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132339 ulp-mlperf:   m-results    : [0.941406, 0.058594]
+1127.132339 ulp-mlperf: Loading file COCO_val2014_000000076211.bin segment 0
+1127.132340 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132340 ulp-mlperf: Performance results for window 182:
+1127.132340 ulp-mlperf:   # Inferences :             1
+1127.132340 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132340 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132340 ulp-mlperf:   m-results    : [0.964844, 0.035156]
+1127.132340 ulp-mlperf: Loading file COCO_val2014_000000304357.bin segment 0
+1127.132340 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132340 ulp-mlperf: Performance results for window 183:
+1127.132340 ulp-mlperf:   # Inferences :             1
+1127.132340 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132340 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132340 ulp-mlperf:   m-results    : [0.722656, 0.277344]
+1127.132340 ulp-mlperf: Loading file COCO_val2014_000000543322.bin segment 0
+1127.132341 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132341 ulp-mlperf: Performance results for window 184:
+1127.132341 ulp-mlperf:   # Inferences :             1
+1127.132341 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132341 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132341 ulp-mlperf:   m-results    : [0.933594, 0.066406]
+1127.132341 ulp-mlperf: Loading file COCO_val2014_000000336257.bin segment 0
+1127.132342 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132342 ulp-mlperf: Performance results for window 185:
+1127.132342 ulp-mlperf:   # Inferences :             1
+1127.132342 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132342 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132342 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132342 ulp-mlperf: Loading file COCO_train2014_000000055169.bin segment 0
+1127.132343 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132343 ulp-mlperf: Performance results for window 186:
+1127.132343 ulp-mlperf:   # Inferences :             1
+1127.132343 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132343 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132343 ulp-mlperf:   m-results    : [0.523438, 0.476562]
+1127.132343 ulp-mlperf: Loading file COCO_train2014_000000068482.bin segment 0
+1127.132343 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132344 ulp-mlperf: Performance results for window 187:
+1127.132344 ulp-mlperf:   # Inferences :             1
+1127.132344 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132344 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132344 ulp-mlperf:   m-results    : [0.921875, 0.078125]
+1127.132344 ulp-mlperf: Loading file COCO_val2014_000000293259.bin segment 0
+1127.132344 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132344 ulp-mlperf: Performance results for window 188:
+1127.132344 ulp-mlperf:   # Inferences :             1
+1127.132344 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132344 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132344 ulp-mlperf:   m-results    : [0.648438, 0.351562]
+1127.132344 ulp-mlperf: Loading file COCO_train2014_000000039000.bin segment 0
+1127.132345 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132345 ulp-mlperf: Performance results for window 189:
+1127.132345 ulp-mlperf:   # Inferences :             1
+1127.132345 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132345 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132345 ulp-mlperf:   m-results    : [0.976562, 0.023438]
+1127.132345 ulp-mlperf: Loading file COCO_train2014_000000068956.bin segment 0
+1127.132346 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132346 ulp-mlperf: Performance results for window 190:
+1127.132346 ulp-mlperf:   # Inferences :             1
+1127.132346 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132346 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132346 ulp-mlperf:   m-results    : [0.90625, 0.09375]
+1127.132346 ulp-mlperf: Loading file COCO_train2014_000000100863.bin segment 0
+1127.132347 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132347 ulp-mlperf: Performance results for window 191:
+1127.132347 ulp-mlperf:   # Inferences :             1
+1127.132347 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132347 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132347 ulp-mlperf:   m-results    : [0.964844, 0.035156]
+1127.132347 ulp-mlperf: Loading file COCO_train2014_000000305805.bin segment 0
+1127.132347 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132347 ulp-mlperf: Performance results for window 192:
+1127.132347 ulp-mlperf:   # Inferences :             1
+1127.132347 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132347 ulp-mlperf:   Throughput   :      9.002 inf./sec.
+1127.132347 ulp-mlperf:   m-results    : [0.96875, 0.03125]
+1127.132347 ulp-mlperf: Loading file COCO_train2014_000000487144.bin segment 0
+1127.132348 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132348 ulp-mlperf: Performance results for window 193:
+1127.132348 ulp-mlperf:   # Inferences :             1
+1127.132348 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132348 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132348 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132348 ulp-mlperf: Loading file COCO_val2014_000000540816.bin segment 0
+1127.132349 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132349 ulp-mlperf: Performance results for window 194:
+1127.132349 ulp-mlperf:   # Inferences :             1
+1127.132349 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132349 ulp-mlperf:   Throughput   :      9.005 inf./sec.
+1127.132349 ulp-mlperf:   m-results    : [0.960938, 0.039062]
+1127.132349 ulp-mlperf: Loading file COCO_train2014_000000284765.bin segment 0
+1127.132350 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132350 ulp-mlperf: Performance results for window 195:
+1127.132350 ulp-mlperf:   # Inferences :             1
+1127.132350 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132350 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132350 ulp-mlperf:   m-results    : [0.972656, 0.027344]
+1127.132350 ulp-mlperf: Loading file COCO_train2014_000000439930.bin segment 0
+1127.132350 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132351 ulp-mlperf: Performance results for window 196:
+1127.132351 ulp-mlperf:   # Inferences :             1
+1127.132351 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132351 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132351 ulp-mlperf:   m-results    : [0.953125, 0.046875]
+1127.132351 ulp-mlperf: Loading file COCO_train2014_000000268227.bin segment 0
+1127.132351 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132351 ulp-mlperf: Performance results for window 197:
+1127.132351 ulp-mlperf:   # Inferences :             1
+1127.132351 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132351 ulp-mlperf:   Throughput   :      9.004 inf./sec.
+1127.132351 ulp-mlperf:   m-results    : [0.582031, 0.417969]
+1127.132351 ulp-mlperf: Loading file COCO_train2014_000000552403.bin segment 0
+1127.132352 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132352 ulp-mlperf: Performance results for window 198:
+1127.132352 ulp-mlperf:   # Inferences :             1
+1127.132352 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132352 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132352 ulp-mlperf:   m-results    : [0.777344, 0.222656]
+1127.132352 ulp-mlperf: Loading file COCO_train2014_000000440623.bin segment 0
+1127.132353 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132353 ulp-mlperf: Performance results for window 199:
+1127.132353 ulp-mlperf:   # Inferences :             1
+1127.132353 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132353 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132353 ulp-mlperf:   m-results    : [0.875, 0.125]
+1127.132353 ulp-mlperf: Loading file COCO_train2014_000000108071.bin segment 0
+1127.132354 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+1127.132354 ulp-mlperf: Performance results for window 200:
+1127.132354 ulp-mlperf:   # Inferences :             1
+1127.132354 ulp-mlperf:   Runtime      :      0.111 sec.
+1127.132354 ulp-mlperf:   Throughput   :      9.003 inf./sec.
+1127.132354 ulp-mlperf:   m-results    : [0.941406, 0.058594]
+SerialDevice exiting port /dev/cu.usbmodem14101, entry_count (before decrement) = 1
+--------------------
+1127.132354 ulp-mlperf: Top 1% = 86.0
+1127.132354 ulp-mlperf: AUC = 0.934
+Session logged in file sessions/20251127_132116/log.txt

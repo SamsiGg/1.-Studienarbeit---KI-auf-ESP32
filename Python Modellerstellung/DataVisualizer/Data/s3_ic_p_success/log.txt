@@ -1,0 +1,80 @@
+Logging initialized. Writing output to sessions/20251127_134725/log.txt
+Initializing SerialDevice on port: /dev/cu.usbmodem14101 at 115200 baud
+SerialDevice entering port /dev/cu.usbmodem14101, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: ESP32-S3
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: ic01
+SerialDevice exiting port /dev/cu.usbmodem14101, entry_count (before decrement) = 1
+SerialDevice entering port /dev/cu.usbmodem14101, entry_count (before increment) = 0
+1127.134728 ulp-mlperf: Loading file emu_s_002009.bin segment 0
+1127.134728 ulp-mlperf: Load complete.
+Running inference with 5/50 (warmup/measured) iterations ...
+done
+1127.134733 ulp-mlperf: Performance results for window 1:
+1127.134733 ulp-mlperf:   # Inferences :            50
+1127.134733 ulp-mlperf:   Runtime      :      5.043 sec.
+1127.134733 ulp-mlperf:   Throughput   :      9.916 inf./sec.
+1127.134733 ulp-mlperf:   m-results    : [0.0, 0.996094, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+1127.134733 ulp-mlperf: Loading file taxi_s_001241.bin segment 0
+1127.134733 ulp-mlperf: Load complete.
+Running inference with 5/50 (warmup/measured) iterations ...
+done
+1127.134739 ulp-mlperf: Performance results for window 2:
+1127.134739 ulp-mlperf:   # Inferences :            50
+1127.134739 ulp-mlperf:   Runtime      :      5.042 sec.
+1127.134739 ulp-mlperf:   Throughput   :      9.916 inf./sec.
+1127.134739 ulp-mlperf:   m-results    : [0.0, 0.996094, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+1127.134739 ulp-mlperf: Loading file accentor_s_001031.bin segment 0
+1127.134739 ulp-mlperf: Load complete.
+Running inference with 5/50 (warmup/measured) iterations ...
+done
+1127.134745 ulp-mlperf: Performance results for window 3:
+1127.134745 ulp-mlperf:   # Inferences :            50
+1127.134745 ulp-mlperf:   Runtime      :      5.042 sec.
+1127.134745 ulp-mlperf:   Throughput   :      9.916 inf./sec.
+1127.134745 ulp-mlperf:   m-results    : [0.0, 0.996094, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+1127.134745 ulp-mlperf: Loading file mongrel_s_000686.bin segment 0
+1127.134745 ulp-mlperf: Load complete.
+Running inference with 5/50 (warmup/measured) iterations ...
+done
+1127.134750 ulp-mlperf: Performance results for window 4:
+1127.134750 ulp-mlperf:   # Inferences :            50
+1127.134750 ulp-mlperf:   Runtime      :      5.042 sec.
+1127.134750 ulp-mlperf:   Throughput   :      9.916 inf./sec.
+1127.134750 ulp-mlperf:   m-results    : [0.0, 0.996094, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+1127.134750 ulp-mlperf: Loading file stealth_bomber_s_002204.bin segment 0
+1127.134750 ulp-mlperf: Load complete.
+Running inference with 5/50 (warmup/measured) iterations ...
+done
+1127.134756 ulp-mlperf: Performance results for window 5:
+1127.134756 ulp-mlperf:   # Inferences :            50
+1127.134756 ulp-mlperf:   Runtime      :      5.043 sec.
+1127.134756 ulp-mlperf:   Throughput   :      9.916 inf./sec.
+1127.134756 ulp-mlperf:   m-results    : [0.0, 0.996094, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+SerialDevice exiting port /dev/cu.usbmodem14101, entry_count (before decrement) = 1
+--------------------
+Performance results for window 1
+# Inferences : 50
+Runtime: 5.042577 sec.
+Throughput: 9.915564997817585 inf./sec.
+Performance results for window 2
+# Inferences : 50
+Runtime: 5.042383 sec.
+Throughput: 9.91594648799982 inf./sec.
+Performance results for window 3
+# Inferences : 50
+Runtime: 5.04231 sec.
+Throughput: 9.91609004603049 inf./sec.
+Performance results for window 4
+# Inferences : 50
+Runtime: 5.04239 sec.
+Throughput: 9.915932722379665 inf./sec.
+Performance results for window 5
+# Inferences : 50
+Runtime: 5.042507 sec.
+Throughput: 9.915702645529297 inf./sec.
+1127.134756 ulp-mlperf: ---------------------------------------------------------
+1127.134756 ulp-mlperf: Median throughput is      9.916 inf./sec.
+1127.134756 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions/20251127_134725/log.txt
