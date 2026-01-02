@@ -13,10 +13,10 @@ SAVE_FORMAT = "png"
 
 # --- PREISE (in Euro) ---
 PRICES = {
-    "esp32": 6.00,
-    "s3": 20.00,
-    "teensy": 25.00,
-    "giga": 75.00
+    "esp32": 10.00,
+    "s3": 19.80,
+    "teensy": 29.50,
+    "giga": 63.80
 }
 
 # Reihenfolge für Diagramme

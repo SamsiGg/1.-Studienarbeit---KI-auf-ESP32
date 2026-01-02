@@ -12,7 +12,7 @@ Energy data for trial 1
   Total Energy  : 1540657.727 uJ
   Energy/Inf    : 77032.886 uJ/inf
 Energy data for trial 2
-  Elapsed time  : 2.081  <<<< below minimum duration
+  Elapsed time  : 2.081  <<<< below minimum duration 0,4424
   Inferences    : 20
   Power         : 741.3808 mW.
   Total Energy  : 1542813.458 uJ
