@@ -11,7 +11,7 @@ Ziel der Arbeit war es, die Eignung des kostengünstigen **ESP32** (und ESP32-S3
 Das Repository ist als Workspace organisiert. Die wichtigsten Ordner sind die jeweiligen `MLPerf`-Implementierungen, welche als eigenständige **PlatformIO**-Umgebungen angelegt sind.
 
 ### Hauptprojekte (Benchmark)
-Diese Ordner enthalten den vollständigen Code, um die MLPerf-Benchmarks (Keyword Spotting, Image Classification, Visual Wake Words) auf der jeweiligen Hardware auszuführen. Sie können direkt mit PlatformIO geöffnet und auf den Mikrocontroller geflasht werden.
+Diese Ordner enthalten den vollständigen Code, um die MLPerf-Benchmarks auf der jeweiligen Hardware auszuführen. Sie können direkt mit PlatformIO geöffnet und auf den Mikrocontroller geflasht werden.
 
 * `📂 MLPerf_ESP32-Wroom-32` - Implementierung für den generischen ESP32 (Xtensa LX6).
 * `📂 MLPerf_ESP32-S3` - Optimierte Implementierung für den ESP32-S3 (Xtensa LX7 mit Vektor-Instruktionen).
@@ -23,6 +23,20 @@ Zusätzlich zu den Benchmarks befinden sich hier Projekte, die zum Verständnis 
 
 * `📂 Python Modellerstellung` - Python-Skripte zur Aufbereitung der Messdaten und Erstellung der Diagramme für die Arbeit.
 * `📂 ESP32-CAM_Programm` & `📂 ESP32-Wroom-32_Programm` - Kleinere Hilfsprojekte und "Playgrounds", die zur Einarbeitung in die Thematik und zum Testen von Einzelkomponenten dienten.
+
+## 🚀 Nutzung & Konfiguration
+
+Damit der Benchmark korrekt läuft, müssen je nach gewünschtem Testfall Anpassungen in der Konfiguration vorgenommen werden:
+
+### 1. Modellauswahl (`platformio.ini`)
+Das zu testende neuronale Netz wird über ein Define in der `platformio.ini` Datei des jeweiligen Projekts festgelegt. Um das Modell zu wechseln, muss das entsprechende Flag gesetzt werden (die anderen sollten auskommentiert oder entfernt sein):
+
+* `EE_MODEL_VERSION_KWS01` - Keyword Spotting
+* `EE_MODEL_VERSION_IC01`  - Image Classification
+* `EE_MODEL_VERSION_VWW01` - Visual Wake Words
+
+### 2. Test-Modus (Environment)
+Für die verschiedenen Messarten (Genauigkeit, Performance, Energie) sind in PlatformIO separate Umgebungen (**Environments**) vorkonfiguriert. Wähle vor dem Kompilieren/Flashen einfach die selbsterklärende Umgebung aus der Liste aus (z.B. `env:accuracy`, `env:perf`, `env:energy`).
 
 ## 🛠 Hardware & Software Stack
 
