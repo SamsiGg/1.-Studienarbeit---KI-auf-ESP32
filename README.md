@@ -11,7 +11,7 @@ Ziel der Arbeit war es, die Eignung des kostengünstigen **ESP32** (und ESP32-S3
 Das Repository ist als Workspace organisiert. Die wichtigsten Ordner sind die jeweiligen `MLPerf`-Implementierungen, welche als eigenständige **PlatformIO**-Umgebungen angelegt sind.
 
 ### Hauptprojekte (Benchmark)
-Diese Ordner enthalten den vollständigen Code, um die MLPerf-Benchmarks auf der jeweiligen Hardware auszuführen. Sie können direkt mit PlatformIO geöffnet und auf den Mikrocontroller geflasht werden.
+Diese Ordner enthalten den vollständigen Code, um die MLPerf-Benchmarks (Keyword Spotting, Image Classification, Visual Wake Words) auf der jeweiligen Hardware auszuführen. Sie können direkt mit PlatformIO geöffnet und auf den Mikrocontroller geflasht werden.
 
 * `📂 MLPerf_ESP32-Wroom-32` - Implementierung für den generischen ESP32 (Xtensa LX6).
 * `📂 MLPerf_ESP32-S3` - Optimierte Implementierung für den ESP32-S3 (Xtensa LX7 mit Vektor-Instruktionen).
@@ -26,7 +26,10 @@ Zusätzlich zu den Benchmarks befinden sich hier Projekte, die zum Verständnis 
 
 ## 🚀 Nutzung & Konfiguration
 
-Damit der Benchmark korrekt läuft, müssen je nach gewünschtem Testfall Anpassungen in der Konfiguration vorgenommen werden:
+⚠️ **Voraussetzung:** Der **EEMBC Runner** (die Host-Software zur Steuerung des Benchmarks) ist **nicht** in diesem Repository enthalten. Er ist im offiziellen MLCommons Repository zu finden:
+👉 [https://github.com/mlcommons/tiny](https://github.com/mlcommons/tiny)
+
+📦 **Plug & Play:** Da es sich um PlatformIO-Projekte handelt, sind **keine manuellen Bibliotheks-Installationen** notwendig. Alle Abhängigkeiten werden automatisch durch die Projektkonfiguration verwaltet.
 
 ### 1. Modellauswahl (`platformio.ini`)
 Das zu testende neuronale Netz wird über ein Define in der `platformio.ini` Datei des jeweiligen Projekts festgelegt. Um das Modell zu wechseln, muss das entsprechende Flag gesetzt werden (die anderen sollten auskommentiert oder entfernt sein):
@@ -36,12 +39,12 @@ Das zu testende neuronale Netz wird über ein Define in der `platformio.ini` Dat
 * `EE_MODEL_VERSION_VWW01` - Visual Wake Words
 
 ### 2. Test-Modus (Environment)
-Für die verschiedenen Messarten (Genauigkeit, Performance, Energie) sind in PlatformIO separate Umgebungen (**Environments**) vorkonfiguriert. Wähle vor dem Kompilieren/Flashen einfach die selbsterklärende Umgebung aus der Liste aus (z.B. `env:accuracy`, `env:perf`, `env:energy`).
+Für die verschiedenen Messarten (Performance, Energie) sind in PlatformIO separate Umgebungen (**Environments**) vorkonfiguriert. Wähle vor dem Kompilieren/Flashen einfach die selbsterklärende Umgebung aus der Liste aus (z.B. `env:teensy40_perf`, `env:teensy40_energy`).
 
 ## 🛠 Hardware & Software Stack
 
 **Untersuchte Hardware:**
-* **Espressif:** ESP32 DevKit V1, Arduino Nano ESP32 (S3)
+* **Espressif:** Lolin D32 (ESP32), Arduino Nano ESP32 (S3)
 * **ARM Cortex-M7:** Teensy 4.0, Arduino Giga R1
 
 **Software:**
